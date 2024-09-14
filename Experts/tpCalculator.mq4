@@ -35,43 +35,67 @@ void OnTick()
   {   
       
       Management management = Management();
-         
-      ORDER_TICKET = 0;
+      Orders orders = Orders();
       
-      for(int i=0; i<OrdersTotal(); i++) {
+      orders.GetOrdersList();
       
-         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
-         
-         if(openOrder && OrderSymbol() == Symbol()){
-            
-            ORDER_TICKET = OrderTicket(); 
-            
-            break;
-         }
-      }
+      //if(ORDERS_LIST[0] == 0) {
+      if(OrdersTotal() == 0) {
       
-      if(ORDER_TICKET == 0) {
-      
-         management.UpdateValues();
+         management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));         
       }
       else {
          
          management.LoadValues();
          
-         if(TAKE_PROFIT_BID_PRICE != OrderTakeProfit() || STOP_RISK_BID_PRICE != OrderStopLoss()) {
+         if(OPEN_BID_PRICE != 0 && TAKE_PROFIT_BID_PRICE != 0 && STOP_RISK_BID_PRICE != 0) {
+         
+            orders.UpdateOrders(ORDERS_LIST[0], STOP_RISK_BID_PRICE, TAKE_PROFIT_BID_PRICE);
             
-            Orders order = Orders();
-            order.UpdateOrder(ORDER_TICKET, STOP_RISK_BID_PRICE, TAKE_PROFIT_BID_PRICE);
-            management.AdjustLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
-         } 
+            if(GetLastError() == ERR_INVALID_STOPS) {
+                        
+               management.MoveLevels(OPEN_BID_PRICE, OrderTakeProfit(), OrderStopLoss());
+               //management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
+            }
+         }
+         else {
+            
+            management.DeleteLevels();
+            management.PlotLevels(OrderOpenPrice(), OrderTakeProfit(), OrderStopLoss());            
+         }
          
-         Alert(ORDER_TICKET + " -- " + TAKE_PROFIT_BID_PRICE + " - " + OrderTakeProfit() + " ** " + STOP_RISK_BID_PRICE + " - " + OrderStopLoss());
-         
+         //management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
       }
   }
   
 
 //+------------------------------------------------------------------+
+      
+               /*
+
+         
+         if(OPERATION_TYPE == OP_BUY) {           
+            
+            if(Ask <= STOP_RISK_ASK_PRICE+halfSpread || Ask >= TAKE_PROFIT_ASK_PRICE-halfSpread) {
+                  
+                  management.DeleteLevels();
+            }
+         }
+         else if (OPERATION_TYPE == OP_SELL) {
+            
+            if(Bid >= STOP_RISK_BID_PRICE-halfSpread || Bid <= TAKE_PROFIT_BID_PRICE+halfSpread) {
+            
+               management.DeleteLevels();
+            }
+         }
+         
+         
+         
+         */
+         
+         
+         //Alert(ORDER_TICKET + " -- " + TAKE_PROFIT_BID_PRICE + " - " + OrderTakeProfit() + " ** " + STOP_RISK_BID_PRICE + " - " + OrderStopLoss());
+      
       //Alert(ORDER_TICKET);
   /*
       Management management = Management();

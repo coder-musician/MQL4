@@ -9,7 +9,7 @@
 #property strict
 //#property show_inputs
 
-// mnew version
+
 string YEAR;
 string MONTH;
 string DAY;

@@ -10,6 +10,7 @@
 
 #include "..\Include\Custom\Management.mqh"
 #include "..\Include\Custom\Orders.mqh"
+#include "..\Include\Custom\Journal.mqh"
 
 
 
@@ -36,21 +37,43 @@ void OnTick()
       
       Management management = Management();
       Orders orders = Orders();
+      Journal journal = Journal();
       
       orders.GetOrdersList();
       
       //if(ORDERS_LIST[0] == 0) {
       if(OrdersTotal() == 0) {
-      
-         management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));         
+         
+         string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Bars);
+         
+         management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
+         CANDLES_COUNT = 0;
+         
+         if(IS_ORDER_ACTIVE) {
+            
+            snapshotName = snapshotName + "-close";
+            journal.takeScreenshot(snapshotName);
+            IS_ORDER_ACTIVE = False;
+         }
       }
       else {
+         
+         IS_ORDER_ACTIVE = True;
+         
+         if(CANDLES_COUNT < Bars) {
+            
+            string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Bars);
+         
+            journal.takeScreenshot(snapshotName);
+            
+            CANDLES_COUNT = Bars;
+         }
          
          management.LoadValues();
          
          if(OPEN_BID_PRICE != 0 && TAKE_PROFIT_BID_PRICE != 0 && STOP_RISK_BID_PRICE != 0) {
          
-            orders.UpdateOrders(ORDERS_LIST[0], STOP_RISK_BID_PRICE, TAKE_PROFIT_BID_PRICE);
+            orders.UpdateOrder(ORDERS_LIST[0], STOP_RISK_BID_PRICE, TAKE_PROFIT_BID_PRICE);
             
             if(GetLastError() == ERR_INVALID_STOPS) {
                         

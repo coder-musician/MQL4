@@ -67,6 +67,7 @@ void OnStart()
       ORDER_LOTS =  getLots();
       
       
-      NewOrder.PlaceOrder();      
+      NewOrder.PlaceOrder();
+           
   }
 //+------------------------------------------------------------------+

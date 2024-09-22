@@ -58,7 +58,15 @@ void OnTick()
       }
       else {
          
-         IS_ORDER_ACTIVE = True;
+         if(!IS_ORDER_ACTIVE) {
+            
+            string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Bars);
+            snapshotName = snapshotName + "-open";
+            journal.takeScreenshot(snapshotName);
+            IS_ORDER_ACTIVE = True;
+         }
+         
+         //IS_ORDER_ACTIVE = True;
          
          if(CANDLES_COUNT < Bars) {
             

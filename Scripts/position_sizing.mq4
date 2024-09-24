@@ -16,23 +16,23 @@ int STANDARD_LOT_VALUE = 100000;
 int STANDARD_LOT_SIZE = 1;
 double DECIMALS = 0.0001;
 double PRICE = Bid;
-double PIPS_RISKED = 10;
+double PIPS_RISKED = 27;
 
 void OnStart()
   {
 //--- 
       
       
-      double currentPipValue = STANDARD_LOT_VALUE*(DECIMALS / PRICE); 
+      double currentPipValue = (STANDARD_LOT_SIZE*STANDARD_LOT_VALUE)*(DECIMALS / PRICE);
           
       double AmountRisked = AccountBalance() * ORDERS_RISK_PERCENTAGE;
       double tradePipValue = AmountRisked / PIPS_RISKED;
       
       double PositionSize = (tradePipValue * STANDARD_LOT_SIZE)/currentPipValue;
       
-      double mylot = (PositionSize*STANDARD_LOT_VALUE)*(DECIMALS / Bid);
+      double mylot = ((PositionSize*STANDARD_LOT_VALUE)*(DECIMALS / PRICE))*PIPS_RISKED;
       
-      MessageBox(DoubleToString(PositionSize));
+      MessageBox(DoubleToString(tradePipValue));
       
       
       /*

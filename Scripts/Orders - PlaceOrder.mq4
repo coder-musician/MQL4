@@ -19,6 +19,10 @@ int STANDARD_LOT_SIZE = 1;
 double DECIMALS = 0.0001;
 double MULTIPLIER = 10000;
 
+//+------------------------------------------------------------------+
+//| Script program start function                                    |
+//+------------------------------------------------------------------+
+
 void OnStart()
   { 
       
@@ -57,14 +61,13 @@ ORDER_LOTS = PositionSize;
       
       RISKED_PIPS = ((RISKED_PIPS+(Ask-Bid))*MULTIPLIER);
       
-      // El 10 = 100.000 * 0.0001
-      double PipValue = (STANDARD_LOT_VALUE*DECIMALS)/ORDER_OPEN_PRICE;
+      double MarketPipValue = (STANDARD_LOT_VALUE*DECIMALS)/ORDER_OPEN_PRICE;
       
       double AmountRisked = AccountBalance() * ORDERS_RISK_PERCENTAGE;
       double RiskPipValue = AmountRisked / RISKED_PIPS;
       
       
-      ORDER_LOTS = RiskPipValue/PipValue;
+      ORDER_LOTS = RiskPipValue/MarketPipValue;
       
       
       NewOrder.PlaceOrder(); 

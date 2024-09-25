@@ -16,6 +16,8 @@ double ORDER_PROFIT_PRICE = 0;
 double ORDER_RISK_PRICE = 0;
 double ORDER_LOTS = 0;
 int ORDER_OPERATION = 0;
+int CANDLES_COUNT = 0;
+
 class Orders
   {
   
@@ -84,12 +86,14 @@ public:
       }
    }
    
-   void PlaceOrder() {
+   int PlaceOrder() {
       
-      double newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, "");
+      int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, "");
       
       bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
       ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrWhite);
+      
+      return newOrder;
    }
    
    void UpdateOrder(int OrderId, double StopRisk, double TakeProfit) {

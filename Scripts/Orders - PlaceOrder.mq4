@@ -24,14 +24,7 @@ double MULTIPLIER = 10000;
 
 void OnStart()
   { 
-      
-/*      
- 
-
-double PositionSize = (tradePipValue * STANDARD_LOT_SIZE)/currentPipValue;
-
-ORDER_LOTS = PositionSize;
-*/
+  
       Management TradeManagement = Management();
       Orders NewOrder = Orders();
       
@@ -70,8 +63,8 @@ ORDER_LOTS = PositionSize;
       
       
       NewOrder.PlaceOrder(); 
+      //MessageBox(GetLastError());
       
-      /*
       string mensae = "Open Price: " + ORDER_OPEN_PRICE + "\n" + 
                       "Stop Loss: " + ORDER_RISK_PRICE + "\n" + 
                       "Spread: " + DoubleToStr(Ask-Bid) + "\n" + 
@@ -79,11 +72,13 @@ ORDER_LOTS = PositionSize;
                       "Pips Loss: " + RISKED_PIPS + "\n" +
                       "Risk Pip Value: " + RiskPipValue + "\n" +
                       "\n" +
-                      "Pip Market Value: " + PipValue + "\n" +
+                      "Pip Market Value: " + MarketPipValue + "\n" +
+                      "\n" +
+                      "Operation: " + ORDER_OPERATION + "\n" +
                       "\n" +
                       "Position: " + DoubleToStr(ORDER_LOTS);          
-      MessageBox(mensae);
-      
+      //MessageBox(mensae);
+      /*
 
       //double PipValue = (STANDARD_LOT_SIZE*0.0001)/ORDER_OPEN_PRICE;
             //ORDER_LOTS = AmountRisked / (RiskPipValue*PipValue);

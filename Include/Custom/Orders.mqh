@@ -57,6 +57,7 @@ public:
          IS_ORDER_ACTIVE = True;
       }
    }
+
    
    void loadActiveOrders() {
       
@@ -86,8 +87,38 @@ public:
       }
    }
    
-   int PlaceOrder() {
       
+   bool checkForActiveOrders(string symbol) {
+      
+      bool isActive = False;
+      
+      for(int i=0; i<OrdersTotal(); i++) {
+      
+         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
+         
+         if(openOrder && OrderSymbol() == symbol){
+            
+            isActive = True;
+            break;
+         }
+      }
+     
+      return isActive;      
+   }
+   
+   int PlaceOrder() {
+      /*
+      string mensae = "Open Price: " + ORDER_OPEN_PRICE + "\n" + 
+                      "Stop Loss: " + ORDER_RISK_PRICE + "\n" + 
+                      "Profit: " + ORDER_PROFIT_PRICE + "\n" + 
+                      "\n" +
+                      "Pips Loss: " + ORDER_LOTS + "\n" +
+                      "Operation: " + ORDER_OPERATION + "\n" +
+                      "\n" +
+                      "Synmbol: " + Symbol() + "\n" +
+                      "\n";         
+      MessageBox(mensae);
+      */
       int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, "");
       
       bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);

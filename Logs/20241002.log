@@ -1,0 +1,49 @@
+0	09:22:01.819	Compiling 'position_sizing'
+0	09:22:11.829	Custom indicator Pivots_Monthly GBPUSD,H1: loaded successfully
+0	09:22:12.000	Custom indicator Pivots_Daily GBPUSD,H1: loaded successfully
+0	09:22:12.164	Custom indicator Pivots_Daily_Medians GBPUSD,H1: loaded successfully
+0	09:22:12.315	Custom indicator Pivots_Weekly GBPUSD,H1: loaded successfully
+0	09:22:12.503	Custom indicator Pivots_Weekly_Medians GBPUSD,H1: loaded successfully
+0	09:22:12.688	Custom indicator Knight Timer GBPUSD,H1: loaded successfully
+0	09:22:12.894	Custom indicator Knight MAs v3 GBPUSD,H1: loaded successfully
+0	09:22:13.063	Custom indicator Knight Tunnel v3 GBPUSD,H1: loaded successfully
+0	09:22:13.249	Custom indicator Knight Lines FX GBPUSD,H1: loaded successfully
+0	09:22:13.454	Custom indicator Knight OsMA GBPUSD,H1: loaded successfully
+0	09:22:13.688	Custom indicator Knight DoubleStochs GBPUSD,H1: loaded successfully
+0	09:22:13.893	Custom indicator Stochastic GBPUSD,H1: loaded successfully
+0	09:22:13.953	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	09:22:14.010	Pivots_Monthly GBPUSD,H1: initialized
+0	09:22:14.010	Pivots_Daily GBPUSD,H1: initialized
+0	09:22:14.010	Pivots_Daily_Medians GBPUSD,H1: initialized
+0	09:22:14.010	Pivots_Weekly GBPUSD,H1: initialized
+0	09:22:14.010	Pivots_Weekly_Medians GBPUSD,H1: initialized
+0	09:22:14.010	Knight Timer GBPUSD,H1: initialized
+0	09:22:14.373	Library YRPLib GBPUSD,H1: loaded successfully
+0	09:22:14.373	Knight MAs v3 GBPUSD,H1: initialized
+0	09:22:14.373	Knight Tunnel v3 GBPUSD,H1: initialized
+0	09:22:14.373	Knight Lines FX GBPUSD,H1: initialized
+0	09:22:14.373	Knight OsMA GBPUSD,H1: initialized
+0	09:22:14.643	Library YRPLib GBPUSD,H1: loaded successfully
+0	09:22:14.643	Knight DoubleStochs GBPUSD,H1: initialized
+0	09:22:14.643	Stochastic GBPUSD,H1: initialized
+0	09:22:14.643	Pivots_Daily GBPUSD,H1: 0
+0	09:22:14.643	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:14.643	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:14.643	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:14.650	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:14.650	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:14.650	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:14.650	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:15.152	Custom indicator Pivots_Monthly GBPUSD,H4: loaded successfully
+0	09:22:15.323	Custom indicator Pivots_Daily GBPUSD,H4: loaded successfully
+0	09:22:15.473	Custom indicator Pivots_Daily_Medians GBPUSD,H4: loaded successfully
+0	09:22:15.642	Custom indicator Pivots_Weekly GBPUSD,H4: loaded successfully
+0	09:22:16.085	Custom indicator Pivots_Weekly_Medians GBPUSD,H4: loaded successfully
+0	09:22:16.248	Custom indicator Knight Timer GBPUSD,H4: loaded successfully
+0	09:22:16.381	Custom indicator Knight MAs v3 GBPUSD,H4: loaded successfully
+0	09:22:16.541	Custom indicator Knight Tunnel v3 GBPUSD,H4: loaded successfully
+0	09:22:16.661	Custom indicator Knight Lines FX GBPUSD,H4: loaded successfully
+0	09:22:16.777	Custom indicator Knight OsMA GBPUSD,H4: loaded successfully
+0	09:22:16.890	Custom indicator Knight DoubleStochs GBPUSD,H4: loaded successfully
+0	09:22:17.010	Custom indicator Stochastic GBPUSD,H4: loaded successfully
+0	09:22:17.029	Expert tpCalculator GBPUSD,H4: loaded successfully

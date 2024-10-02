@@ -39,13 +39,14 @@ void OnTick()
       Orders orders = Orders();
       Journal journal = Journal();
       
-      orders.GetOrdersList();
+      string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Period()) + "-" + IntegerToString(Bars);
       
-      //if(ORDERS_LIST[0] == 0) {
-      if(OrdersTotal() == 0) {
-         
-         string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Bars);
-         
+      orders.GetOrdersList();
+      bool areOrdersActive = orders.checkForActiveOrders(Symbol());
+      
+      
+      if(!areOrdersActive) {
+      
          management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
          CANDLES_COUNT = 0;
          
@@ -54,24 +55,20 @@ void OnTick()
             snapshotName = snapshotName + "-close";
             journal.takeScreenshot(snapshotName);
             IS_ORDER_ACTIVE = False;
+            management.DeleteLevels();
          }
       }
       else {
          
          if(!IS_ORDER_ACTIVE) {
-            
-            string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Bars);
+         
             snapshotName = snapshotName + "-open";
             journal.takeScreenshot(snapshotName);
             IS_ORDER_ACTIVE = True;
          }
          
-         //IS_ORDER_ACTIVE = True;
-         
          if(CANDLES_COUNT < Bars) {
-            
-            string snapshotName = IntegerToString(OrderTicket()) + "-" + IntegerToString(Bars);
-         
+                     
             journal.takeScreenshot(snapshotName);
             
             CANDLES_COUNT = Bars;

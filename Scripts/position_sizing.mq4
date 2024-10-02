@@ -23,16 +23,18 @@ void OnStart()
 //--- 
       
       
-      double currentPipValue = (STANDARD_LOT_SIZE*STANDARD_LOT_VALUE)*(DECIMALS / PRICE);
-          
-      double AmountRisked = AccountBalance() * ORDERS_RISK_PERCENTAGE;
-      double tradePipValue = AmountRisked / PIPS_RISKED;
+      int CurrentOrderTicket = 0;
+      bool IS_ORDER_ACTIVE = False;
       
-      double PositionSize = (tradePipValue * STANDARD_LOT_SIZE)/currentPipValue;
+      for(int i=0; i<OrdersTotal(); i++) {
       
-      double mylot = ((PositionSize*STANDARD_LOT_VALUE)*(DECIMALS / PRICE))*PIPS_RISKED;
-      
-      MessageBox(DoubleToString(tradePipValue));
+         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
+         
+         if(openOrder && OrderSymbol() == Symbol()){
+            
+            CurrentOrderTicket = OrderTicket(); 
+            break;
+         }
       
       
       /*

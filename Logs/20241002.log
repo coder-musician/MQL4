@@ -47,3 +47,1365 @@
 0	09:22:16.890	Custom indicator Knight DoubleStochs GBPUSD,H4: loaded successfully
 0	09:22:17.010	Custom indicator Stochastic GBPUSD,H4: loaded successfully
 0	09:22:17.029	Expert tpCalculator GBPUSD,H4: loaded successfully
+0	09:22:17.029	Pivots_Monthly GBPUSD,H4: initialized
+0	09:22:17.029	Pivots_Daily GBPUSD,H4: initialized
+0	09:22:17.029	Pivots_Daily_Medians GBPUSD,H4: initialized
+0	09:22:17.029	Pivots_Weekly GBPUSD,H4: initialized
+0	09:22:17.029	Pivots_Weekly_Medians GBPUSD,H4: initialized
+0	09:22:17.030	Knight Timer GBPUSD,H4: initialized
+0	09:22:17.137	Library YRPLib GBPUSD,H4: loaded successfully
+0	09:22:17.138	Knight MAs v3 GBPUSD,H4: initialized
+0	09:22:17.138	Knight Tunnel v3 GBPUSD,H4: initialized
+0	09:22:17.138	Knight Lines FX GBPUSD,H4: initialized
+0	09:22:17.138	Knight OsMA GBPUSD,H4: initialized
+0	09:22:17.276	Library YRPLib GBPUSD,H4: loaded successfully
+0	09:22:17.276	Knight DoubleStochs GBPUSD,H4: initialized
+0	09:22:17.276	Stochastic GBPUSD,H4: initialized
+0	09:22:20.704	Pivots_Daily GBPUSD,H1: 0
+0	09:22:20.704	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:20.704	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:20.704	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:20.704	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:20.704	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:20.704	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:20.704	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.240	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.240	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.240	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.240	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.246	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.246	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.246	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.246	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.701	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.701	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.702	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.702	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.702	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.702	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.702	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.703	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.703	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.703	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.703	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.703	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.704	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.704	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.705	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.705	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.705	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.705	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.705	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.705	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.705	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.706	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.706	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.706	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.706	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.706	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.706	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.706	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.706	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.706	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.757	tpCalculator GBPUSD,H4: initialized
+0	09:22:23.759	tpCalculator GBPUSD,H1: initialized
+0	09:22:23.783	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.783	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.783	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.783	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.783	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.783	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.783	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.783	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.823	Pivots_Daily GBPUSD,H1: 0
+0	09:22:23.823	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:23.823	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:23.823	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:23.823	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:23.823	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:23.823	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:23.823	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.466	Pivots_Daily GBPUSD,H1: 0
+0	09:22:24.466	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:24.466	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:24.466	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.466	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:24.467	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:24.467	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:24.467	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.535	Pivots_Daily GBPUSD,H1: 0
+0	09:22:24.535	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:24.535	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:24.535	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.535	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:24.535	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:24.535	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:24.535	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.770	Pivots_Daily GBPUSD,H1: 0
+0	09:22:24.770	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:24.770	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:24.770	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.770	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:24.770	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:24.770	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:24.770	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.947	Pivots_Daily GBPUSD,H1: 0
+0	09:22:24.947	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:24.947	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:24.947	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:24.948	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:24.948	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:24.948	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:24.948	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:25.353	Pivots_Daily GBPUSD,H1: 0
+0	09:22:25.354	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:25.354	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:25.354	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:25.354	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:25.354	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:25.354	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:25.354	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:25.453	Pivots_Daily GBPUSD,H1: 0
+0	09:22:25.453	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:25.453	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:25.453	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:25.453	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:25.453	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:25.453	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:25.453	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:26.119	Pivots_Daily GBPUSD,H1: 0
+0	09:22:26.119	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:26.119	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:26.119	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:26.119	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:26.119	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:26.119	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:26.119	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:26.200	Pivots_Daily GBPUSD,H1: 0
+0	09:22:26.200	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:26.200	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:26.200	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:26.200	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:26.200	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:26.200	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:26.200	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:28.115	Pivots_Daily GBPUSD,H1: 0
+0	09:22:28.115	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:28.115	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:28.115	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:28.115	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:28.115	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:28.115	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:28.115	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:28.495	Pivots_Daily GBPUSD,H1: 0
+0	09:22:28.495	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:28.495	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:28.495	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:28.495	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:28.495	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:28.495	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:28.495	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:31.051	Pivots_Daily GBPUSD,H1: 0
+0	09:22:31.051	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:31.051	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:31.051	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:31.051	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:31.051	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:31.051	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:31.051	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:31.093	Pivots_Daily GBPUSD,H1: 0
+0	09:22:31.093	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:31.093	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:31.093	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:31.093	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:31.093	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:31.093	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:31.093	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:31.750	Pivots_Daily GBPUSD,H1: 0
+0	09:22:31.750	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:31.750	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:31.750	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:31.750	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:31.750	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:31.750	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:31.750	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.283	Pivots_Daily GBPUSD,H1: 0
+0	09:22:34.283	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:34.283	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:34.283	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.283	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:34.283	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:34.283	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:34.283	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.352	Pivots_Daily GBPUSD,H1: 0
+0	09:22:34.352	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:34.352	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:34.352	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.352	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:34.352	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:34.352	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:34.352	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.440	Pivots_Daily GBPUSD,H1: 0
+0	09:22:34.440	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:34.440	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:34.440	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.440	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:34.440	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:34.440	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:34.440	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.516	Pivots_Daily GBPUSD,H1: 0
+0	09:22:34.516	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:34.516	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:34.516	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:34.516	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:34.516	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:34.516	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:34.516	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:35.037	Pivots_Daily GBPUSD,H1: 0
+0	09:22:35.037	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:35.037	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:35.037	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:35.037	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:35.037	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:35.037	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:35.037	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.058	Pivots_Daily GBPUSD,H1: 0
+0	09:22:36.058	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:36.058	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:36.058	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.058	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:36.058	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:36.058	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:36.058	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.199	Pivots_Daily GBPUSD,H1: 0
+0	09:22:36.199	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:36.199	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:36.199	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.199	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:36.199	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:36.199	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:36.199	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.230	Pivots_Daily GBPUSD,H1: 0
+0	09:22:36.230	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:36.230	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:36.230	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.230	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:36.230	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:36.230	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:36.230	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.416	Pivots_Daily GBPUSD,H1: 0
+0	09:22:36.417	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:36.417	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:36.417	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.417	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:36.417	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:36.417	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:36.417	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.506	Pivots_Daily GBPUSD,H1: 0
+0	09:22:36.506	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:36.506	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:36.506	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:36.506	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:36.506	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:36.506	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:36.506	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:37.147	Pivots_Daily GBPUSD,H1: 0
+0	09:22:37.147	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:37.147	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:37.147	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:37.147	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:37.147	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:37.147	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:37.147	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:37.360	Pivots_Daily GBPUSD,H1: 0
+0	09:22:37.360	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:37.360	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:37.360	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:37.360	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:37.360	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:37.360	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:37.360	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:37.991	Pivots_Daily GBPUSD,H1: 0
+0	09:22:37.991	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:37.991	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:37.991	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:37.991	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:37.991	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:37.991	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:37.991	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:38.049	Pivots_Daily GBPUSD,H1: 0
+0	09:22:38.049	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:38.049	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:38.049	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:38.049	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:38.049	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:38.049	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:38.049	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:38.771	Pivots_Daily GBPUSD,H1: 0
+0	09:22:38.772	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:38.772	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:38.772	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:38.772	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:38.772	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:38.772	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:38.772	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:38.982	Pivots_Daily GBPUSD,H1: 0
+0	09:22:38.982	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:38.982	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:38.982	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:38.982	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:38.982	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:38.982	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:38.982	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:39.225	Pivots_Daily GBPUSD,H1: 0
+0	09:22:39.225	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:39.225	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:39.225	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:39.225	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:39.225	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:39.225	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:39.225	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:39.332	Pivots_Daily GBPUSD,H1: 0
+0	09:22:39.332	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:39.332	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:39.332	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:39.332	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:39.332	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:39.332	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:39.332	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:40.019	Pivots_Daily GBPUSD,H1: 0
+0	09:22:40.019	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:40.019	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:40.019	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:40.019	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:40.019	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:40.019	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:40.019	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:42.802	Pivots_Daily GBPUSD,H1: 0
+0	09:22:42.802	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:42.802	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:42.802	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:42.803	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:42.803	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:42.803	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:42.803	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:42.916	Pivots_Daily GBPUSD,H1: 0
+0	09:22:42.916	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:42.916	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:42.916	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:42.916	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:42.916	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:42.916	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:42.916	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:44.908	Pivots_Daily GBPUSD,H1: 0
+0	09:22:44.908	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:44.908	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:44.908	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:44.908	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:44.908	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:44.908	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:44.908	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:47.982	Pivots_Daily GBPUSD,H1: 0
+0	09:22:47.982	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:47.982	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:47.982	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:47.983	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:47.983	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:47.983	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:47.983	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:48.629	Pivots_Daily GBPUSD,H1: 0
+0	09:22:48.629	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:48.629	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:48.629	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:48.636	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:48.636	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:48.636	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:48.636	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.740	Pivots_Daily GBPUSD,H1: 0
+0	09:22:49.740	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:49.740	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:49.740	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.740	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:49.740	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:49.740	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:49.740	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.801	Pivots_Daily GBPUSD,H1: 0
+0	09:22:49.802	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:49.802	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:49.802	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.802	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:49.802	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:49.802	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:49.802	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.804	Pivots_Daily GBPUSD,H1: 0
+0	09:22:49.804	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:49.804	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:49.804	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.804	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:49.804	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:49.804	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:49.804	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.806	Pivots_Daily GBPUSD,H1: 0
+0	09:22:49.806	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:49.806	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:49.806	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.806	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:49.806	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:49.806	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:49.806	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.809	Pivots_Daily GBPUSD,H1: 0
+0	09:22:49.809	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:49.809	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:49.809	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:49.810	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:49.810	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:49.810	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:49.810	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:50.059	Pivots_Daily GBPUSD,H1: 0
+0	09:22:50.059	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:50.059	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:50.059	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:50.059	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:50.059	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:50.059	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:50.059	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:52.015	Pivots_Daily GBPUSD,H1: 0
+0	09:22:52.015	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:52.015	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:52.015	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:52.015	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:52.015	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:52.015	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:52.015	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:52.200	Pivots_Daily GBPUSD,H1: 0
+0	09:22:52.200	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:52.200	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:52.200	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:52.200	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:52.200	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:52.200	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:52.200	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:53.888	Pivots_Daily GBPUSD,H1: 0
+0	09:22:53.889	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:53.889	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:53.889	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:53.889	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:53.889	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:53.889	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:53.889	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:54.575	Pivots_Daily GBPUSD,H1: 0
+0	09:22:54.575	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:54.575	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:54.575	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:54.575	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:54.575	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:54.575	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:54.575	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:56.583	Pivots_Daily GBPUSD,H1: 0
+0	09:22:56.583	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:56.583	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:56.583	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:56.583	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:56.583	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:56.583	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:56.583	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:56.659	Pivots_Daily GBPUSD,H1: 0
+0	09:22:56.659	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:56.659	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:56.659	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:56.659	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:56.659	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:56.659	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:56.659	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:58.154	Pivots_Daily GBPUSD,H1: 0
+0	09:22:58.154	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:58.154	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:58.154	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:58.154	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:58.154	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:58.154	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:58.154	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:22:58.274	Pivots_Daily GBPUSD,H1: 0
+0	09:22:58.274	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:22:58.274	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:22:58.274	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:22:58.274	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:22:58.274	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:22:58.274	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:22:58.274	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:03.511	Pivots_Daily GBPUSD,H1: 0
+0	09:23:03.511	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:03.511	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:03.511	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:03.513	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:03.513	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:03.513	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:03.513	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:04.026	Pivots_Daily GBPUSD,H1: 0
+0	09:23:04.026	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:04.026	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:04.026	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:04.026	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:04.026	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:04.026	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:04.026	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:04.166	Pivots_Daily GBPUSD,H1: 0
+0	09:23:04.166	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:04.166	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:04.166	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:04.166	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:04.166	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:04.166	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:04.166	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:04.567	Pivots_Daily GBPUSD,H1: 0
+0	09:23:04.567	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:04.567	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:04.567	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:04.567	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:04.567	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:04.567	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:04.567	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:06.647	Pivots_Daily GBPUSD,H1: 0
+0	09:23:06.647	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:06.647	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:06.647	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:06.647	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:06.647	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:06.647	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:06.647	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:06.727	Pivots_Daily GBPUSD,H1: 0
+0	09:23:06.727	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:06.728	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:06.728	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:06.728	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:06.728	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:06.728	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:06.728	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:07.348	Pivots_Daily GBPUSD,H1: 0
+0	09:23:07.349	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:07.349	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:07.349	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:07.349	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:07.349	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:07.349	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:07.349	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:08.725	Pivots_Daily GBPUSD,H1: 0
+0	09:23:08.725	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:08.725	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:08.725	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:08.725	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:08.725	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:08.725	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:08.725	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:09.922	Pivots_Daily GBPUSD,H1: 0
+0	09:23:09.922	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:09.922	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:09.922	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:09.922	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:09.922	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:09.922	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:09.922	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:10.675	Pivots_Daily GBPUSD,H1: 0
+0	09:23:10.675	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:10.675	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:10.675	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:10.675	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:10.675	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:10.675	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:10.675	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:10.801	Pivots_Daily GBPUSD,H1: 0
+0	09:23:10.801	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:10.801	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:10.801	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:10.802	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:10.802	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:10.802	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:10.802	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:11.323	Pivots_Daily GBPUSD,H1: 0
+0	09:23:11.323	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:11.323	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:11.323	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:11.323	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:11.323	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:11.323	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:11.323	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:11.429	Pivots_Daily GBPUSD,H1: 0
+0	09:23:11.429	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:11.429	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:11.429	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:11.429	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:11.429	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:11.429	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:11.429	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.381	Pivots_Daily GBPUSD,H1: 0
+0	09:23:12.382	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:12.382	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:12.382	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.382	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:12.382	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:12.382	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:12.382	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.437	Pivots_Daily GBPUSD,H1: 0
+0	09:23:12.437	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:12.437	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:12.437	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.437	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:12.437	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:12.437	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:12.437	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.506	Pivots_Daily GBPUSD,H1: 0
+0	09:23:12.506	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:12.506	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:12.506	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.506	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:12.506	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:12.506	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:12.506	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.615	Pivots_Daily GBPUSD,H1: 0
+0	09:23:12.615	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:12.615	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:12.615	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:12.615	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:12.615	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:12.615	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:12.615	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:14.645	Pivots_Daily GBPUSD,H1: 0
+0	09:23:14.645	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:14.645	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:14.645	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:14.645	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:14.645	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:14.645	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:14.645	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:14.757	Pivots_Daily GBPUSD,H1: 0
+0	09:23:14.757	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:14.757	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:14.757	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:14.757	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:14.757	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:14.757	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:14.757	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:15.079	Pivots_Daily GBPUSD,H1: 0
+0	09:23:15.079	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:15.079	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:15.079	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:15.079	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:15.079	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:15.079	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:15.079	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:15.331	Pivots_Daily GBPUSD,H1: 0
+0	09:23:15.331	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:15.331	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:15.331	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:15.331	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:15.331	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:15.331	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:15.331	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.572	Pivots_Daily GBPUSD,H1: 0
+0	09:23:16.572	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:16.572	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:16.572	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.572	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:16.572	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:16.572	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:16.572	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.628	Pivots_Daily GBPUSD,H1: 0
+0	09:23:16.629	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:16.629	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:16.629	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.629	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:16.629	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:16.629	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:16.629	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.807	Pivots_Daily GBPUSD,H1: 0
+0	09:23:16.807	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:16.807	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:16.807	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.807	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:16.807	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:16.807	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:16.807	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.867	Pivots_Daily GBPUSD,H1: 0
+0	09:23:16.867	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:16.867	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:16.867	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:16.867	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:16.867	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:16.867	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:16.867	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:17.053	Pivots_Daily GBPUSD,H1: 0
+0	09:23:17.053	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:17.053	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:17.053	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:17.054	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:17.054	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:17.054	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:17.054	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:17.394	Pivots_Daily GBPUSD,H1: 0
+0	09:23:17.394	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:17.394	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:17.394	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:17.394	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:17.394	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:17.394	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:17.394	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:18.331	Pivots_Daily GBPUSD,H1: 0
+0	09:23:18.331	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:18.332	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:18.332	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:18.332	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:18.332	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:18.332	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:18.332	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:18.801	Pivots_Daily GBPUSD,H1: 0
+0	09:23:18.801	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:18.801	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:18.801	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:18.801	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:18.801	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:18.801	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:18.801	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:21.712	Pivots_Daily GBPUSD,H1: 0
+0	09:23:21.712	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:21.712	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:21.712	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:21.712	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:21.712	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:21.712	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:21.712	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:25.158	Pivots_Daily GBPUSD,H1: 0
+0	09:23:25.158	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:25.158	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:25.158	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:25.158	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:25.158	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:25.158	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:25.158	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:25.282	Pivots_Daily GBPUSD,H1: 0
+0	09:23:25.282	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:25.282	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:25.282	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:25.282	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:25.282	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:25.282	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:25.282	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:27.236	Pivots_Daily GBPUSD,H1: 0
+0	09:23:27.236	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:27.236	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:27.236	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:27.236	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:27.236	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:27.236	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:27.236	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:27.311	Pivots_Daily GBPUSD,H1: 0
+0	09:23:27.311	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:27.311	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:27.311	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:27.311	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:27.311	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:27.311	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:27.311	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:27.953	Pivots_Daily GBPUSD,H1: 0
+0	09:23:27.953	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:27.953	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:27.953	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:27.953	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:27.953	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:27.953	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:27.953	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:29.019	Pivots_Daily GBPUSD,H1: 0
+0	09:23:29.019	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:29.019	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:29.019	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:29.019	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:29.019	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:29.019	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:29.019	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:30.818	Pivots_Daily GBPUSD,H1: 0
+0	09:23:30.818	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:30.818	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:30.818	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:30.818	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:30.818	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:30.818	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:30.818	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:31.249	Pivots_Daily GBPUSD,H1: 0
+0	09:23:31.249	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:31.249	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:31.249	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:31.249	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:31.249	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:31.249	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:31.249	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:31.299	Pivots_Daily GBPUSD,H1: 0
+0	09:23:31.299	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:31.299	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:31.299	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:31.299	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:31.299	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:31.299	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:31.299	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:31.994	Pivots_Daily GBPUSD,H1: 0
+0	09:23:31.994	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:31.994	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:31.994	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:31.994	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:31.994	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:31.994	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:31.994	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:32.360	Pivots_Daily GBPUSD,H1: 0
+0	09:23:32.360	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:32.360	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:32.360	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:32.360	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:32.360	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:32.360	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:32.360	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:33.101	Pivots_Daily GBPUSD,H1: 0
+0	09:23:33.101	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:33.101	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:33.101	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:33.101	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:33.101	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:33.101	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:33.101	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:33.278	Pivots_Daily GBPUSD,H1: 0
+0	09:23:33.278	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:33.278	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:33.278	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:33.278	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:33.278	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:33.278	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:33.278	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.091	Pivots_Daily GBPUSD,H1: 0
+0	09:23:34.091	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:34.091	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:34.091	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.091	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:34.091	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:34.091	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:34.091	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.252	Pivots_Daily GBPUSD,H1: 0
+0	09:23:34.252	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:34.252	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:34.252	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.252	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:34.252	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:34.252	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:34.252	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.397	Pivots_Daily GBPUSD,H1: 0
+0	09:23:34.397	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:34.397	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:34.397	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.397	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:34.397	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:34.397	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:34.397	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.474	Pivots_Daily GBPUSD,H1: 0
+0	09:23:34.474	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:34.474	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:34.474	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.474	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:34.474	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:34.474	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:34.474	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.518	Pivots_Daily GBPUSD,H1: 0
+0	09:23:34.518	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:34.518	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:34.518	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:34.518	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:34.518	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:34.518	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:34.518	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:38.769	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	09:23:38.794	Management -SetLevels GBPUSD,H1: initialized
+0	09:23:38.794	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	09:23:38.799	Script Management -SetLevels GBPUSD,H1: removed
+0	09:23:39.131	Pivots_Daily GBPUSD,H1: 0
+0	09:23:39.131	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:39.131	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:39.131	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:39.131	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:39.131	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:39.131	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:39.131	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:40.062	Pivots_Daily GBPUSD,H1: 0
+0	09:23:40.062	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:40.062	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:40.062	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:40.062	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:40.062	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:40.062	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:40.062	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:41.608	Pivots_Daily GBPUSD,H1: 0
+0	09:23:41.608	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:41.608	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:41.608	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:41.608	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:41.608	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:41.608	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:41.608	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:41.756	Pivots_Daily GBPUSD,H1: 0
+0	09:23:41.756	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:41.756	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:41.756	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:41.756	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:41.756	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:41.756	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:41.756	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:42.381	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	09:23:42.411	Orders - PlaceOrder GBPUSD,H1: initialized
+0	09:23:42.642	Pivots_Daily GBPUSD,H1: 0
+0	09:23:42.642	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:42.642	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:42.642	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:42.642	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:42.642	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:42.642	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:42.642	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:42.882	Pivots_Daily GBPUSD,H1: 0
+0	09:23:42.882	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:42.882	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:42.882	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:42.882	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:42.882	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:42.882	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:42.882	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:43.380	Pivots_Daily GBPUSD,H1: 0
+0	09:23:43.380	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:43.380	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:43.380	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:43.380	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:43.380	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:43.380	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:43.380	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:43.436	Pivots_Daily GBPUSD,H1: 0
+0	09:23:43.436	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:43.436	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:43.436	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:43.436	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:43.436	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:43.436	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:43.436	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:43.991	Pivots_Daily GBPUSD,H1: 0
+0	09:23:43.991	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:43.991	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:43.991	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:43.991	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:43.991	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:43.991	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:43.991	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:44.152	Pivots_Daily GBPUSD,H1: 0
+0	09:23:44.152	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:44.152	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:44.153	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:44.153	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:44.153	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:44.153	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:44.153	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+2	09:23:44.167	Orders - PlaceOrder GBPUSD,H1: open #23340843 buy 8.74 GBPUSD at 1.32791 sl: 1.32687 tp: 1.33075 ok
+0	09:23:44.179	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	09:23:44.182	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	09:23:44.443	Pivots_Daily GBPUSD,H1: 0
+0	09:23:44.443	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:44.443	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:44.443	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:44.443	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:44.443	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:44.443	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:44.443	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+3	09:23:44.541	tpCalculator GBPUSD,H1: trade operations not allowed by settings
+0	09:23:46.160	Pivots_Daily GBPUSD,H1: 0
+0	09:23:46.160	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:46.160	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:46.160	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:46.160	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:46.160	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:46.160	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:46.160	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+3	09:23:46.160	tpCalculator GBPUSD,H4: trade operations not allowed by settings
+0	09:23:46.294	Pivots_Daily GBPUSD,H1: 0
+0	09:23:46.294	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:46.294	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:46.294	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:46.294	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:46.294	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:46.294	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:46.294	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:46.488	Pivots_Daily GBPUSD,H1: 0
+0	09:23:46.488	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:46.488	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:46.488	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:46.488	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:46.488	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:46.488	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:46.488	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.000	Pivots_Daily GBPUSD,H1: 0
+0	09:23:48.000	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:48.000	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:48.000	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.000	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:48.000	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:48.000	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:48.000	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.098	Pivots_Daily GBPUSD,H1: 0
+0	09:23:48.098	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:48.098	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:48.098	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.098	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:48.099	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:48.099	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:48.099	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.275	Pivots_Daily GBPUSD,H1: 0
+0	09:23:48.275	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:48.275	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:48.275	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.275	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:48.275	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:48.275	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:48.275	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.761	Pivots_Daily GBPUSD,H1: 0
+0	09:23:48.761	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:48.761	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:48.761	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.761	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:48.761	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:48.761	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:48.761	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.798	Pivots_Daily GBPUSD,H1: 0
+0	09:23:48.798	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:48.798	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:48.798	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.799	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:48.799	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:48.799	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:48.799	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.866	Pivots_Daily GBPUSD,H1: 0
+0	09:23:48.866	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:48.866	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:48.866	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:48.866	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:48.866	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:48.866	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:48.866	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.298	Pivots_Daily GBPUSD,H1: 0
+0	09:23:49.298	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:49.298	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:49.298	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.298	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:49.298	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:49.298	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:49.298	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.442	Pivots_Daily GBPUSD,H1: 0
+0	09:23:49.442	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:49.442	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:49.442	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.442	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:49.442	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:49.442	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:49.442	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.786	Pivots_Daily GBPUSD,H1: 0
+0	09:23:49.786	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:49.786	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:49.786	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.786	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:49.786	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:49.786	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:49.786	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.836	Pivots_Daily GBPUSD,H1: 0
+0	09:23:49.836	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:49.836	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:49.836	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:49.836	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:49.836	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:49.836	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:49.836	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:50.906	Pivots_Daily GBPUSD,H1: 0
+0	09:23:50.906	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:50.906	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:50.906	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:50.906	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:50.906	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:50.906	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:50.906	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:50.965	Pivots_Daily GBPUSD,H1: 0
+0	09:23:50.966	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:50.966	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:50.966	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:50.966	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:50.966	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:50.966	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:50.966	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:51.656	Pivots_Daily GBPUSD,H1: 0
+0	09:23:51.656	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:51.656	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:51.656	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:51.656	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:51.656	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:51.656	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:51.656	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:51.744	Pivots_Daily GBPUSD,H1: 0
+0	09:23:51.744	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:51.744	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:51.744	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:51.744	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:51.744	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:51.744	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:51.744	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:52.461	Pivots_Daily GBPUSD,H1: 0
+0	09:23:52.461	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:52.461	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:52.461	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:52.461	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:52.461	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:52.461	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:52.461	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:52.872	Pivots_Daily GBPUSD,H1: 0
+0	09:23:52.872	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:52.872	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:52.872	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:52.872	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:52.872	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:52.872	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:52.872	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:53.124	Pivots_Daily GBPUSD,H1: 0
+0	09:23:53.124	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:53.124	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:53.124	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:53.124	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:53.124	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:53.124	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:53.124	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:53.866	Pivots_Daily GBPUSD,H1: 0
+0	09:23:53.866	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:53.866	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:53.866	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:53.866	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:53.866	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:53.866	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:53.866	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:54.600	Pivots_Daily GBPUSD,H1: 0
+0	09:23:54.600	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:54.600	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:54.600	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:54.600	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:54.600	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:54.600	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:54.600	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:55.617	Pivots_Daily GBPUSD,H1: 0
+0	09:23:55.617	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:55.617	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:55.617	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:55.617	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:55.617	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:55.617	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:55.617	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:56.805	Pivots_Daily GBPUSD,H1: 0
+0	09:23:56.805	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:56.805	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:56.805	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:56.805	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:56.805	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:56.805	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:56.805	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:57.004	Pivots_Daily GBPUSD,H1: 0
+0	09:23:57.004	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:57.004	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:57.004	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:57.004	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:57.004	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:57.004	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:57.004	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:57.804	Pivots_Daily GBPUSD,H1: 0
+0	09:23:57.804	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:57.804	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:57.804	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:57.804	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:57.804	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:57.804	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:57.804	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:57.941	Pivots_Daily GBPUSD,H1: 0
+0	09:23:57.941	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:57.941	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:57.942	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:57.942	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:57.942	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:57.942	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:57.942	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:58.019	Pivots_Daily GBPUSD,H1: 0
+0	09:23:58.019	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:58.019	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:58.019	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:58.019	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:58.019	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:58.019	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:58.019	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:58.708	Pivots_Daily GBPUSD,H1: 0
+0	09:23:58.708	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:58.708	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:58.708	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:58.708	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:58.708	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:58.708	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:58.708	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.104	Pivots_Daily GBPUSD,H1: 0
+0	09:23:59.104	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:59.104	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:59.104	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.104	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:59.104	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:59.104	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:59.104	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.549	Pivots_Daily GBPUSD,H1: 0
+0	09:23:59.549	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:59.549	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:59.549	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.549	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:59.549	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:59.549	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:59.549	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.607	Pivots_Daily GBPUSD,H1: 0
+0	09:23:59.607	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:59.607	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:59.608	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.608	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:59.608	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:59.608	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:59.608	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.696	Pivots_Daily GBPUSD,H1: 0
+0	09:23:59.696	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:59.696	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:59.696	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.696	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:59.696	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:59.696	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:59.696	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.754	Pivots_Daily GBPUSD,H1: 0
+0	09:23:59.754	Pivots_Daily GBPUSD,H1: ObjectSet Done
+0	09:23:59.754	Pivots_Daily GBPUSD,H1: ObjectMove Done
+0	09:23:59.754	Pivots_Daily GBPUSD,H1: ObjectsRedraw Done
+0	09:23:59.755	Pivots_Daily_Medians GBPUSD,H1: 0
+0	09:23:59.755	Pivots_Daily_Medians GBPUSD,H1: ObjectSet Done
+0	09:23:59.755	Pivots_Daily_Medians GBPUSD,H1: ObjectMove Done
+0	09:23:59.755	Pivots_Daily_Medians GBPUSD,H1: ObjectsRedraw Done
+0	09:24:02.364	tpCalculator GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Pivots_Monthly GBPUSD,H1: deinitialized
+0	09:24:02.364	Pivots_Monthly GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Pivots_Daily GBPUSD,H1: deinitialized
+0	09:24:02.364	Pivots_Daily GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Pivots_Daily_Medians GBPUSD,H1: deinitialized
+0	09:24:02.364	Pivots_Daily_Medians GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Pivots_Weekly GBPUSD,H1: deinitialized
+0	09:24:02.364	Pivots_Weekly GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Pivots_Weekly_Medians GBPUSD,H1: deinitialized
+0	09:24:02.364	Pivots_Weekly_Medians GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Knight Timer GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Knight MAs v3 GBPUSD,H1: deinitialized
+0	09:24:02.364	Knight MAs v3 GBPUSD,H1: uninit reason 4
+0	09:24:02.364	YRPLib GBPUSD,H1: uninit reason 0
+0	09:24:02.364	Knight Tunnel v3 GBPUSD,H1: deinitialized
+0	09:24:02.364	Knight Tunnel v3 GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Knight Lines FX GBPUSD,H1: deinitialized
+0	09:24:02.364	Knight Lines FX GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Knight OsMA GBPUSD,H1: uninit reason 4
+0	09:24:02.364	Knight DoubleStochs GBPUSD,H1: deinitialized
+0	09:24:02.364	Knight DoubleStochs GBPUSD,H1: uninit reason 4
+0	09:24:02.364	YRPLib GBPUSD,H1: uninit reason 0
+0	09:24:02.364	Stochastic GBPUSD,H1: uninit reason 4
+0	09:24:02.365	tpCalculator GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Pivots_Monthly GBPUSD,H4: deinitialized
+0	09:24:02.365	Pivots_Monthly GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Pivots_Daily GBPUSD,H4: deinitialized
+0	09:24:02.365	Pivots_Daily GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Pivots_Daily_Medians GBPUSD,H4: deinitialized
+0	09:24:02.365	Pivots_Daily_Medians GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Pivots_Weekly GBPUSD,H4: deinitialized
+0	09:24:02.365	Pivots_Weekly GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Pivots_Weekly_Medians GBPUSD,H4: deinitialized
+0	09:24:02.365	Pivots_Weekly_Medians GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Knight Timer GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Knight MAs v3 GBPUSD,H4: deinitialized
+0	09:24:02.365	Knight MAs v3 GBPUSD,H4: uninit reason 4
+0	09:24:02.365	YRPLib GBPUSD,H4: uninit reason 0
+0	09:24:02.365	Knight Tunnel v3 GBPUSD,H4: deinitialized
+0	09:24:02.365	Knight Tunnel v3 GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Knight Lines FX GBPUSD,H4: deinitialized
+0	09:24:02.365	Knight Lines FX GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Knight OsMA GBPUSD,H4: uninit reason 4
+0	09:24:02.365	Knight DoubleStochs GBPUSD,H4: deinitialized
+0	09:24:02.365	Knight DoubleStochs GBPUSD,H4: uninit reason 4
+0	09:24:02.365	YRPLib GBPUSD,H4: uninit reason 0
+0	09:24:02.365	Stochastic GBPUSD,H4: uninit reason 4
+0	09:24:02.379	Automated trading disabled
+3	09:24:02.379	Automated trading disabled because profile has been changed
+0	09:24:02.415	Expert tpCalculator GBPUSD,H1: removed
+0	09:24:02.418	Custom indicator Pivots_Monthly GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Pivots_Daily GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Pivots_Daily_Medians GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Pivots_Weekly GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Pivots_Weekly_Medians GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Knight Timer GBPUSD,H1: removed
+0	09:24:02.419	Library YRPLib GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Knight MAs v3 GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Knight Tunnel v3 GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Knight Lines FX GBPUSD,H1: removed
+0	09:24:02.419	Custom indicator Knight OsMA GBPUSD,H1: removed
+0	09:24:02.420	Library YRPLib GBPUSD,H1: removed
+0	09:24:02.420	Custom indicator Knight DoubleStochs GBPUSD,H1: removed
+0	09:24:02.420	Custom indicator Stochastic GBPUSD,H1: removed
+0	09:24:02.434	Expert tpCalculator GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Pivots_Monthly GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Pivots_Daily GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Pivots_Daily_Medians GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Pivots_Weekly GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Pivots_Weekly_Medians GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Knight Timer GBPUSD,H4: removed
+0	09:24:02.435	Library YRPLib GBPUSD,H4: removed
+0	09:24:02.435	Custom indicator Knight MAs v3 GBPUSD,H4: removed
+0	09:24:02.436	Custom indicator Knight Tunnel v3 GBPUSD,H4: removed
+0	09:24:02.436	Custom indicator Knight Lines FX GBPUSD,H4: removed
+0	09:24:02.438	Custom indicator Knight OsMA GBPUSD,H4: removed
+0	09:24:02.438	Library YRPLib GBPUSD,H4: removed
+0	09:24:02.438	Custom indicator Knight DoubleStochs GBPUSD,H4: removed
+0	09:24:02.438	Custom indicator Stochastic GBPUSD,H4: removed
+0	09:24:02.532	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	09:24:02.586	Expert tpCalculator EURUSD,H1: loaded successfully
+0	09:24:02.706	tpCalculator EURUSD,H1: initialized
+0	09:24:02.706	tpCalculator GBPUSD,H1: initialized
+3	09:24:04.531	tpCalculator GBPUSD,H1: trade operations not allowed by settings
+0	09:24:08.798	tpCalculator GBPUSD,H1: uninit reason 4
+0	09:24:08.804	Expert tpCalculator GBPUSD,H1: removed

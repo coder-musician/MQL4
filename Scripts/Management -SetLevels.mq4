@@ -8,6 +8,7 @@
 #property version   "1.00"
 #property strict
 
+#include "..\Include\Custom\Management.mqh"
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
@@ -16,8 +17,9 @@
 
 void OnStart()
   {
-      ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)), 0, 0);
-      ObjectSetInteger(0,"SL_BID",OBJPROP_COLOR,clrRed); 
+       Management management = Management();
+       management.DeleteLevels();
+       management.SetLevels();
   }
 
 //+------------------------------------------------------------------+

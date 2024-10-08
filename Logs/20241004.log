@@ -1,0 +1,38 @@
+0	10:19:53.094	Expert tpCalculator EURUSD,H1: loaded successfully
+0	10:19:53.155	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	10:19:57.411	tpCalculator EURUSD,H1: initialized
+0	10:19:57.417	tpCalculator GBPUSD,H1: initialized
+3	16:06:59.611	cannot open file 'C:\Users\alexa\AppData\Roaming\MetaQuotes\Terminal\2010C2441A263399B34F537D91A53AC9\MQL4\Scripts\Management -DeleteLevels.ex4' [2]
+0	16:07:11.458	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	16:07:11.529	Management -SetLevels EURUSD,H1: initialized
+0	16:07:11.531	Management -SetLevels EURUSD,H1: uninit reason 0
+0	16:07:11.535	Script Management -SetLevels EURUSD,H1: removed
+0	16:07:54.750	tpCalculator EURUSD,H1: uninit reason 2
+0	16:07:54.755	Expert tpCalculator EURUSD,H1: removed
+0	16:07:54.775	Expert tpCalculator EURUSD,H1: loaded successfully
+0	16:07:54.776	tpCalculator GBPUSD,H1: uninit reason 2
+0	16:07:54.779	Expert tpCalculator GBPUSD,H1: removed
+0	16:07:54.795	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	16:07:54.810	tpCalculator EURUSD,H1: initialized
+0	16:07:54.830	tpCalculator GBPUSD,H1: initialized
+3	16:07:57.095	cannot open file 'C:\Users\alexa\AppData\Roaming\MetaQuotes\Terminal\2010C2441A263399B34F537D91A53AC9\MQL4\Scripts\Management -DeleteLevels.ex4' [2]
+0	16:07:57.771	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	16:07:57.794	Management -SetLevels EURUSD,H1: initialized
+0	16:07:57.794	Management -SetLevels EURUSD,H1: uninit reason 0
+0	16:07:57.797	Script Management -SetLevels EURUSD,H1: removed
+0	16:27:04.664	tpCalculator EURUSD,H1: uninit reason 2
+0	16:27:04.667	Expert tpCalculator EURUSD,H1: removed
+0	16:27:04.693	Expert tpCalculator EURUSD,H1: loaded successfully
+0	16:27:04.694	tpCalculator GBPUSD,H1: uninit reason 2
+0	16:27:04.697	Expert tpCalculator GBPUSD,H1: removed
+0	16:27:04.717	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	16:27:04.727	tpCalculator EURUSD,H1: initialized
+0	16:27:04.745	tpCalculator GBPUSD,H1: initialized
+0	16:28:10.422	tpCalculator EURUSD,H1: uninit reason 2
+0	16:28:10.424	Expert tpCalculator EURUSD,H1: removed
+0	16:28:10.441	Expert tpCalculator EURUSD,H1: loaded successfully
+0	16:28:10.442	tpCalculator GBPUSD,H1: uninit reason 2
+0	16:28:10.446	Expert tpCalculator GBPUSD,H1: removed
+0	16:28:10.461	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	16:28:10.474	tpCalculator EURUSD,H1: initialized
+0	16:28:10.494	tpCalculator GBPUSD,H1: initialized

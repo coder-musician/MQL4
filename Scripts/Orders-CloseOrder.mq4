@@ -11,23 +11,15 @@
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 #include "..\Include\Custom\Orders.mqh"
+#include "..\Include\Custom\Management.mqh"
 
 void OnStart()
   {
 //---
-
-   
-   Orders order = Orders();
-   order.GetOrdersList();
-   
-   order.LoadOrderValues(ORDERS_LIST[0]);
-   order.CloseOrder();
-   
-   ObjectDelete(0, "OPEN_PRICE");
-   ObjectDelete(0, "TP_ASK");
-   ObjectDelete(0, "TP_BID");
-   ObjectDelete(0, "SL_ASK");
-   ObjectDelete(0, "SL_BID");
-   
+      Orders order = Orders();
+      order.CloseOrder();
+      
+      Management management = Management();
+      management.DeleteLevels();   
   }
 //+------------------------------------------------------------------+

@@ -21,43 +21,12 @@ public:
   ~Journal();
   
   
-  void takeScreenshot(string ticket) {
+  void takeScreenshot(string name) {
          
-         string snapshot = ticket + ".png";
-         bool a = ChartScreenShot(0, snapshot + ".png", IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
+         string snapshot = name + ".png";
+         bool a = ChartScreenShot(0, snapshot + ".png", 
+            IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
    }
-   
-  
-
-   
-   
-   
-           /*         
-   bool createFolder(string folderName) {
-
-      bool result = FolderCreate(folderName,0);
-      
-      return result;
-   }
-   
-   void takeScreenshot(string name) {
-   
-      ChartScreenShot(0, , IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
-   }
-      
-      void CreateLabel(string LabelName, string LabelValue) {
-      
-         ObjectCreate(LabelName, OBJ_LABEL, 0, Time[0], 0, 0, 0);
-         ObjectSetString(0,LabelName,OBJPROP_TEXT,LabelValue); 
-         ObjectSetInteger(0,LabelName,OBJPROP_COLOR,clrNONE);
-      }
-      
-      string GetValue(string LabelName) {
-      
-         string value = ObjectGetString(0,LabelName, OBJPROP_TEXT,0);
-         
-         return value;
-      }*/
   };
 //+------------------------------------------------------------------+
 //|                                                                  |

@@ -8,7 +8,7 @@
 #property version   "1.00"
 #property strict
 
-
+#include "..\Include\Custom\Management.mqh"
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
@@ -17,10 +17,7 @@
  
 void OnStart()
   {
-      ObjectDelete(0, "OPEN_PRICE");
-      ObjectDelete(0, "TP_ASK");
-      ObjectDelete(0, "TP_BID");
-      ObjectDelete(0, "SL_ASK");
-      ObjectDelete(0, "SL_BID");
+      Management management = Management();
+      management.DeleteLevels();
   }
 //+------------------------------------------------------------------+

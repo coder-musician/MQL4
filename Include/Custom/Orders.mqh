@@ -124,7 +124,18 @@ public:
    
    void CloseOrder() {
    
-      bool closeSuccess = OrderClose(ORDER_TICKET,ORDER_LOTS,Bid,3,clrNONE);
+      bool closeSuccess = false;
+      
+      for(int i=0; i<OrdersTotal(); i++) {
+      
+         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
+         
+         if(OrderSymbol() == Symbol()){
+            
+            MessageBox(OrderTicket() + " -- " + OrderLots());
+            closeSuccess = OrderClose(OrderTicket(),OrderLots(),Bid,3,clrNONE); 
+         }
+      }
       
       ObjectDelete(0, "OPEN_PRICE");
       ObjectDelete(0, "TP_ASK");

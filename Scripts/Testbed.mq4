@@ -13,8 +13,7 @@
 void OnStart()
   {
 //---
-
-   ObjectSetString(0,"SL_BID", OBJPROP_TEXT, DoubleToStr(Ask));
+   
    
   }
 //+------------------------------------------------------------------+

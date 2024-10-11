@@ -42,6 +42,13 @@ void OnTick()
       string snapshotName = IntegerToString(OrderTicket()) + "-" + 
          IntegerToString(Period()) + "-" + IntegerToString(Bars);
       
+      if(CANDLES_COUNT < Bars) {     
+      
+            snapshotName = snapshotName + "Market";
+            journal.takeScreenshot(snapshotName);            
+            CANDLES_COUNT = Bars;
+      }
+      
       orders.GetOrdersList();
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
       

@@ -1,1 +1,275 @@
 0	12:29:30.358	Expert tpCalculator EURUSD,H1: loaded successfully
+0	12:29:35.884	tpCalculator EURUSD,H1: initialized
+0	12:31:04.131	tpCalculator EURUSD,H1: uninit reason 3
+0	12:31:04.679	tpCalculator EURUSD,M1: initialized
+0	12:31:10.324	Script Orders - PlaceOrder EURUSD,M1: loaded successfully
+0	12:31:10.355	Orders - PlaceOrder EURUSD,M1: initialized
+2	12:31:10.577	Orders - PlaceOrder EURUSD,M1: open #23597156 buy 10.16 EURUSD at 1.09776 sl: 1.09708 tp: 1.09952 ok
+0	12:31:10.577	Orders - PlaceOrder EURUSD,M1: uninit reason 0
+0	12:31:10.581	Script Orders - PlaceOrder EURUSD,M1: removed
+0	12:33:08.534	Script Orders-CloseOrder EURUSD,M1: loaded successfully
+0	12:33:08.581	Orders-CloseOrder EURUSD,M1: initialized
+2	12:33:08.815	Orders-CloseOrder EURUSD,M1: close #23597156 buy 10.16 EURUSD at 1.09776 sl: 1.09708 tp: 1.09952 at price 1.09750
+0	12:33:08.815	Orders-CloseOrder EURUSD,M1: uninit reason 0
+0	12:33:08.818	Script Orders-CloseOrder EURUSD,M1: removed
+0	15:17:05.292	tpCalculator EURUSD,M1: uninit reason 2
+0	15:17:05.298	Expert tpCalculator EURUSD,M1: removed
+0	15:17:05.320	Expert tpCalculator EURUSD,M1: loaded successfully
+0	15:17:05.422	tpCalculator EURUSD,M1: initialized
+0	15:17:38.428	tpCalculator EURUSD,M1: uninit reason 3
+0	15:17:38.597	tpCalculator EURUSD,H1: initialized
+0	15:19:26.717	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:19:26.740	Management -SetLevels EURUSD,H1: initialized
+0	15:19:26.741	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:19:26.744	Script Management -SetLevels EURUSD,H1: removed
+0	15:20:06.808	tpCalculator EURUSD,H1: uninit reason 2
+0	15:20:06.812	Expert tpCalculator EURUSD,H1: removed
+0	15:20:06.829	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:20:06.863	tpCalculator EURUSD,H1: initialized
+0	15:21:28.555	tpCalculator EURUSD,H1: uninit reason 2
+0	15:21:28.557	Expert tpCalculator EURUSD,H1: removed
+0	15:21:28.580	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:21:28.613	tpCalculator EURUSD,H1: initialized
+0	15:22:42.316	tpCalculator EURUSD,H1: uninit reason 2
+0	15:22:42.319	Expert tpCalculator EURUSD,H1: removed
+0	15:22:42.336	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:22:42.371	tpCalculator EURUSD,H1: initialized
+0	15:22:55.930	tpCalculator EURUSD,H1: uninit reason 2
+0	15:22:55.933	Expert tpCalculator EURUSD,H1: removed
+0	15:22:55.957	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:22:55.993	tpCalculator EURUSD,H1: initialized
+0	15:23:45.521	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:23:45.542	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:23:45.787	Orders - PlaceOrder EURUSD,H1: open #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09802 tp: 1.09494 ok
+0	15:23:45.787	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:23:45.790	Script Orders - PlaceOrder EURUSD,H1: removed
+2	15:23:46.128	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09788 tp: 1.09480 ok
+2	15:23:49.658	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09788 tp: 1.09429 ok
+2	15:23:57.783	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09863 tp: 1.09429 ok
+2	15:24:01.189	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09984 tp: 1.09429 ok
+2	15:24:01.424	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.10013 tp: 1.09429 ok
+2	15:24:08.985	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09733 tp: 1.09429 ok
+2	15:24:28.517	tpCalculator EURUSD,H1: modify #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09776 tp: 1.09429 ok
+0	15:24:40.281	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:24:40.303	Orders-CloseOrder EURUSD,H1: initialized
+2	15:24:40.519	Orders-CloseOrder EURUSD,H1: close #23602222 sell 7.22 EURUSD at 1.09707 sl: 1.09776 tp: 1.09429 at price 1.09729
+0	15:24:40.519	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:24:40.522	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:24:42.824	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:24:42.848	Management -SetLevels EURUSD,H1: initialized
+0	15:24:42.850	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:24:42.852	Script Management -SetLevels EURUSD,H1: removed
+0	15:24:44.962	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:24:44.985	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:24:45.205	Orders - PlaceOrder EURUSD,H1: open #23602233 buy 7.65 EURUSD at 1.09737 sl: 1.09646 tp: 1.09986 ok
+0	15:24:45.207	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:24:45.211	Script Orders - PlaceOrder EURUSD,H1: removed
+2	15:24:49.205	tpCalculator EURUSD,H1: modify #23602233 buy 7.65 EURUSD at 1.09737 sl: 1.09565 tp: 1.09986 ok
+2	15:24:55.331	tpCalculator EURUSD,H1: modify #23602233 buy 7.65 EURUSD at 1.09737 sl: 1.09617 tp: 1.09986 ok
+0	15:25:01.398	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:25:01.419	Orders-CloseOrder EURUSD,H1: initialized
+2	15:25:01.627	Orders-CloseOrder EURUSD,H1: close #23602233 buy 7.65 EURUSD at 1.09737 sl: 1.09617 tp: 1.09986 at price 1.09716
+0	15:25:01.628	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:25:01.630	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:26:03.677	tpCalculator EURUSD,H1: uninit reason 2
+0	15:26:03.680	Expert tpCalculator EURUSD,H1: removed
+0	15:26:03.723	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:26:03.760	tpCalculator EURUSD,H1: initialized
+0	15:26:06.367	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:26:06.390	Management -SetLevels EURUSD,H1: initialized
+0	15:26:06.390	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:26:06.394	Script Management -SetLevels EURUSD,H1: removed
+0	15:26:07.970	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:26:08.077	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:26:08.283	Orders - PlaceOrder EURUSD,H1: open #23602256 buy 7.48 EURUSD at 1.09746 sl: 1.09653 tp: 1.10001 ok
+0	15:26:08.283	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:26:08.289	Script Orders - PlaceOrder EURUSD,H1: removed
+0	15:26:12.123	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:26:12.150	Orders-CloseOrder EURUSD,H1: initialized
+2	15:26:12.331	Orders-CloseOrder EURUSD,H1: close #23602256 buy 7.48 EURUSD at 1.09746 sl: 1.09653 tp: 1.10001 at price 1.09722
+0	15:26:12.331	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:26:12.334	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:26:16.674	tpCalculator EURUSD,H1: uninit reason 2
+0	15:26:16.678	Expert tpCalculator EURUSD,H1: removed
+0	15:26:16.700	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:26:16.735	tpCalculator EURUSD,H1: initialized
+0	15:26:19.977	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:26:20.000	Management -SetLevels EURUSD,H1: initialized
+0	15:26:20.000	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:26:20.003	Script Management -SetLevels EURUSD,H1: removed
+0	15:26:27.741	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:26:27.764	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:26:27.953	Orders - PlaceOrder EURUSD,H1: open #23602259 buy 7.69 EURUSD at 1.09748 sl: 1.09659 tp: 1.09995 ok
+0	15:26:27.954	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:26:27.956	Script Orders - PlaceOrder EURUSD,H1: removed
+0	15:26:31.557	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:26:31.578	Orders-CloseOrder EURUSD,H1: initialized
+2	15:26:31.804	Orders-CloseOrder EURUSD,H1: close #23602259 buy 7.69 EURUSD at 1.09748 sl: 1.09659 tp: 1.09995 at price 1.09723
+0	15:26:31.804	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:26:31.807	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:27:15.892	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:27:15.918	Management -SetLevels EURUSD,H1: initialized
+0	15:27:15.919	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:27:15.922	Script Management -SetLevels EURUSD,H1: removed
+0	15:27:17.855	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:27:17.874	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:27:18.095	Orders - PlaceOrder EURUSD,H1: open #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09659 tp: 1.10003 ok
+0	15:27:18.095	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:27:18.098	Script Orders - PlaceOrder EURUSD,H1: removed
+2	15:27:33.831	tpCalculator EURUSD,H1: modify #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09599 tp: 1.10003 ok
+2	15:27:34.033	tpCalculator EURUSD,H1: modify #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09659 tp: 1.10003 ok
+2	15:27:42.254	tpCalculator EURUSD,H1: modify #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09687 tp: 1.10003 ok
+2	15:27:45.236	tpCalculator EURUSD,H1: modify #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09578 tp: 1.10003 ok
+2	15:27:50.455	tpCalculator EURUSD,H1: modify #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09659 tp: 1.10003 ok
+0	15:27:58.096	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:27:58.117	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:27:58.315	Orders - PlaceOrder EURUSD,H1: open #23602271 buy 8.08 EURUSD at 1.09743 sl: 1.09659 tp: 1.10003 ok
+0	15:27:58.315	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:27:58.318	Script Orders - PlaceOrder EURUSD,H1: removed
+0	15:28:00.257	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:28:00.279	Orders-CloseOrder EURUSD,H1: initialized
+2	15:28:00.503	Orders-CloseOrder EURUSD,H1: close #23602262 buy 7.51 EURUSD at 1.09750 sl: 1.09659 tp: 1.10003 at price 1.09716
+0	15:28:00.504	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:28:00.507	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:28:01.002	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:28:01.025	Orders-CloseOrder EURUSD,H1: initialized
+2	15:28:01.221	Orders-CloseOrder EURUSD,H1: close #23602271 buy 8.08 EURUSD at 1.09743 sl: 1.09659 tp: 1.10003 at price 1.09716
+0	15:28:01.221	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:28:01.224	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:28:03.736	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:28:03.760	Management -SetLevels EURUSD,H1: initialized
+0	15:28:03.760	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:28:03.762	Script Management -SetLevels EURUSD,H1: removed
+0	15:28:12.665	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:28:12.685	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:28:25.172	Orders - PlaceOrder EURUSD,H1: open #23602274 sell 6.91 EURUSD at 1.09722 sl: 1.09820 tp: 1.09500 ok
+0	15:28:25.173	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:28:25.177	Script Orders - PlaceOrder EURUSD,H1: removed
+2	15:28:25.454	tpCalculator EURUSD,H1: modify #23602274 sell 6.91 EURUSD at 1.09722 sl: 1.09894 tp: 1.09486 ok
+0	15:28:37.069	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	15:28:37.209	Orders-CloseOrder EURUSD,H1: initialized
+2	15:28:37.422	Orders-CloseOrder EURUSD,H1: close #23602274 sell 6.91 EURUSD at 1.09722 sl: 1.09894 tp: 1.09486 at price 1.09744
+0	15:28:37.422	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	15:28:37.428	Script Orders-CloseOrder EURUSD,H1: removed
+0	15:28:38.918	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:28:38.943	Management -SetLevels EURUSD,H1: initialized
+0	15:28:38.943	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:28:38.946	Script Management -SetLevels EURUSD,H1: removed
+0	15:28:41.976	Script Management -DeleteLevels EURUSD,H1: loaded successfully
+0	15:28:41.998	Management -DeleteLevels EURUSD,H1: initialized
+0	15:28:41.998	Management -DeleteLevels EURUSD,H1: uninit reason 0
+0	15:28:42.001	Script Management -DeleteLevels EURUSD,H1: removed
+0	15:28:43.057	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	15:28:43.082	Management -SetLevels EURUSD,H1: initialized
+0	15:28:43.082	Management -SetLevels EURUSD,H1: uninit reason 0
+0	15:28:43.085	Script Management -SetLevels EURUSD,H1: removed
+0	15:28:59.193	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	15:28:59.213	Orders - PlaceOrder EURUSD,H1: initialized
+2	15:28:59.456	Orders - PlaceOrder EURUSD,H1: open #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09415 ok
+0	15:28:59.456	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	15:28:59.460	Script Orders - PlaceOrder EURUSD,H1: removed
+2	15:29:01.829	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09833 tp: 1.09401 ok
+2	15:29:02.033	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+2	15:29:07.126	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.10067 tp: 1.09401 ok
+2	15:29:16.596	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09831 tp: 1.09401 ok
+2	15:29:16.783	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+2	15:29:26.814	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.10312 tp: 1.09401 ok
+2	15:30:15.946	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09767 tp: 1.09401 ok
+2	15:30:20.706	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+2	15:30:29.782	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09773 tp: 1.09401 ok
+2	15:30:30.016	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+2	15:31:30.017	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09990 tp: 1.09401 ok
+0	15:33:16.913	tpCalculator EURUSD,H1: uninit reason 2
+0	15:33:16.915	Expert tpCalculator EURUSD,H1: removed
+0	15:33:16.943	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:33:16.976	tpCalculator EURUSD,H1: initialized
+0	15:33:33.176	tpCalculator EURUSD,H1: uninit reason 1
+0	15:33:33.194	Expert tpCalculator EURUSD,H1: removed
+0	15:33:33.210	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:33:34.700	tpCalculator EURUSD,H1: initialized
+0	15:34:17.131	tpCalculator EURUSD,H1: uninit reason 2
+0	15:34:17.134	Expert tpCalculator EURUSD,H1: removed
+0	15:34:17.155	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:34:17.195	tpCalculator EURUSD,H1: initialized
+0	15:34:17.284	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:18.023	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:18.546	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:18.615	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:20.603	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:22.791	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:31.257	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:33.051	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:33.754	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:35.224	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:35.318	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:36.007	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:36.489	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:37.677	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:37.756	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:38.586	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:39.022	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:39.082	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:41.275	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:41.353	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:42.370	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:42.694	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:42.805	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:43.193	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:43.526	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:44.914	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:45.415	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:45.959	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:46.197	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:46.774	tpCalculator EURUSD,H1: Alert: 0 -- 0
+0	15:34:47.592	tpCalculator EURUSD,H1: uninit reason 2
+0	15:34:47.596	Expert tpCalculator EURUSD,H1: removed
+0	15:34:47.624	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:34:47.660	tpCalculator EURUSD,H1: initialized
+0	15:35:47.800	tpCalculator EURUSD,H1: uninit reason 2
+0	15:35:47.803	Expert tpCalculator EURUSD,H1: removed
+0	15:35:47.819	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:35:47.853	tpCalculator EURUSD,H1: initialized
+0	15:36:19.295	tpCalculator EURUSD,H1: uninit reason 2
+0	15:36:19.299	Expert tpCalculator EURUSD,H1: removed
+0	15:36:19.356	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:36:19.391	tpCalculator EURUSD,H1: initialized
+2	15:36:27.723	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+2	15:36:37.767	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09814 tp: 1.09401 ok
+2	15:36:41.390	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.10293 tp: 1.09401 ok
+2	15:36:47.986	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+0	15:37:11.763	tpCalculator EURUSD,H1: uninit reason 2
+0	15:37:11.768	Expert tpCalculator EURUSD,H1: removed
+0	15:37:11.786	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:37:11.822	tpCalculator EURUSD,H1: initialized
+2	15:37:33.691	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.10054 tp: 1.09401 ok
+2	15:37:36.192	tpCalculator EURUSD,H1: modify #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 ok
+0	15:37:43.804	tpCalculator EURUSD,H1: uninit reason 2
+0	15:37:43.806	Expert tpCalculator EURUSD,H1: removed
+0	15:37:43.825	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:37:43.863	tpCalculator EURUSD,H1: initialized
+0	16:01:55.796	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	16:01:55.823	Orders-CloseOrder EURUSD,H1: initialized
+2	16:01:56.058	Orders-CloseOrder EURUSD,H1: close #23602291 sell 5.47 EURUSD at 1.09721 sl: 1.09847 tp: 1.09401 at price 1.09787
+0	16:01:56.058	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	16:01:56.061	Script Orders-CloseOrder EURUSD,H1: removed
+0	17:46:50.801	tpCalculator EURUSD,H1: uninit reason 2
+0	17:46:50.805	Expert tpCalculator EURUSD,H1: removed
+0	17:46:50.824	Expert tpCalculator EURUSD,H1: loaded successfully
+0	17:46:50.863	tpCalculator EURUSD,H1: initialized
+0	17:50:15.983	Compiling 'Orders - PlaceOrder'
+0	17:50:30.418	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	17:50:30.442	Management -SetLevels EURUSD,H1: initialized
+0	17:50:30.442	Management -SetLevels EURUSD,H1: uninit reason 0
+0	17:50:30.445	Script Management -SetLevels EURUSD,H1: removed
+0	17:54:06.166	Script Management -DeleteLevels EURUSD,H1: loaded successfully
+0	17:54:06.187	Management -DeleteLevels EURUSD,H1: initialized
+0	17:54:06.187	Management -DeleteLevels EURUSD,H1: uninit reason 0
+0	17:54:06.189	Script Management -DeleteLevels EURUSD,H1: removed
+0	17:54:07.632	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	17:54:07.653	Management -SetLevels EURUSD,H1: initialized
+0	17:54:07.654	Management -SetLevels EURUSD,H1: uninit reason 0
+0	17:54:07.657	Script Management -SetLevels EURUSD,H1: removed
+0	17:54:12.548	Script Management -DeleteLevels EURUSD,H1: loaded successfully
+0	17:54:12.569	Management -DeleteLevels EURUSD,H1: initialized
+0	17:54:12.569	Management -DeleteLevels EURUSD,H1: uninit reason 0
+0	17:54:12.572	Script Management -DeleteLevels EURUSD,H1: removed

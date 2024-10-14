@@ -10,10 +10,21 @@
 
 int IMAGE_XPIX = 615;
 int IMAGE_YPIX = 882;
+string extension = ".png";
 
 class Journal
   {
 private:
+
+   bool takeScreenShot(string name) {
+      
+      long chartid = ChartID();
+   
+      bool snapSuccess = ChartScreenShot(chartid, name, 
+            IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
+            
+      return snapSuccess;
+   }
 
 public:
 
@@ -21,12 +32,45 @@ public:
   ~Journal();
   
   
-  void takeScreenshot(string name) {
-         
-         string snapshot = name + ".png";
-         bool a = ChartScreenShot(0, snapshot + ".png", 
-            IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
+  void MarketScreenshot(string symbol) {
+  
+         string name = symbol + "-" + 
+            IntegerToString(TimeCurrent()) + extension;
+            
+         takeScreenShot(name);
    }
+   
+   void CustomScreenshot(string symbol) {
+  
+         string name = symbol + "-" + 
+            IntegerToString(TimeCurrent()) + "-" +
+            "Custom" + extension;
+            
+         takeScreenShot(name);
+   }
+   
+   void OpenScreenshot(string symbol, int orderid) {
+  
+         string name = symbol + "-" + 
+            IntegerToString(TimeCurrent()) + "-" +
+            IntegerToString(orderid) + "-Open" +
+            extension;
+            
+         takeScreenShot(name);
+   }
+   
+   void CloseScreenshot(string symbol, int orderid) {
+  
+         string name = symbol + "-" + 
+            IntegerToString(TimeCurrent()) + "-" +
+            IntegerToString(orderid) + "-Close" +
+            extension;
+            
+         takeScreenShot(name);
+   }
+   
+   
+   
   };
 //+------------------------------------------------------------------+
 //|                                                                  |

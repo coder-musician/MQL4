@@ -12,7 +12,7 @@
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
 
-
+int CANDLES_COUNT = 0;
 
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
@@ -34,20 +34,23 @@ void OnDeinit(const int reason)
 //+------------------------------------------------------------------+
 void OnTick()
   {   
+  
+      //if(IntegerToString(ChartID()) == ObjectGetString(0,"SL_BID", OBJPROP_TEXT,0)) {
+      //if(ChartID() == StringToInteger(ObjectGetString(0,"SL_BID", OBJPROP_TEXT,0))) {
       
       Management management = Management();
-      Orders orders = Orders();
       Journal journal = Journal();
       
-      string snapshotName = IntegerToString(OrderTicket()) + "-" + 
-         IntegerToString(Period()) + "-" + IntegerToString(Bars);
-      
-      if(CANDLES_COUNT < Bars) {     
-      
-            snapshotName = snapshotName + "Market";
-            journal.takeScreenshot(snapshotName);            
-            CANDLES_COUNT = Bars;
+      if(CANDLES_COUNT < Bars) {
+         
+         journal.MarketScreenshot(Symbol());
+         CANDLES_COUNT = Bars;
       }
+      
+      string snapshotName = IntegerToString(OrderTicket()) + "-" + 
+         IntegerToString(Period()) + "-" + IntegerToString(Bars);      
+         
+      Orders orders = Orders();         
       
       orders.GetOrdersList();
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
@@ -55,12 +58,10 @@ void OnTick()
       if(!areOrdersActive) {
       
          management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
-         CANDLES_COUNT = 0;
          
          if(IS_ORDER_ACTIVE) {
             
-            snapshotName = snapshotName + "-close";
-            journal.takeScreenshot(snapshotName);
+            journal.CloseScreenshot(Symbol(), ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = False;
             management.DeleteLevels();
          }
@@ -69,22 +70,14 @@ void OnTick()
          
          if(!IS_ORDER_ACTIVE) {
          
-            snapshotName = snapshotName + "-open";
-            journal.takeScreenshot(snapshotName);
+            journal.OpenScreenshot(Symbol(), ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = True;
-         }
-         
-         if(CANDLES_COUNT < Bars) {
-                     
-            journal.takeScreenshot(snapshotName);
-            
-            CANDLES_COUNT = Bars;
          }
          
          management.LoadValues();
          
          double origSL = StringToDouble(OrderComment());
-         //Alert(ORDER_OPERATION + " -- " + OP_BUY);
+         
          if((STOP_RISK_BID_PRICE < Bid && (STOP_RISK_BID_PRICE < origSL)) ||  
          (STOP_RISK_BID_PRICE > Bid && (STOP_RISK_BID_PRICE > origSL))) {
        

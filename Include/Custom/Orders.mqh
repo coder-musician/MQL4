@@ -16,7 +16,7 @@ double ORDER_PROFIT_PRICE = 0;
 double ORDER_RISK_PRICE = 0;
 double ORDER_LOTS = 0;
 int ORDER_OPERATION = 0;
-int CANDLES_COUNT = 0;
+
 
 class Orders
   {
@@ -107,12 +107,23 @@ public:
    }
    
    int PlaceOrder() {
-
+      
       int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, 
          ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, DoubleToStr(ORDER_RISK_PRICE));
       
-      bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
-      ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrWhite);
+      if(newOrder != -1) {
+      
+         bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
+         ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrWhite);
+      }
+      else {
+      
+         GetSummary();
+      }
+      
+      
+         
+      
       
       return newOrder;
    }
@@ -122,20 +133,9 @@ public:
       bool OrderAdjust = OrderModify(OrderId,0, StopRisk, TakeProfit, 0, clrNONE); 
    }
    
-   void CloseOrder() {
+   void CloseOrder(int ticket, double lots, double price) {
    
-      bool closeSuccess = false;
-      
-      for(int i=0; i<OrdersTotal(); i++) {
-      
-         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
-         
-         if(OrderSymbol() == Symbol()){
-            
-            MessageBox(OrderTicket() + " -- " + OrderLots());
-            closeSuccess = OrderClose(OrderTicket(),OrderLots(),Bid,3,clrNONE); 
-         }
-      }
+      bool closeSuccess = OrderClose(ticket,lots,price,3,clrNONE);
       
       ObjectDelete(0, "OPEN_PRICE");
       ObjectDelete(0, "TP_ASK");
@@ -144,7 +144,7 @@ public:
       ObjectDelete(0, "SL_BID");
    }
    
-   string GetSummary() {      
+   void GetSummary() {      
       
       string summary = "ORDER_TICKET: " + IntegerToString(ORDER_TICKET) + "\n" +
       "ORDER_OPEN_PRICE: " + DoubleToString(ORDER_OPEN_PRICE) + "\n" +
@@ -152,7 +152,7 @@ public:
       "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
       "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n";
       
-      return summary;
+      MessageBox(summary);
    }
    
   };

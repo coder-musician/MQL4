@@ -18,35 +18,43 @@ int STANDARD_LOT_VALUE = 100000;
 double DECIMALS = 0.0001;
 double MULTIPLIER = 10000;
 
+void GetSummary() {      
+      
+      string summary = "ORDER_TICKET: " + IntegerToString(ORDER_TICKET) + "\n" +
+      "ORDER_OPEN_PRICE: " + DoubleToString(ORDER_OPEN_PRICE) + "\n" +
+      "ORDER_PROFIT_PRICE: " + DoubleToString(ORDER_PROFIT_PRICE) + "\n" +
+      "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
+      "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n";
+      
+      MessageBox(summary);
+   }
+
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 
 void OnStart()
   { 
-      
-      Management TradeManagement = Management();
+      //Management management = Management();      
       Orders NewOrder = Orders();
       
       double RISKED_PIPS = 0;
       
+      ORDER_PROFIT_PRICE = NormalizeDouble(ObjectGet("TP_BID", 1),Digits); 
+      ORDER_RISK_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
+      
+      
       if(STOP_RISK_BID_PRICE < Bid) {
          
          ORDER_OPERATION = OP_BUY;
-         ORDER_OPEN_PRICE = Ask;
-         ORDER_PROFIT_PRICE = TAKE_PROFIT_BID_PRICE;
-         ORDER_RISK_PRICE = STOP_RISK_BID_PRICE;
+         ORDER_OPEN_PRICE = Ask;         
          
          RISKED_PIPS = (ORDER_OPEN_PRICE - ORDER_RISK_PRICE);
-         
-         
       }
       else {
          
          ORDER_OPERATION = OP_SELL;
          ORDER_OPEN_PRICE = Bid;
-         ORDER_PROFIT_PRICE = TAKE_PROFIT_ASK_PRICE;
-         ORDER_RISK_PRICE = STOP_RISK_ASK_PRICE;
          
          RISKED_PIPS = (ORDER_RISK_PRICE - ORDER_OPEN_PRICE);
       }
@@ -61,6 +69,16 @@ void OnStart()
       
       ORDER_LOTS = RiskPipValue/MarketPipValue;
       
-      ObjectSetString(0,"SL_BID", OBJPROP_TEXT, DoubleToString(ORDER_RISK_PRICE));
-      NewOrder.PlaceOrder();       
+      int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, 
+         ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, DoubleToStr(ORDER_RISK_PRICE));
+      
+      if(newOrder != -1) {
+      
+         bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
+         ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrSienna);
+      } 
+      else {
+      
+         GetSummary();
+      }
 }

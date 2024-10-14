@@ -56,6 +56,8 @@ private:
    
    void Get_Risk_Pips() { 
       
+      STOP_RISK_BID_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
+      
       if(Bid > STOP_RISK_BID_PRICE) {
       
          STOP_RISK_PIPS = Ask - STOP_RISK_BID_PRICE;
@@ -71,29 +73,27 @@ public:
                     ~Management();
                     
       
-      void UpdateTakeProfit(double SlBid) {   
-      
-         double SPREAD = Ask-Bid;
-         int TP_LINE_COLOR = clrGreen;
+      void UpdateTakeProfit(double SlBid) {  
          
+         double SPREAD = Ask-Bid;
+         
+         int TP_LINE_COLOR = clrGreen;  
+                
          if(GetLinePrice("TP_BID") == 0) {
          
             PlotLine("TP_BID", 0, TP_LINE_COLOR);   
          } 
-     
-         STOP_RISK_BID_PRICE = SlBid;
+         
+         STOP_RISK_BID_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
          STOP_RISK_ASK_PRICE = STOP_RISK_BID_PRICE + SPREAD;
          
          Get_Risk_Pips();
-         TAKE_PROFIT_PIPS = STOP_RISK_PIPS*REWARD_RATIO;
-         
          
          if(Bid > SlBid) {
             
             OPERATION_TYPE = OP_BUY;
             
-            TAKE_PROFIT_BID_PRICE = Bid + (STOP_RISK_PIPS*REWARD_RATIO) + SPREAD;
-            TAKE_PROFIT_ASK_PRICE = TAKE_PROFIT_BID_PRICE + SPREAD;
+            TAKE_PROFIT_BID_PRICE = Bid + (STOP_RISK_PIPS*REWARD_RATIO) + (SPREAD);
             
             ChangeLineColor("SL_BID", clrRed);
                         
@@ -102,13 +102,14 @@ public:
 
             OPERATION_TYPE = OP_SELL;
             
-            TAKE_PROFIT_BID_PRICE = Ask - TAKE_PROFIT_PIPS - SPREAD;
-            TAKE_PROFIT_ASK_PRICE = TAKE_PROFIT_BID_PRICE + SPREAD;
+            TAKE_PROFIT_BID_PRICE = Ask - (STOP_RISK_PIPS*REWARD_RATIO) - (SPREAD);           
             
             ChangeLineColor("SL_BID", clrIndigo);
             TP_LINE_COLOR = clrIndigo;
          }
          
+         
+         TAKE_PROFIT_ASK_PRICE = TAKE_PROFIT_BID_PRICE + SPREAD;
          ChangeLineColor("TP_BID", TP_LINE_COLOR);
          MoveLine("TP_BID", TAKE_PROFIT_BID_PRICE);
             
@@ -137,8 +138,8 @@ public:
          
          if(SlBid > TpBid) { // <- SELL
          
-            PlotLine("TP_ASK", TpBid+SPREAD, clrGreen);
-            PlotLine("SL_ASK", SlBid+SPREAD, clrRed);
+            PlotLine("TP_ASK", (TpBid-SPREAD), clrGreen);
+            PlotLine("SL_ASK", (SlBid-SPREAD), clrRed);
          }
    
       }
@@ -148,7 +149,7 @@ public:
          double SPREAD = Ask-Bid;
          
          DeleteLevels();
-         PlotLine("OPEN_PRICE", OpenPrice, clrWhite);
+         PlotLine("OPEN_PRICE", OpenPrice, clrSienna);
          
          
          if(SlBid > TpBid) { // <- SELL
@@ -169,10 +170,11 @@ public:
          MoveLine("SL_BID", SlBid);
       }
       
-      void SetLevels() {
+      void SetLevels(string chart) {
       
-         ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)), 0, 0);
+         ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)));
          ObjectSetInteger(0,"SL_BID",OBJPROP_COLOR,clrRed);
+         ObjectSetString(0, "SL_BID", OBJPROP_TEXT,chart);
       }
       
       void DeleteLevels() {

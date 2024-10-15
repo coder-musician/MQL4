@@ -15,7 +15,7 @@ string order;
 int IMAGE_XPIX = 615;
 int IMAGE_YPIX = 882;
 
-void createFolder(string order) {
+void createFolder(string name) {
 
    bool result = FolderCreate(order,0);
 

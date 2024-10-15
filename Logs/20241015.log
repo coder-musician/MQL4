@@ -317,3 +317,199 @@
 0	12:27:29.712	tpCalculator GBPUSD,H1: uninit reason 9
 0	12:27:29.787	Expert tpCalculator EURUSD,H1: removed
 0	12:27:29.800	Expert tpCalculator GBPUSD,H1: removed
+0	13:59:21.010	Expert tpCalculator EURUSD,H1: loaded successfully
+0	13:59:21.240	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	13:59:26.127	tpCalculator EURUSD,H1: initialized
+0	13:59:26.134	tpCalculator GBPUSD,H1: initialized
+0	14:03:17.959	Script Testbed GBPUSD,H1: loaded successfully
+0	14:03:17.981	Testbed GBPUSD,H1: initialized
+0	14:03:17.983	Testbed GBPUSD,H1: uninit reason 0
+0	14:03:17.985	Script Testbed GBPUSD,H1: removed
+0	14:03:42.478	Script Testbed GBPUSD,H1: loaded successfully
+0	14:03:42.504	Testbed GBPUSD,H1: initialized
+0	14:03:42.504	Testbed GBPUSD,H1: uninit reason 0
+0	14:03:42.506	Script Testbed GBPUSD,H1: removed
+0	14:03:53.064	Script Testbed GBPUSD,H1: loaded successfully
+0	14:03:53.087	Testbed GBPUSD,H1: initialized
+0	14:03:53.087	Testbed GBPUSD,H1: uninit reason 0
+0	14:03:53.090	Script Testbed GBPUSD,H1: removed
+0	14:10:03.434	Script Testbed GBPUSD,H1: loaded successfully
+0	14:10:03.458	Testbed GBPUSD,H1: initialized
+0	14:10:05.428	Testbed GBPUSD,H1: uninit reason 0
+0	14:10:05.434	Script Testbed GBPUSD,H1: removed
+0	14:10:19.165	Script Testbed GBPUSD,H1: loaded successfully
+0	14:10:19.198	Testbed GBPUSD,H1: initialized
+0	14:10:21.631	Testbed GBPUSD,H1: uninit reason 0
+0	14:10:21.634	Script Testbed GBPUSD,H1: removed
+0	14:11:08.917	Script Testbed GBPUSD,H1: loaded successfully
+0	14:11:08.936	Testbed GBPUSD,H1: initialized
+0	14:11:14.935	Testbed GBPUSD,H1: uninit reason 0
+0	14:11:14.938	Script Testbed GBPUSD,H1: removed
+0	14:11:26.869	Script Testbed GBPUSD,H1: loaded successfully
+0	14:11:26.890	Testbed GBPUSD,H1: initialized
+0	14:13:02.515	Testbed GBPUSD,H1: uninit reason 0
+0	14:13:02.518	Script Testbed GBPUSD,H1: removed
+0	14:13:34.725	Script Testbed GBPUSD,H1: loaded successfully
+0	14:13:34.765	Testbed GBPUSD,H1: initialized
+0	14:13:36.654	Testbed GBPUSD,H1: uninit reason 0
+0	14:13:36.658	Script Testbed GBPUSD,H1: removed
+0	14:20:17.251	Script Testbed GBPUSD,H1: loaded successfully
+0	14:20:17.272	Testbed GBPUSD,H1: initialized
+0	14:20:19.972	Testbed GBPUSD,H1: uninit reason 0
+0	14:20:19.976	Script Testbed GBPUSD,H1: removed
+0	14:20:22.419	Script Testbed GBPUSD,H1: loaded successfully
+0	14:20:22.446	Testbed GBPUSD,H1: initialized
+0	14:20:24.996	Testbed GBPUSD,H1: uninit reason 0
+0	14:20:24.998	Script Testbed GBPUSD,H1: removed
+0	14:20:29.562	Script Testbed GBPUSD,H1: loaded successfully
+0	14:20:29.584	Testbed GBPUSD,H1: initialized
+0	14:20:33.490	Testbed GBPUSD,H1: uninit reason 0
+0	14:20:33.493	Script Testbed GBPUSD,H1: removed
+0	14:21:36.804	Script Testbed GBPUSD,H1: loaded successfully
+0	14:21:36.824	Testbed GBPUSD,H1: initialized
+0	14:21:41.535	Testbed GBPUSD,H1: uninit reason 0
+0	14:21:41.538	Script Testbed GBPUSD,H1: removed
+0	14:22:57.901	Script Testbed GBPUSD,H1: loaded successfully
+0	14:22:57.924	Testbed GBPUSD,H1: initialized
+0	14:23:02.735	Testbed GBPUSD,H1: uninit reason 0
+0	14:23:02.739	Script Testbed GBPUSD,H1: removed
+0	14:23:17.172	Script Testbed GBPUSD,H1: loaded successfully
+0	14:23:17.196	Testbed GBPUSD,H1: initialized
+0	14:23:17.197	Testbed GBPUSD,H1: uninit reason 0
+0	14:23:17.199	Script Testbed GBPUSD,H1: removed
+0	15:24:12.292	Script Testbed GBPUSD,H1: loaded successfully
+0	15:24:12.318	Testbed GBPUSD,H1: initialized
+0	15:25:53.680	Testbed GBPUSD,H1: uninit reason 0
+0	15:25:53.682	Script Testbed GBPUSD,H1: removed
+0	15:29:29.400	Script Testbed GBPUSD,H1: loaded successfully
+0	15:29:29.422	Testbed GBPUSD,H1: initialized
+0	15:29:31.574	Testbed GBPUSD,H1: uninit reason 0
+0	15:29:31.577	Script Testbed GBPUSD,H1: removed
+0	15:29:34.056	Script Testbed GBPUSD,H1: loaded successfully
+0	15:29:34.075	Testbed GBPUSD,H1: initialized
+0	15:29:34.827	Testbed GBPUSD,H1: uninit reason 0
+0	15:29:34.830	Script Testbed GBPUSD,H1: removed
+0	15:29:35.507	Script Testbed GBPUSD,H1: loaded successfully
+0	15:29:35.528	Testbed GBPUSD,H1: initialized
+0	15:29:36.147	Testbed GBPUSD,H1: uninit reason 0
+0	15:29:36.150	Script Testbed GBPUSD,H1: removed
+0	15:30:25.244	Script Testbed GBPUSD,H1: loaded successfully
+0	15:30:25.271	Testbed GBPUSD,H1: initialized
+0	15:32:29.391	Testbed GBPUSD,H1: uninit reason 0
+0	15:32:29.394	Script Testbed GBPUSD,H1: removed
+0	15:34:22.465	Script Testbed GBPUSD,H1: loaded successfully
+0	15:34:22.491	Testbed GBPUSD,H1: initialized
+0	15:35:29.091	Testbed GBPUSD,H1: uninit reason 0
+0	15:35:29.093	Script Testbed GBPUSD,H1: removed
+0	15:41:29.766	Script Testbed GBPUSD,H1: loaded successfully
+0	15:41:29.792	Testbed GBPUSD,H1: initialized
+0	15:43:17.968	Testbed GBPUSD,H1: uninit reason 0
+0	15:43:17.971	Script Testbed GBPUSD,H1: removed
+0	15:45:40.494	Script Testbed GBPUSD,H1: loaded successfully
+0	15:45:40.534	Testbed GBPUSD,H1: initialized
+0	15:45:40.534	Testbed GBPUSD,H1: uninit reason 0
+0	15:45:40.537	Script Testbed GBPUSD,H1: removed
+0	15:45:41.663	Script Testbed GBPUSD,H1: loaded successfully
+0	15:45:41.724	Testbed GBPUSD,H1: initialized
+0	15:45:41.724	Testbed GBPUSD,H1: uninit reason 0
+0	15:45:41.727	Script Testbed GBPUSD,H1: removed
+0	15:46:22.276	Script Testbed GBPUSD,H1: loaded successfully
+0	15:46:22.305	Testbed GBPUSD,H1: initialized
+0	15:46:30.311	Testbed GBPUSD,H1: uninit reason 0
+0	15:46:30.314	Script Testbed GBPUSD,H1: removed
+0	15:46:44.523	Script Testbed GBPUSD,H1: loaded successfully
+0	15:46:44.547	Testbed GBPUSD,H1: initialized
+0	15:46:46.793	Testbed GBPUSD,H1: uninit reason 0
+0	15:46:46.795	Script Testbed GBPUSD,H1: removed
+0	15:47:05.976	Script Testbed GBPUSD,H1: loaded successfully
+0	15:47:06.028	Testbed GBPUSD,H1: initialized
+0	15:47:31.139	Testbed GBPUSD,H1: uninit reason 0
+0	15:47:31.142	Script Testbed GBPUSD,H1: removed
+0	15:49:04.377	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:04.404	Testbed GBPUSD,H1: initialized
+0	15:49:11.202	Testbed GBPUSD,H1: uninit reason 0
+0	15:49:11.204	Script Testbed GBPUSD,H1: removed
+0	15:49:20.228	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:20.249	Testbed GBPUSD,H1: initialized
+0	15:49:34.411	Testbed GBPUSD,H1: uninit reason 0
+0	15:49:34.414	Script Testbed GBPUSD,H1: removed
+0	15:49:39.588	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:39.608	Testbed GBPUSD,H1: initialized
+0	15:49:47.845	Testbed GBPUSD,H1: uninit reason 0
+0	15:49:47.848	Script Testbed GBPUSD,H1: removed
+0	15:49:56.246	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:56.270	Testbed GBPUSD,H1: initialized
+0	15:50:01.453	Testbed GBPUSD,H1: uninit reason 0
+0	15:50:01.456	Script Testbed GBPUSD,H1: removed
+0	15:50:09.133	Script Testbed GBPUSD,H1: loaded successfully
+0	15:50:09.154	Testbed GBPUSD,H1: initialized
+0	15:50:24.005	Testbed GBPUSD,H1: uninit reason 0
+0	15:50:24.007	Script Testbed GBPUSD,H1: removed
+0	15:50:33.441	Script Testbed GBPUSD,H1: loaded successfully
+0	15:50:33.464	Testbed GBPUSD,H1: initialized
+0	15:50:43.582	Testbed GBPUSD,H1: uninit reason 0
+0	15:50:43.590	Script Testbed GBPUSD,H1: removed
+3	15:51:03.862	cannot open file 'C:\Users\alexa\AppData\Roaming\MetaQuotes\Terminal\2010C2441A263399B34F537D91A53AC9\MQL4\Scripts\Testbed.ex4' [2]
+3	15:51:05.305	cannot open file 'C:\Users\alexa\AppData\Roaming\MetaQuotes\Terminal\2010C2441A263399B34F537D91A53AC9\MQL4\Scripts\Testbed.ex4' [2]
+0	15:51:14.091	Script Testbed GBPUSD,H1: loaded successfully
+0	15:51:14.117	Testbed GBPUSD,H1: initialized
+0	15:51:28.188	Testbed GBPUSD,H1: uninit reason 0
+0	15:51:28.191	Script Testbed GBPUSD,H1: removed
+0	15:54:08.641	Script Testbed GBPUSD,H1: loaded successfully
+0	15:54:08.665	Testbed GBPUSD,H1: initialized
+0	15:54:17.811	Testbed GBPUSD,H1: uninit reason 0
+0	15:54:17.813	Script Testbed GBPUSD,H1: removed
+0	15:58:02.245	tpCalculator EURUSD,H1: uninit reason 2
+0	15:58:02.248	Expert tpCalculator EURUSD,H1: removed
+0	15:58:02.267	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:58:02.268	tpCalculator GBPUSD,H1: uninit reason 2
+0	15:58:02.271	Expert tpCalculator GBPUSD,H1: removed
+0	15:58:02.291	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	15:58:02.311	tpCalculator EURUSD,H1: initialized
+0	15:58:02.337	tpCalculator GBPUSD,H1: initialized
+0	15:58:19.967	tpCalculator EURUSD,H1: uninit reason 4
+0	15:58:19.978	Expert tpCalculator EURUSD,H1: removed
+0	15:58:20.910	tpCalculator GBPUSD,H1: uninit reason 4
+0	15:58:20.929	Expert tpCalculator GBPUSD,H1: removed
+0	15:58:29.284	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	15:58:38.750	tpCalculator GBPUSD,H1: initialized
+0	15:59:10.128	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	15:59:10.153	Management -SetLevels GBPUSD,H1: initialized
+0	15:59:10.153	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	15:59:10.156	Script Management -SetLevels GBPUSD,H1: removed
+0	15:59:12.430	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	15:59:12.452	Orders - PlaceOrder GBPUSD,H1: initialized
+2	15:59:12.649	Orders - PlaceOrder GBPUSD,H1: open #23795861 buy 5.93 GBPUSD at 1.30690 sl: 1.30590 tp: 1.30974 ok
+0	15:59:12.649	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	15:59:12.652	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	15:59:27.588	Script Orders-CloseOrder GBPUSD,H1: loaded successfully
+0	15:59:27.608	Orders-CloseOrder GBPUSD,H1: initialized
+2	15:59:27.802	Orders-CloseOrder GBPUSD,H1: close #23795861 buy 5.93 GBPUSD at 1.30690 sl: 1.30590 tp: 1.30974 at price 1.30655
+0	15:59:27.802	Orders-CloseOrder GBPUSD,H1: uninit reason 0
+0	15:59:27.806	Script Orders-CloseOrder GBPUSD,H1: removed
+0	16:02:08.709	Script Testbed GBPUSD,H1: loaded successfully
+0	16:02:08.730	Testbed GBPUSD,H1: initialized
+0	16:02:08.742	Testbed GBPUSD,H1: uninit reason 0
+0	16:02:08.745	Script Testbed GBPUSD,H1: removed
+0	16:07:54.564	Script Testbed GBPUSD,H1: loaded successfully
+0	16:07:54.588	Testbed GBPUSD,H1: initialized
+0	16:07:59.633	Testbed GBPUSD,H1: uninit reason 0
+0	16:07:59.636	Script Testbed GBPUSD,H1: removed
+0	16:08:48.923	Script Testbed GBPUSD,H4: loaded successfully
+0	16:08:48.947	Testbed GBPUSD,H4: initialized
+0	16:09:29.892	Testbed GBPUSD,H4: uninit reason 0
+0	16:09:29.897	Script Testbed GBPUSD,H4: removed
+0	16:11:35.019	Script Testbed GBPUSD,H1: loaded successfully
+0	16:11:35.040	Testbed GBPUSD,H1: initialized
+0	16:11:36.617	Testbed GBPUSD,H1: uninit reason 0
+0	16:11:36.621	Script Testbed GBPUSD,H1: removed
+0	16:11:38.606	Script Testbed GBPUSD,H4: loaded successfully
+0	16:11:38.631	Testbed GBPUSD,H4: initialized
+0	16:11:40.231	Testbed GBPUSD,H4: uninit reason 0
+0	16:11:40.234	Script Testbed GBPUSD,H4: removed
+0	16:17:16.351	tpCalculator GBPUSD,H1: uninit reason 2
+0	16:17:16.356	Expert tpCalculator GBPUSD,H1: removed
+0	16:17:16.387	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	16:17:16.423	tpCalculator GBPUSD,H1: initialized
+0	16:41:44.834	tpCalculator GBPUSD,H1: uninit reason 9
+0	16:41:44.971	Expert tpCalculator GBPUSD,H1: removed

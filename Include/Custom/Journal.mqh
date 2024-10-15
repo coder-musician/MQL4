@@ -16,60 +16,71 @@ class Journal
   {
 private:
 
-   bool takeScreenShot(string name) {
-      
-      long chartid = ChartID();
+   string GetDate() {
    
-      bool snapSuccess = ChartScreenShot(chartid, name, 
-            IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
-            
-      return snapSuccess;
+      string year = IntegerToString(Year());
+      string month = IntegerToString(Month());
+      string day = IntegerToString(Day());      
+      string date = year + "." + month + "." + day;
+      
+      return date;
    }
-
+   
+   string CreateFolder() {
+   
+      string folder = Symbol() + "\\" + GetDate();      
+      bool result = FolderCreate(folder,0);
+      
+      return folder;
+   }
+   
+   void TakeShot(int chartid, string desc) {
+      
+      string folder = CreateFolder();
+      
+      string fullpath = folder + "\\" + 
+         StringSubstr(IntegerToString(TimeCurrent()),5,0) + "-" + 
+         Symbol() + "-" + GetDate() + "-" + desc + extension;      
+    
+      bool snapSuccess = ChartScreenShot(chartid, fullpath, 
+         IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
+   }
+   
 public:
 
    Journal();
   ~Journal();
   
-  
-  void MarketScreenshot(string symbol) {
-  
-         string name = symbol + "-" + 
-            IntegerToString(TimeCurrent()) + extension;
+  void MarketScreenshot() {
             
-         takeScreenShot(name);
+         TakeShot(0, "Market");
    }
    
-   void CustomScreenshot(string symbol) {
+   void CustomScreenshot() {
   
-         string name = symbol + "-" + 
-            IntegerToString(TimeCurrent()) + "-" +
-            "Custom" + extension;
-            
-         takeScreenShot(name);
+         TakeShot(0, "Custom");
    }
    
-   void OpenScreenshot(string symbol, int orderid) {
+   void OpenScreenshot(int orderid) {
+   
+         string name = "ORDER." + IntegerToString(orderid) + "-Open";
   
-         string name = symbol + "-" + 
-            IntegerToString(TimeCurrent()) + "-" +
-            IntegerToString(orderid) + "-Open" +
-            extension;
-            
-         takeScreenShot(name);
+         TakeShot(0, name);
    }
    
-   void CloseScreenshot(string symbol, int orderid) {
+   void CloseScreenshot(int orderid) {
   
-         string name = symbol + "-" + 
-            IntegerToString(TimeCurrent()) + "-" +
-            IntegerToString(orderid) + "-Close" +
-            extension;
-            
-         takeScreenShot(name);
+         string name = "ORDER." + IntegerToString(orderid) + "-Close";
+  
+         TakeShot(0, name);
    }
    
-   
+   void HTFScreenshot(int orderid, int chartid) {
+  
+         string name = "ORDER." + IntegerToString(orderid) + "-HTF";
+  
+         TakeShot(chartid, name);
+   }   
    
   };
 //+------------------------------------------------------------------+

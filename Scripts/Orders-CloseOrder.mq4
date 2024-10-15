@@ -28,7 +28,5 @@ void OnStart()
          order.CloseOrder(OrderTicket(), OrderLots(), OrderOpenPrice());
          
       }
-      
-
   }
 //+------------------------------------------------------------------+

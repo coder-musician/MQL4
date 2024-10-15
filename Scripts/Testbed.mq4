@@ -14,15 +14,12 @@
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
+   
 void OnStart()
   {
 //---
    
-   Journal journal = Journal();
-   //journal.TakeMarketScreenshot("EURUSD", 25568, 60);
-   
-   journal.CustomScreenshot(Symbol());
-   
+   MessageBox(ChartID());
    
   }
 //+------------------------------------------------------------------+

@@ -33,22 +33,15 @@ void OnDeinit(const int reason)
 //| Expert tick function                                             |
 //+------------------------------------------------------------------+
 void OnTick()
-  {   
-  
-      //if(IntegerToString(ChartID()) == ObjectGetString(0,"SL_BID", OBJPROP_TEXT,0)) {
-      //if(ChartID() == StringToInteger(ObjectGetString(0,"SL_BID", OBJPROP_TEXT,0))) {
-      
+  {         
       Management management = Management();
       Journal journal = Journal();
       
       if(CANDLES_COUNT < Bars) {
          
-         journal.MarketScreenshot(Symbol());
+         journal.MarketScreenshot();
          CANDLES_COUNT = Bars;
-      }
-      
-      string snapshotName = IntegerToString(OrderTicket()) + "-" + 
-         IntegerToString(Period()) + "-" + IntegerToString(Bars);      
+      }    
          
       Orders orders = Orders();         
       
@@ -61,7 +54,7 @@ void OnTick()
          
          if(IS_ORDER_ACTIVE) {
             
-            journal.CloseScreenshot(Symbol(), ORDERS_LIST[0]);
+            journal.CloseScreenshot(ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = False;
             management.DeleteLevels();
          }
@@ -70,7 +63,7 @@ void OnTick()
          
          if(!IS_ORDER_ACTIVE) {
          
-            journal.OpenScreenshot(Symbol(), ORDERS_LIST[0]);
+            journal.OpenScreenshot(ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = True;
          }
          

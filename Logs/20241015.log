@@ -1,0 +1,515 @@
+0	10:14:35.106	Expert tpCalculator EURUSD,H1: loaded successfully
+0	10:14:35.215	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	10:14:40.303	tpCalculator GBPUSD,H1: initialized
+0	10:14:40.306	tpCalculator EURUSD,H1: initialized
+0	10:14:49.695	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	10:14:49.734	Management -SetLevels EURUSD,H1: initialized
+0	10:14:49.734	Management -SetLevels EURUSD,H1: uninit reason 0
+0	10:14:49.739	Script Management -SetLevels EURUSD,H1: removed
+0	10:15:14.606	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:15:14.662	Orders - PlaceOrder EURUSD,H1: initialized
+2	10:15:14.906	Orders - PlaceOrder EURUSD,H1: open #23784459 buy 14.10 EURUSD at 1.09068 sl: 1.09032 tp: 1.09148 ok
+0	10:15:14.907	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:15:14.913	Script Orders - PlaceOrder EURUSD,H1: removed
+2	10:15:21.642	tpCalculator EURUSD,H1: modify #23784459 buy 14.10 EURUSD at 1.09068 sl: 1.09032 tp: 1.09081 ok
+2	10:15:21.893	tpCalculator EURUSD,H1: modify #23784459 buy 14.10 EURUSD at 1.09068 sl: 1.09032 tp: 1.09077 ok
+2	10:15:23.654	tpCalculator EURUSD,H1: modify #23784459 buy 14.10 EURUSD at 1.09068 sl: 1.09032 tp: 1.09074 ok
+2	10:15:25.655	tpCalculator EURUSD,H1: modify #23784459 buy 14.10 EURUSD at 1.09068 sl: 1.09032 tp: 1.09076 ok
+0	10:15:30.000	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	10:15:30.109	Management -SetLevels GBPUSD,H1: initialized
+0	10:15:30.110	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	10:15:30.132	Script Management -SetLevels GBPUSD,H1: removed
+0	10:15:40.782	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:15:40.840	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:15:40.840	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:15:42.780	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:15:42.795	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:15:47.075	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:15:47.273	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:15:47.273	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:15:48.875	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:15:48.880	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:15:53.771	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:15:53.805	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:15:53.805	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:15:55.143	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:15:55.147	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:16:01.946	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:16:01.975	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:16:01.975	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:16:11.611	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:16:11.615	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:16:31.800	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:16:31.829	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:16:31.829	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:17:05.272	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:17:05.278	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:17:07.620	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:17:07.656	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:17:07.656	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:17:13.717	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:17:13.722	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:17:54.579	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:17:54.617	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:17:54.617	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:19:23.706	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:19:23.708	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:27:26.753	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:27:26.778	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:27:26.778	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:27:29.759	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:27:29.763	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:27:41.653	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:27:41.678	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:27:41.678	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:27:44.388	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:27:44.393	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:27:59.417	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:27:59.446	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:27:59.446	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:28:01.607	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:28:01.615	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:28:23.353	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:28:23.376	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:28:23.376	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:28:25.153	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:28:25.158	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:28:39.118	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:28:39.142	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:28:39.142	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:28:39.142	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:28:39.144	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:28:40.505	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:28:40.526	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:28:40.526	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:28:40.526	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:28:40.529	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:28:44.953	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:28:44.975	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:28:44.975	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:28:44.975	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:28:44.977	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:29:28.032	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:29:28.057	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:29:28.057	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:31:13.097	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:31:13.102	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:31:50.903	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:31:50.922	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:31:50.922	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:31:55.602	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:31:55.605	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:33:03.020	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:33:03.052	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:33:03.052	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:33:07.466	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:33:07.470	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:33:23.032	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:33:23.056	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:33:23.056	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:33:33.702	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:33:33.706	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:34:34.225	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:34:34.246	Orders - PlaceOrder EURUSD,H1: initialized
+0	10:34:36.809	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:34:36.812	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:34:53.548	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:34:53.700	Orders - PlaceOrder EURUSD,H1: initialized
+0	10:34:55.420	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:34:55.427	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:35:07.132	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:35:07.159	Orders - PlaceOrder EURUSD,H1: initialized
+0	10:35:10.293	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:35:10.301	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:35:28.277	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:35:28.299	Orders - PlaceOrder EURUSD,H1: initialized
+0	10:35:30.158	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:35:30.162	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:35:46.203	Script Testbed EURUSD,H1: loaded successfully
+0	10:35:46.228	Testbed EURUSD,H1: initialized
+0	10:35:46.239	Testbed EURUSD,H1: uninit reason 0
+0	10:35:46.242	Script Testbed EURUSD,H1: removed
+0	10:35:47.474	Script Testbed EURUSD,H1: loaded successfully
+0	10:35:47.498	Testbed EURUSD,H1: initialized
+0	10:35:47.510	Testbed EURUSD,H1: uninit reason 0
+0	10:35:47.514	Script Testbed EURUSD,H1: removed
+0	10:35:52.471	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:35:52.506	Orders - PlaceOrder EURUSD,H1: initialized
+0	10:36:00.172	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:36:00.176	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:36:09.695	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:36:09.732	Orders - PlaceOrder EURUSD,H1: initialized
+0	10:36:16.556	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:36:16.561	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:36:36.589	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:36:36.617	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:36:36.617	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:36:41.342	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:36:41.345	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:36:49.371	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:36:49.397	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:36:49.397	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:36:52.615	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:36:52.618	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:36:59.323	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:36:59.346	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:36:59.346	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:37:03.820	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:37:03.822	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:37:50.299	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:37:50.320	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:37:50.320	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:37:55.556	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:37:55.560	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:40:07.503	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:40:07.524	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:40:07.524	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:40:09.313	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:40:09.319	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:40:23.551	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:40:23.572	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:40:23.572	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:40:25.532	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:40:25.536	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:40:49.148	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:40:49.181	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:40:49.181	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:40:49.181	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:40:49.182	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:40:50.230	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:40:50.252	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:40:50.252	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:40:50.252	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:40:50.255	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:40:51.113	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:40:51.134	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:40:51.134	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:40:51.134	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:40:51.137	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:41:45.396	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:41:45.417	Orders - PlaceOrder GBPUSD,H1: initialized
+3	10:41:45.417	Orders - PlaceOrder GBPUSD,H1: invalid lots amount for OrderSend function
+0	10:41:47.685	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:41:47.692	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:42:00.606	Script Testbed GBPUSD,H1: loaded successfully
+0	10:42:00.641	Testbed GBPUSD,H1: initialized
+0	10:42:00.651	Testbed GBPUSD,H1: uninit reason 0
+0	10:42:00.654	Script Testbed GBPUSD,H1: removed
+0	10:42:02.357	Script Testbed GBPUSD,H1: loaded successfully
+0	10:42:02.391	Testbed GBPUSD,H1: initialized
+0	10:42:02.402	Testbed GBPUSD,H1: uninit reason 0
+0	10:42:02.405	Script Testbed GBPUSD,H1: removed
+0	10:42:40.448	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:42:40.471	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:42:47.374	Orders - PlaceOrder GBPUSD,H1: open #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30742 ok
+0	10:42:47.374	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:42:47.381	Script Orders - PlaceOrder GBPUSD,H1: removed
+2	10:42:47.668	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30718 ok
+0	10:43:05.020	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:43:05.041	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:43:09.154	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30903 tp: 1.30718 ok
+2	10:43:09.405	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30920 tp: 1.30718 ok
+2	10:43:09.608	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30718 ok
+0	10:43:23.593	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:43:23.596	Script Orders - PlaceOrder GBPUSD,H1: removed
+2	10:44:25.124	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30726 ok
+2	10:44:25.655	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30811 ok
+2	10:44:25.952	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30821 ok
+2	10:44:26.231	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30824 ok
+2	10:44:26.904	tpCalculator GBPUSD,H1: modify #23786557 sell 14.58 GBPUSD at 1.30829 sl: 1.30874 tp: 1.30822 ok
+0	10:46:34.136	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	10:46:34.159	Management -SetLevels GBPUSD,H1: initialized
+0	10:46:34.160	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	10:46:34.163	Script Management -SetLevels GBPUSD,H1: removed
+0	10:46:52.594	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:46:52.620	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:46:54.764	Orders - PlaceOrder GBPUSD,H1: open #23786751 sell 14.32 GBPUSD at 1.30793 sl: 1.30830 tp: 1.30690 ok
+0	10:46:54.764	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:46:54.817	Script Orders - PlaceOrder GBPUSD,H1: removed
+2	10:46:56.200	tpCalculator GBPUSD,H1: modify #23786751 sell 14.32 GBPUSD at 1.30793 sl: 1.30830 tp: 1.30706 ok
+0	10:51:16.083	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	10:51:16.111	Management -SetLevels EURUSD,H1: initialized
+0	10:51:16.111	Management -SetLevels EURUSD,H1: uninit reason 0
+0	10:51:16.115	Script Management -SetLevels EURUSD,H1: removed
+0	10:51:18.996	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	10:51:19.029	Management -SetLevels GBPUSD,H1: initialized
+0	10:51:19.029	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	10:51:19.033	Script Management -SetLevels GBPUSD,H1: removed
+0	10:51:26.265	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:51:26.289	Orders - PlaceOrder GBPUSD,H1: initialized
+0	10:51:28.333	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:51:28.336	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:51:33.010	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:51:33.035	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:51:33.263	Orders - PlaceOrder GBPUSD,H1: open #23787100 sell 20.05 GBPUSD at 1.30847 sl: 1.30891 tp: 1.30750 ok
+0	10:51:33.263	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:51:33.266	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:52:51.171	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	10:52:51.200	Management -SetLevels GBPUSD,H1: initialized
+0	10:52:51.200	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	10:52:51.206	Script Management -SetLevels GBPUSD,H1: removed
+0	10:52:56.370	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:52:56.396	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:52:56.610	Orders - PlaceOrder GBPUSD,H1: open #23787157 sell 11.24 GBPUSD at 1.30897 sl: 1.30933 tp: 1.30809 ok
+0	10:52:56.610	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:52:56.613	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	10:54:44.870	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	10:54:44.896	Orders - PlaceOrder EURUSD,H1: initialized
+2	10:54:45.106	Orders - PlaceOrder EURUSD,H1: open #23787262 buy 13.93 EURUSD at 1.09083 sl: 1.09048 tp: 1.09160 ok
+0	10:54:45.106	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	10:54:45.110	Script Orders - PlaceOrder EURUSD,H1: removed
+0	10:56:24.265	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	10:56:24.299	Management -SetLevels GBPUSD,H1: initialized
+0	10:56:24.300	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	10:56:24.302	Script Management -SetLevels GBPUSD,H1: removed
+0	10:56:35.327	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:56:35.351	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:56:35.561	Orders - PlaceOrder GBPUSD,H1: open #23787347 sell 14.78 GBPUSD at 1.30962 sl: 1.30995 tp: 1.30871 ok
+0	10:56:35.561	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:56:35.565	Script Orders - PlaceOrder GBPUSD,H1: removed
+2	10:56:36.232	tpCalculator GBPUSD,H1: modify #23787347 sell 14.78 GBPUSD at 1.30962 sl: 1.30995 tp: 1.30891 ok
+0	10:59:02.950	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	10:59:02.975	Management -SetLevels GBPUSD,H1: initialized
+0	10:59:02.975	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	10:59:02.978	Script Management -SetLevels GBPUSD,H1: removed
+0	10:59:08.961	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	10:59:08.984	Orders - PlaceOrder GBPUSD,H1: initialized
+2	10:59:09.200	Orders - PlaceOrder GBPUSD,H1: open #23787438 sell 14.15 GBPUSD at 1.30935 sl: 1.30974 tp: 1.30842 ok
+0	10:59:09.201	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	10:59:09.207	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	11:00:24.129	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	11:00:24.159	Management -SetLevels GBPUSD,H1: initialized
+0	11:00:24.159	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	11:00:24.161	Script Management -SetLevels GBPUSD,H1: removed
+0	11:00:30.856	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	11:00:30.881	Orders - PlaceOrder GBPUSD,H1: initialized
+2	11:00:31.108	Orders - PlaceOrder GBPUSD,H1: open #23787564 sell 16.07 GBPUSD at 1.30920 sl: 1.30955 tp: 1.30847 ok
+0	11:00:31.108	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	11:00:31.110	Script Orders - PlaceOrder GBPUSD,H1: removed
+2	11:00:31.482	tpCalculator GBPUSD,H1: modify #23787564 sell 16.07 GBPUSD at 1.30920 sl: 1.30955 tp: 1.30839 ok
+0	11:49:34.513	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	11:49:34.536	Management -SetLevels GBPUSD,H1: initialized
+0	11:49:34.536	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	11:49:34.539	Script Management -SetLevels GBPUSD,H1: removed
+0	11:49:53.254	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	11:49:53.279	Orders - PlaceOrder GBPUSD,H1: initialized
+0	11:49:55.164	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	11:49:55.168	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	11:50:00.590	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	11:50:00.621	Orders - PlaceOrder GBPUSD,H1: initialized
+2	11:50:00.795	Orders - PlaceOrder GBPUSD,H1: open #23789526 sell 13.90 GBPUSD at 1.30834 sl: 1.30872 tp: 1.30740 ok
+0	11:50:00.795	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	11:50:00.798	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	11:51:08.253	Script Management -SetLevels EURUSD,H1: loaded successfully
+0	11:51:08.281	Management -SetLevels EURUSD,H1: initialized
+0	11:51:08.282	Management -SetLevels EURUSD,H1: uninit reason 0
+0	11:51:08.284	Script Management -SetLevels EURUSD,H1: removed
+0	11:51:19.428	Script Orders-CloseOrder EURUSD,H1: loaded successfully
+0	11:51:19.464	Orders-CloseOrder EURUSD,H1: initialized
+0	11:51:19.464	Orders-CloseOrder EURUSD,H1: uninit reason 0
+0	11:51:19.469	Script Orders-CloseOrder EURUSD,H1: removed
+0	11:51:25.127	Script Orders - PlaceOrder EURUSD,H1: loaded successfully
+0	11:51:25.160	Orders - PlaceOrder EURUSD,H1: initialized
+2	11:51:25.390	Orders - PlaceOrder EURUSD,H1: open #23789580 buy 13.36 EURUSD at 1.09033 sl: 1.08998 tp: 1.09110 ok
+0	11:51:25.390	Orders - PlaceOrder EURUSD,H1: uninit reason 0
+0	11:51:25.393	Script Orders - PlaceOrder EURUSD,H1: removed
+0	12:27:29.711	tpCalculator EURUSD,H1: uninit reason 9
+0	12:27:29.712	tpCalculator GBPUSD,H1: uninit reason 9
+0	12:27:29.787	Expert tpCalculator EURUSD,H1: removed
+0	12:27:29.800	Expert tpCalculator GBPUSD,H1: removed
+0	13:59:21.010	Expert tpCalculator EURUSD,H1: loaded successfully
+0	13:59:21.240	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	13:59:26.127	tpCalculator EURUSD,H1: initialized
+0	13:59:26.134	tpCalculator GBPUSD,H1: initialized
+0	14:03:17.959	Script Testbed GBPUSD,H1: loaded successfully
+0	14:03:17.981	Testbed GBPUSD,H1: initialized
+0	14:03:17.983	Testbed GBPUSD,H1: uninit reason 0
+0	14:03:17.985	Script Testbed GBPUSD,H1: removed
+0	14:03:42.478	Script Testbed GBPUSD,H1: loaded successfully
+0	14:03:42.504	Testbed GBPUSD,H1: initialized
+0	14:03:42.504	Testbed GBPUSD,H1: uninit reason 0
+0	14:03:42.506	Script Testbed GBPUSD,H1: removed
+0	14:03:53.064	Script Testbed GBPUSD,H1: loaded successfully
+0	14:03:53.087	Testbed GBPUSD,H1: initialized
+0	14:03:53.087	Testbed GBPUSD,H1: uninit reason 0
+0	14:03:53.090	Script Testbed GBPUSD,H1: removed
+0	14:10:03.434	Script Testbed GBPUSD,H1: loaded successfully
+0	14:10:03.458	Testbed GBPUSD,H1: initialized
+0	14:10:05.428	Testbed GBPUSD,H1: uninit reason 0
+0	14:10:05.434	Script Testbed GBPUSD,H1: removed
+0	14:10:19.165	Script Testbed GBPUSD,H1: loaded successfully
+0	14:10:19.198	Testbed GBPUSD,H1: initialized
+0	14:10:21.631	Testbed GBPUSD,H1: uninit reason 0
+0	14:10:21.634	Script Testbed GBPUSD,H1: removed
+0	14:11:08.917	Script Testbed GBPUSD,H1: loaded successfully
+0	14:11:08.936	Testbed GBPUSD,H1: initialized
+0	14:11:14.935	Testbed GBPUSD,H1: uninit reason 0
+0	14:11:14.938	Script Testbed GBPUSD,H1: removed
+0	14:11:26.869	Script Testbed GBPUSD,H1: loaded successfully
+0	14:11:26.890	Testbed GBPUSD,H1: initialized
+0	14:13:02.515	Testbed GBPUSD,H1: uninit reason 0
+0	14:13:02.518	Script Testbed GBPUSD,H1: removed
+0	14:13:34.725	Script Testbed GBPUSD,H1: loaded successfully
+0	14:13:34.765	Testbed GBPUSD,H1: initialized
+0	14:13:36.654	Testbed GBPUSD,H1: uninit reason 0
+0	14:13:36.658	Script Testbed GBPUSD,H1: removed
+0	14:20:17.251	Script Testbed GBPUSD,H1: loaded successfully
+0	14:20:17.272	Testbed GBPUSD,H1: initialized
+0	14:20:19.972	Testbed GBPUSD,H1: uninit reason 0
+0	14:20:19.976	Script Testbed GBPUSD,H1: removed
+0	14:20:22.419	Script Testbed GBPUSD,H1: loaded successfully
+0	14:20:22.446	Testbed GBPUSD,H1: initialized
+0	14:20:24.996	Testbed GBPUSD,H1: uninit reason 0
+0	14:20:24.998	Script Testbed GBPUSD,H1: removed
+0	14:20:29.562	Script Testbed GBPUSD,H1: loaded successfully
+0	14:20:29.584	Testbed GBPUSD,H1: initialized
+0	14:20:33.490	Testbed GBPUSD,H1: uninit reason 0
+0	14:20:33.493	Script Testbed GBPUSD,H1: removed
+0	14:21:36.804	Script Testbed GBPUSD,H1: loaded successfully
+0	14:21:36.824	Testbed GBPUSD,H1: initialized
+0	14:21:41.535	Testbed GBPUSD,H1: uninit reason 0
+0	14:21:41.538	Script Testbed GBPUSD,H1: removed
+0	14:22:57.901	Script Testbed GBPUSD,H1: loaded successfully
+0	14:22:57.924	Testbed GBPUSD,H1: initialized
+0	14:23:02.735	Testbed GBPUSD,H1: uninit reason 0
+0	14:23:02.739	Script Testbed GBPUSD,H1: removed
+0	14:23:17.172	Script Testbed GBPUSD,H1: loaded successfully
+0	14:23:17.196	Testbed GBPUSD,H1: initialized
+0	14:23:17.197	Testbed GBPUSD,H1: uninit reason 0
+0	14:23:17.199	Script Testbed GBPUSD,H1: removed
+0	15:24:12.292	Script Testbed GBPUSD,H1: loaded successfully
+0	15:24:12.318	Testbed GBPUSD,H1: initialized
+0	15:25:53.680	Testbed GBPUSD,H1: uninit reason 0
+0	15:25:53.682	Script Testbed GBPUSD,H1: removed
+0	15:29:29.400	Script Testbed GBPUSD,H1: loaded successfully
+0	15:29:29.422	Testbed GBPUSD,H1: initialized
+0	15:29:31.574	Testbed GBPUSD,H1: uninit reason 0
+0	15:29:31.577	Script Testbed GBPUSD,H1: removed
+0	15:29:34.056	Script Testbed GBPUSD,H1: loaded successfully
+0	15:29:34.075	Testbed GBPUSD,H1: initialized
+0	15:29:34.827	Testbed GBPUSD,H1: uninit reason 0
+0	15:29:34.830	Script Testbed GBPUSD,H1: removed
+0	15:29:35.507	Script Testbed GBPUSD,H1: loaded successfully
+0	15:29:35.528	Testbed GBPUSD,H1: initialized
+0	15:29:36.147	Testbed GBPUSD,H1: uninit reason 0
+0	15:29:36.150	Script Testbed GBPUSD,H1: removed
+0	15:30:25.244	Script Testbed GBPUSD,H1: loaded successfully
+0	15:30:25.271	Testbed GBPUSD,H1: initialized
+0	15:32:29.391	Testbed GBPUSD,H1: uninit reason 0
+0	15:32:29.394	Script Testbed GBPUSD,H1: removed
+0	15:34:22.465	Script Testbed GBPUSD,H1: loaded successfully
+0	15:34:22.491	Testbed GBPUSD,H1: initialized
+0	15:35:29.091	Testbed GBPUSD,H1: uninit reason 0
+0	15:35:29.093	Script Testbed GBPUSD,H1: removed
+0	15:41:29.766	Script Testbed GBPUSD,H1: loaded successfully
+0	15:41:29.792	Testbed GBPUSD,H1: initialized
+0	15:43:17.968	Testbed GBPUSD,H1: uninit reason 0
+0	15:43:17.971	Script Testbed GBPUSD,H1: removed
+0	15:45:40.494	Script Testbed GBPUSD,H1: loaded successfully
+0	15:45:40.534	Testbed GBPUSD,H1: initialized
+0	15:45:40.534	Testbed GBPUSD,H1: uninit reason 0
+0	15:45:40.537	Script Testbed GBPUSD,H1: removed
+0	15:45:41.663	Script Testbed GBPUSD,H1: loaded successfully
+0	15:45:41.724	Testbed GBPUSD,H1: initialized
+0	15:45:41.724	Testbed GBPUSD,H1: uninit reason 0
+0	15:45:41.727	Script Testbed GBPUSD,H1: removed
+0	15:46:22.276	Script Testbed GBPUSD,H1: loaded successfully
+0	15:46:22.305	Testbed GBPUSD,H1: initialized
+0	15:46:30.311	Testbed GBPUSD,H1: uninit reason 0
+0	15:46:30.314	Script Testbed GBPUSD,H1: removed
+0	15:46:44.523	Script Testbed GBPUSD,H1: loaded successfully
+0	15:46:44.547	Testbed GBPUSD,H1: initialized
+0	15:46:46.793	Testbed GBPUSD,H1: uninit reason 0
+0	15:46:46.795	Script Testbed GBPUSD,H1: removed
+0	15:47:05.976	Script Testbed GBPUSD,H1: loaded successfully
+0	15:47:06.028	Testbed GBPUSD,H1: initialized
+0	15:47:31.139	Testbed GBPUSD,H1: uninit reason 0
+0	15:47:31.142	Script Testbed GBPUSD,H1: removed
+0	15:49:04.377	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:04.404	Testbed GBPUSD,H1: initialized
+0	15:49:11.202	Testbed GBPUSD,H1: uninit reason 0
+0	15:49:11.204	Script Testbed GBPUSD,H1: removed
+0	15:49:20.228	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:20.249	Testbed GBPUSD,H1: initialized
+0	15:49:34.411	Testbed GBPUSD,H1: uninit reason 0
+0	15:49:34.414	Script Testbed GBPUSD,H1: removed
+0	15:49:39.588	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:39.608	Testbed GBPUSD,H1: initialized
+0	15:49:47.845	Testbed GBPUSD,H1: uninit reason 0
+0	15:49:47.848	Script Testbed GBPUSD,H1: removed
+0	15:49:56.246	Script Testbed GBPUSD,H1: loaded successfully
+0	15:49:56.270	Testbed GBPUSD,H1: initialized
+0	15:50:01.453	Testbed GBPUSD,H1: uninit reason 0
+0	15:50:01.456	Script Testbed GBPUSD,H1: removed
+0	15:50:09.133	Script Testbed GBPUSD,H1: loaded successfully
+0	15:50:09.154	Testbed GBPUSD,H1: initialized
+0	15:50:24.005	Testbed GBPUSD,H1: uninit reason 0
+0	15:50:24.007	Script Testbed GBPUSD,H1: removed
+0	15:50:33.441	Script Testbed GBPUSD,H1: loaded successfully
+0	15:50:33.464	Testbed GBPUSD,H1: initialized
+0	15:50:43.582	Testbed GBPUSD,H1: uninit reason 0
+0	15:50:43.590	Script Testbed GBPUSD,H1: removed
+3	15:51:03.862	cannot open file 'C:\Users\alexa\AppData\Roaming\MetaQuotes\Terminal\2010C2441A263399B34F537D91A53AC9\MQL4\Scripts\Testbed.ex4' [2]
+3	15:51:05.305	cannot open file 'C:\Users\alexa\AppData\Roaming\MetaQuotes\Terminal\2010C2441A263399B34F537D91A53AC9\MQL4\Scripts\Testbed.ex4' [2]
+0	15:51:14.091	Script Testbed GBPUSD,H1: loaded successfully
+0	15:51:14.117	Testbed GBPUSD,H1: initialized
+0	15:51:28.188	Testbed GBPUSD,H1: uninit reason 0
+0	15:51:28.191	Script Testbed GBPUSD,H1: removed
+0	15:54:08.641	Script Testbed GBPUSD,H1: loaded successfully
+0	15:54:08.665	Testbed GBPUSD,H1: initialized
+0	15:54:17.811	Testbed GBPUSD,H1: uninit reason 0
+0	15:54:17.813	Script Testbed GBPUSD,H1: removed
+0	15:58:02.245	tpCalculator EURUSD,H1: uninit reason 2
+0	15:58:02.248	Expert tpCalculator EURUSD,H1: removed
+0	15:58:02.267	Expert tpCalculator EURUSD,H1: loaded successfully
+0	15:58:02.268	tpCalculator GBPUSD,H1: uninit reason 2
+0	15:58:02.271	Expert tpCalculator GBPUSD,H1: removed
+0	15:58:02.291	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	15:58:02.311	tpCalculator EURUSD,H1: initialized
+0	15:58:02.337	tpCalculator GBPUSD,H1: initialized
+0	15:58:19.967	tpCalculator EURUSD,H1: uninit reason 4
+0	15:58:19.978	Expert tpCalculator EURUSD,H1: removed
+0	15:58:20.910	tpCalculator GBPUSD,H1: uninit reason 4
+0	15:58:20.929	Expert tpCalculator GBPUSD,H1: removed
+0	15:58:29.284	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	15:58:38.750	tpCalculator GBPUSD,H1: initialized
+0	15:59:10.128	Script Management -SetLevels GBPUSD,H1: loaded successfully
+0	15:59:10.153	Management -SetLevels GBPUSD,H1: initialized
+0	15:59:10.153	Management -SetLevels GBPUSD,H1: uninit reason 0
+0	15:59:10.156	Script Management -SetLevels GBPUSD,H1: removed
+0	15:59:12.430	Script Orders - PlaceOrder GBPUSD,H1: loaded successfully
+0	15:59:12.452	Orders - PlaceOrder GBPUSD,H1: initialized
+2	15:59:12.649	Orders - PlaceOrder GBPUSD,H1: open #23795861 buy 5.93 GBPUSD at 1.30690 sl: 1.30590 tp: 1.30974 ok
+0	15:59:12.649	Orders - PlaceOrder GBPUSD,H1: uninit reason 0
+0	15:59:12.652	Script Orders - PlaceOrder GBPUSD,H1: removed
+0	15:59:27.588	Script Orders-CloseOrder GBPUSD,H1: loaded successfully
+0	15:59:27.608	Orders-CloseOrder GBPUSD,H1: initialized
+2	15:59:27.802	Orders-CloseOrder GBPUSD,H1: close #23795861 buy 5.93 GBPUSD at 1.30690 sl: 1.30590 tp: 1.30974 at price 1.30655
+0	15:59:27.802	Orders-CloseOrder GBPUSD,H1: uninit reason 0
+0	15:59:27.806	Script Orders-CloseOrder GBPUSD,H1: removed
+0	16:02:08.709	Script Testbed GBPUSD,H1: loaded successfully
+0	16:02:08.730	Testbed GBPUSD,H1: initialized
+0	16:02:08.742	Testbed GBPUSD,H1: uninit reason 0
+0	16:02:08.745	Script Testbed GBPUSD,H1: removed
+0	16:07:54.564	Script Testbed GBPUSD,H1: loaded successfully
+0	16:07:54.588	Testbed GBPUSD,H1: initialized
+0	16:07:59.633	Testbed GBPUSD,H1: uninit reason 0
+0	16:07:59.636	Script Testbed GBPUSD,H1: removed
+0	16:08:48.923	Script Testbed GBPUSD,H4: loaded successfully
+0	16:08:48.947	Testbed GBPUSD,H4: initialized
+0	16:09:29.892	Testbed GBPUSD,H4: uninit reason 0
+0	16:09:29.897	Script Testbed GBPUSD,H4: removed
+0	16:11:35.019	Script Testbed GBPUSD,H1: loaded successfully
+0	16:11:35.040	Testbed GBPUSD,H1: initialized
+0	16:11:36.617	Testbed GBPUSD,H1: uninit reason 0
+0	16:11:36.621	Script Testbed GBPUSD,H1: removed
+0	16:11:38.606	Script Testbed GBPUSD,H4: loaded successfully
+0	16:11:38.631	Testbed GBPUSD,H4: initialized
+0	16:11:40.231	Testbed GBPUSD,H4: uninit reason 0
+0	16:11:40.234	Script Testbed GBPUSD,H4: removed
+0	16:17:16.351	tpCalculator GBPUSD,H1: uninit reason 2
+0	16:17:16.356	Expert tpCalculator GBPUSD,H1: removed
+0	16:17:16.387	Expert tpCalculator GBPUSD,H1: loaded successfully
+0	16:17:16.423	tpCalculator GBPUSD,H1: initialized
+0	16:41:44.834	tpCalculator GBPUSD,H1: uninit reason 9
+0	16:41:44.971	Expert tpCalculator GBPUSD,H1: removed

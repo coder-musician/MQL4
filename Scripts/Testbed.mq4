@@ -7,13 +7,19 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
+
+#include "..\Include\Custom\Management.mqh"
+#include "..\Include\Custom\Orders.mqh"
+#include "..\Include\Custom\Journal.mqh"
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
+   
 void OnStart()
   {
 //---
    
+   MessageBox(ChartID());
    
   }
 //+------------------------------------------------------------------+

@@ -19,8 +19,6 @@ void OnStart()
       Orders order = Orders();
       order.GetOrdersList();
       
-      
-      
       for(int i=0; i<ArraySize(ORDERS_LIST); i++) {
          
          if(ORDERS_LIST[i] == 0)

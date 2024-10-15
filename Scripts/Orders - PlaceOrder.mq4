@@ -18,17 +18,6 @@ int STANDARD_LOT_VALUE = 100000;
 double DECIMALS = 0.0001;
 double MULTIPLIER = 10000;
 
-void GetSummary() {      
-      
-      string summary = "ORDER_TICKET: " + IntegerToString(ORDER_TICKET) + "\n" +
-      "ORDER_OPEN_PRICE: " + DoubleToString(ORDER_OPEN_PRICE) + "\n" +
-      "ORDER_PROFIT_PRICE: " + DoubleToString(ORDER_PROFIT_PRICE) + "\n" +
-      "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
-      "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n";
-      
-      MessageBox(summary);
-   }
-
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
@@ -44,7 +33,7 @@ void OnStart()
       ORDER_RISK_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
       
       
-      if(STOP_RISK_BID_PRICE < Bid) {
+      if(ORDER_RISK_PRICE < Bid) {
          
          ORDER_OPERATION = OP_BUY;
          ORDER_OPEN_PRICE = Ask;         
@@ -57,6 +46,7 @@ void OnStart()
          ORDER_OPEN_PRICE = Bid;
          
          RISKED_PIPS = (ORDER_RISK_PRICE - ORDER_OPEN_PRICE);
+         
       }
       
       RISKED_PIPS = ((RISKED_PIPS+(Ask-Bid))*MULTIPLIER);
@@ -79,6 +69,14 @@ void OnStart()
       } 
       else {
       
-         GetSummary();
-      }
+         string summary = "ORDER_TICKET: " + IntegerToString(ORDER_TICKET) + "\n" +
+            "ORDER_OPEN_PRICE: " + DoubleToString(ORDER_OPEN_PRICE) + "\n" +
+            "ORDER_PROFIT_PRICE: " + DoubleToString(ORDER_PROFIT_PRICE) + "\n" +
+            "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
+            "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n" + 
+            "AMOUNT_RISKED: " + DoubleToString(ORDER_LOTS) + "\n";
+            
+         MessageBox(summary);
+   }
 }
+

@@ -70,8 +70,8 @@ public:
    void OpenScreenshot(int orderid) {
    
          string name = "ORDER." + IntegerToString(orderid);
-         string ltf = name + "LTF-Open";
-         string htf = name + "HTF-Open";
+         string ltf = name + "-LTF-Open";
+         string htf = name + "-HTF-Open";
   
          TakeShot(ChartID(),ltf);
          TakeShot(ChartNext(ChartID()), htf);
@@ -80,8 +80,8 @@ public:
    void CloseScreenshot(int orderid) {
   
          string name = "ORDER." + IntegerToString(orderid);
-         string ltf = name + "LTF-Close";
-         string htf = name + "HTF-Close";
+         string ltf = name + "-LTF-Close";
+         string htf = name + "-HTF-Close";
   
          TakeShot(ChartID(),ltf);
          TakeShot(ChartNext(ChartID()), htf);

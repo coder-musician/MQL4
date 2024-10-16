@@ -156,3 +156,4 @@
 0	09:31:02.366	Script Orders - PlaceOrder GBPUSD,H1: removed
 0	09:33:31.019	tpCalculator GBPUSD,H1: uninit reason 9
 0	09:33:31.191	Expert tpCalculator GBPUSD,H1: removed
+0	09:33:37.151	Expert tpCalculator GBPUSD,H1: loaded successfully

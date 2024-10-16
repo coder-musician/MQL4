@@ -28,13 +28,13 @@ private:
    
    string CreateFolder() {
    
-      string folder = Symbol() + "\\" + GetDate();      
+      string folder = Symbol() + "\\" + IntegerToString(Year()) + "." + IntegerToString(Month()) + "\\" +  GetDate();      
       bool result = FolderCreate(folder,0);
       
       return folder;
    }
    
-   void TakeShot(int chartid, string desc) {
+   void TakeShot(long chartid, string desc) {
       
       string folder = CreateFolder();
       
@@ -53,34 +53,41 @@ public:
   
   void MarketScreenshot() {
             
-         TakeShot(0, "Market");
+         TakeShot(ChartID(), "Market");
+   }
+   
+   void MarketHTFScreenshot() {
+            
+         TakeShot(ChartNext(ChartID()), "Market-HTF");
    }
    
    void CustomScreenshot() {
   
-         TakeShot(0, "Custom");
+         TakeShot(ChartID(), "Custom");
+         TakeShot(ChartNext(ChartID()), "Custom-HTF");
    }
    
    void OpenScreenshot(int orderid) {
    
-         string name = "ORDER." + IntegerToString(orderid) + "-Open";
+         string name = "ORDER." + IntegerToString(orderid);
+         string ltf = name + "LTF-Open";
+         string htf = name + "HTF-Open";
   
-         TakeShot(0, name);
+         TakeShot(ChartID(),ltf);
+         TakeShot(ChartNext(ChartID()), htf);
    }
    
    void CloseScreenshot(int orderid) {
   
-         string name = "ORDER." + IntegerToString(orderid) + "-Close";
+         string name = "ORDER." + IntegerToString(orderid);
+         string ltf = name + "LTF-Close";
+         string htf = name + "HTF-Close";
   
-         TakeShot(0, name);
+         TakeShot(ChartID(),ltf);
+         TakeShot(ChartNext(ChartID()), htf);
    }
    
-   void HTFScreenshot(int orderid, int chartid) {
-  
-         string name = "ORDER." + IntegerToString(orderid) + "-HTF";
-  
-         TakeShot(chartid, name);
-   }   
+   
    
   };
 //+------------------------------------------------------------------+

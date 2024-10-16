@@ -8,7 +8,6 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Management.mqh"
 #include "..\Include\Custom\Orders.mqh"
 
 

@@ -16,7 +16,7 @@ void OnStart()
   {
 //---
       Journal journal = Journal();
-      
       journal.CustomScreenshot();
+      
   }
 //+------------------------------------------------------------------+

@@ -10,7 +10,6 @@
 
 int IMAGE_XPIX = 615;
 int IMAGE_YPIX = 882;
-string extension = ".png";
 
 class Journal
   {
@@ -26,21 +25,36 @@ private:
       return date;
    }
    
-   string CreateFolder() {
+   string GetPairPath() {
    
-      string folder = Symbol() + "\\" + IntegerToString(Year()) + "." + IntegerToString(Month()) + "\\" +  GetDate();      
-      bool result = FolderCreate(folder,0);
+      string path = IntegerToString(Year()) + "." + IntegerToString(Month()) + "\\" + GetDate() + "\\" + Symbol() + "\\";  
       
-      return folder;
+      return path;
    }
    
-   void TakeShot(long chartid, string desc) {
+   string GetImageName() {
       
-      string folder = CreateFolder();
+      string image = StringSubstr(IntegerToString(TimeCurrent()),5,0) + "-" + "XXX" + "-" +
+                           Symbol() + "-" + GetDate() + ".png";
+                        
+      return image;
+   }
+   
+   void TakeLTFShot(long chartid, string desc) {
       
-      string fullpath = folder + "\\" + 
-         StringSubstr(IntegerToString(TimeCurrent()),5,0) + "-" + 
-         Symbol() + "-" + GetDate() + "-" + desc + extension;      
+      string fullpath = GetPairPath() + "LTF\\" + GetImageName();
+      int replace = StringReplace(fullpath, "XXX", desc);
+           
+    
+      bool snapSuccess = ChartScreenShot(chartid, fullpath, 
+         IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
+   }
+   
+   void TakeHTFShot(long chartid, string desc) {
+      
+      string fullpath = GetPairPath() + "HTF\\" + GetImageName();
+      int replace = StringReplace(fullpath, "XXX", desc);
+           
     
       bool snapSuccess = ChartScreenShot(chartid, fullpath, 
          IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
@@ -51,43 +65,55 @@ public:
    Journal();
   ~Journal();
   
-  void MarketScreenshot() {
+  void MarketLTFScreenshot(long chartid) {
             
-         TakeShot(ChartID(), "Market");
+      TakeLTFShot(ChartID(), "Market-LTF");
    }
    
    void MarketHTFScreenshot() {
             
-         TakeShot(ChartNext(ChartID()), "Market-HTF");
+      TakeHTFShot(ChartNext(ChartID()), "Market-HTF");
    }
    
    void CustomScreenshot() {
-  
-         TakeShot(ChartID(), "Custom");
-         TakeShot(ChartNext(ChartID()), "Custom-HTF");
+      
+      string type = "Custom";
+      
+      TakeLTFShot(ChartID(), type);
+      TakeHTFShot(ChartNext(ChartID()), type);
    }
    
    void OpenScreenshot(int orderid) {
+      
+      string desc = "Open-" + IntegerToString(orderid);
+      
+      TakeLTFShot(ChartID(), desc);
+      TakeHTFShot(ChartNext(ChartID()), desc);
+   }
    
-         string name = "ORDER." + IntegerToString(orderid);
-         string ltf = name + "-LTF-Open";
-         string htf = name + "-HTF-Open";
-  
-         TakeShot(ChartID(),ltf);
-         TakeShot(ChartNext(ChartID()), htf);
+   void TradeScreenshot(int orderid) {
+      
+      string desc = "Next-" + IntegerToString(orderid);
+      
+      TakeLTFShot(ChartID(), desc);
+      TakeHTFShot(ChartNext(ChartID()), desc);
    }
    
    void CloseScreenshot(int orderid) {
   
-         string name = "ORDER." + IntegerToString(orderid);
-         string ltf = name + "-LTF-Close";
-         string htf = name + "-HTF-Close";
-  
-         TakeShot(ChartID(),ltf);
-         TakeShot(ChartNext(ChartID()), htf);
+      string desc = "Close-" + IntegerToString(orderid);
+      
+      TakeLTFShot(ChartID(), desc);
+      TakeHTFShot(ChartNext(ChartID()), desc);
    }
    
+   void GetSummary() {
    
+      string message = "ImagePath: " + GetPairPath() + "LTF\\" + GetImageName();
+      CustomScreenshot();
+      MessageBox(message);
+      
+   }
    
   };
 //+------------------------------------------------------------------+

@@ -73,7 +73,8 @@ void OnStart()
             "ORDER_PROFIT_PRICE: " + DoubleToString(ORDER_PROFIT_PRICE) + "\n" +
             "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
             "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n" + 
-            "AMOUNT_RISKED: " + DoubleToString(ORDER_LOTS) + "\n";
+            "AMOUNT_RISKED: " + DoubleToString(ORDER_LOTS) + "\n" +
+            "ERROR: " + IntegerToString(GetLastError()) + "\n";
             
          MessageBox(summary);
    }

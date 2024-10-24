@@ -12,7 +12,21 @@
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
 
-int CANDLES_COUNT = 0;
+int CANDLES_COUNT = Bars;
+
+bool isNewCandle() {
+   
+   bool newCandle = false;
+   
+   if(CANDLES_COUNT < Bars) {
+      
+      newCandle = true;
+      CANDLES_COUNT = Bars;
+   }
+   
+   return newCandle;
+   
+}
 
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
@@ -37,15 +51,9 @@ void OnTick()
       Management management = Management();
       Journal journal = Journal();
       
-      if(CANDLES_COUNT < Bars) {
-         
-         journal.MarketScreenshot();
-         CANDLES_COUNT = Bars;
-      }    
-         
-      Orders orders = Orders();         
-      
+      Orders orders = Orders();
       orders.GetOrdersList();
+      
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
       
       if(!areOrdersActive) {
@@ -58,6 +66,9 @@ void OnTick()
             IS_ORDER_ACTIVE = False;
             management.DeleteLevels();
          }
+         
+         if(isNewCandle())
+            journal.MarketLTFScreenshot(ChartID());
       }
       else {
          
@@ -66,6 +77,9 @@ void OnTick()
             journal.OpenScreenshot(ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = True;
          }
+         
+         if(isNewCandle())
+            journal.TradeScreenshot(ORDERS_LIST[0]);
          
          management.LoadValues();
          

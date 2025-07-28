@@ -12,6 +12,10 @@
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
 
+#include "..\Include\Custom\Indicators\Candlesticks.mqh"
+#include "..\Include\Custom\Indicators\CustomVolume.mqh"
+
+
 int CANDLES_COUNT = Bars;
 
 bool isNewCandle() {
@@ -19,6 +23,9 @@ bool isNewCandle() {
    bool newCandle = false;
    
    if(CANDLES_COUNT < Bars) {
+      
+      //Candlesticks candlesticks = Candlesticks();
+      //candlesticks.UpdateCandlesIndicator();
       
       newCandle = true;
       CANDLES_COUNT = Bars;
@@ -53,6 +60,12 @@ void OnTick()
       
       Orders orders = Orders();
       orders.GetOrdersList();
+      
+      Candlesticks candlesticks = Candlesticks();
+      candlesticks.UpdateCandlesIndicator();
+      
+      CustomVolume customVolume = CustomVolume();
+      customVolume.PlotCustomVolume();
       
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
       

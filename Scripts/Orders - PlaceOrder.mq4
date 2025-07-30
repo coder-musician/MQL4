@@ -103,7 +103,7 @@ void OnStart()
       ORDER_LOTS = (riskedAmount/pipValue)/RISKED_PIPS;
       
       int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, 
-         ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, DoubleToStr(ORDER_RISK_PRICE));
+         ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, DoubleToStr(ORDER_PROFIT_PRICE) + "," + DoubleToStr(ORDER_RISK_PRICE));
       
       if(newOrder != -1) {
       

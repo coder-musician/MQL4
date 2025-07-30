@@ -17,10 +17,11 @@
 int priceDecimals;
 int standardLot = 100000;
 double risk = 0.01;
+string accountCurrency = "USD";
 
 double NormalizePrice(double price) {
 
-   string priceString = price;   
+   string priceString = DoubleToStr(price);
    int priceStringLength = StringLen(priceString);
    int priceEntire = StringFind(priceString,".", 0) + 1;   
    priceDecimals = priceStringLength - priceEntire;
@@ -30,13 +31,12 @@ double NormalizePrice(double price) {
       priceDecimals--;
       priceString = StringSubstr(priceString,0, (priceEntire+priceDecimals));
    }
-   MessageBox(priceString);
+   
    return StringToDouble(priceString);
 }
 
 double valuePerPip() {
    
-   bool isDollarBaseCurrency;
    string baseCurrency = StringSubstr(Symbol(), 0, 3);
    string singlePipString = "0.";
    
@@ -54,7 +54,7 @@ double valuePerPip() {
    
    double pipValue = StringToDouble(singlePipString) / Bid;
    
-   if(baseCurrency != "USD") {
+   if(baseCurrency != accountCurrency) {
    
       pipValue = pipValue * ORDER_OPEN_PRICE;
    }
@@ -112,13 +112,13 @@ void OnStart()
       } 
       else {
       
-         string summary = "ORDER_TICKET: " + ORDER_TICKET + "\n" +
-            "ORDER_OPEN_PRICE: " + ORDER_OPEN_PRICE + "\n" +
-            "ORDER_PROFIT_PRICE: " + ORDER_PROFIT_PRICE + "\n" +
-            "ORDER_RISK_PRICE: " + ORDER_RISK_PRICE + "\n" +
-            "ORDER_LOTS: " + ORDER_LOTS + "\n"+ 
+         string summary = "ORDER_TICKET: " + DoubleToStr(ORDER_TICKET) + "\n" +
+            "ORDER_OPEN_PRICE: " + DoubleToStr(ORDER_OPEN_PRICE) + "\n" +
+            "ORDER_PROFIT_PRICE: " + DoubleToStr(ORDER_PROFIT_PRICE) + "\n" +
+            "ORDER_RISK_PRICE: " + DoubleToStr(ORDER_RISK_PRICE) + "\n" +
+            "ORDER_LOTS: " + DoubleToStr(ORDER_LOTS) + "\n"+ 
             "AMOUNT_RISKED: " + DoubleToString(ORDER_LOTS) + "\n" +
-            "ERROR: " + IntegerToString(GetLastError()) + "\n";
+            "ERROR: " + IntegerToString(GetLastError()) + "\n Enable Auto Trading";
             
          MessageBox(summary);
    }

@@ -11,9 +11,15 @@
 bool IS_ORDER_ACTIVE = False;
 int ORDERS_LIST[10];
 int ORDER_TICKET = 0;
+
+string ORDER_DATE;
+string ORDER_TIME;
+
 double ORDER_OPEN_PRICE = 0;
+
 double ORDER_PROFIT_PRICE = 0;
 double ORDER_RISK_PRICE = 0;
+
 double ORDER_LOTS = 0;
 int ORDER_OPERATION = 0;
 
@@ -120,10 +126,6 @@ public:
       
          GetSummary();
       }
-      
-      
-         
-      
       
       return newOrder;
    }

@@ -35,7 +35,7 @@ private:
       string year = IntegerToString(Year());
       string month = IntegerToString(Month());
       string day = IntegerToString(Day());      
-      string date = year + "." + month + "." + day;
+      string date = year + "." + month;
       
       return date;
    }

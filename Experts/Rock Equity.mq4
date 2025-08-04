@@ -12,7 +12,12 @@
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
 
+#include "..\Include\Custom\Indicators\Candlesticks.mqh"
+#include "..\Include\Custom\Indicators\CustomVolume.mqh"
+
+int HTF = 240;
 int CANDLES_COUNT = Bars;
+
 
 bool isNewCandle() {
    
@@ -25,7 +30,26 @@ bool isNewCandle() {
    }
    
    return newCandle;
-   
+}
+
+void setHFTProperties() {
+
+   if(ChartPeriod() != HTF) {
+      
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BULL, clrAqua);
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BEAR, clrRed);
+         
+         ChartSetInteger(0, CHART_COLOR_CHART_UP, clrTurquoise);
+         ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrRed);
+      }
+      else {
+         
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BULL, clrLimeGreen);
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BEAR, clrCrimson);
+         
+         ChartSetInteger(0, CHART_COLOR_CHART_UP, clrGreen);
+         ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrMaroon);
+      }
 }
 
 //+------------------------------------------------------------------+
@@ -53,6 +77,14 @@ void OnTick()
       
       Orders orders = Orders();
       orders.GetOrdersList();
+      
+      Candlesticks candlesticks = Candlesticks();
+      candlesticks.UpdateCandlesIndicator();
+      
+      CustomVolume customVolume = CustomVolume();
+      customVolume.PlotCustomVolume();
+      
+      setHFTProperties();
       
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
       
@@ -83,7 +115,11 @@ void OnTick()
          
          management.LoadValues();
          
-         double origSL = StringToDouble(OrderComment());
+         string origTPSL[];         
+         StringSplit(OrderComment(), ",", origTPSL);
+         double origTP = StringToDouble(origTPSL[0]);
+         double origSL = StringToDouble(origTPSL[1]);
+          
          
          if((STOP_RISK_BID_PRICE < Bid && (STOP_RISK_BID_PRICE < origSL)) ||  
          (STOP_RISK_BID_PRICE > Bid && (STOP_RISK_BID_PRICE > origSL))) {

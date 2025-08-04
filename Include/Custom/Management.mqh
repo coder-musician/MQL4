@@ -77,7 +77,7 @@ public:
          
          double SPREAD = Ask-Bid;
          
-         int TP_LINE_COLOR = clrGreen;  
+         int TP_LINE_COLOR = clrAqua;  
                 
          if(GetLinePrice("TP_BID") == 0) {
          
@@ -138,7 +138,7 @@ public:
          
          if(SlBid > TpBid) { // <- SELL
          
-            PlotLine("TP_ASK", (TpBid-SPREAD), clrGreen);
+            PlotLine("TP_ASK", (TpBid-SPREAD), clrAqua);
             PlotLine("SL_ASK", (SlBid-SPREAD), clrRed);
          }
    
@@ -159,7 +159,7 @@ public:
          }
          else {
             
-            PlotLine("TP_BID", TpBid, clrGreen);
+            PlotLine("TP_BID", TpBid, clrAqua);
             PlotLine("SL_BID", SlBid, clrRed);
          }
       }

@@ -72,6 +72,11 @@ public:
       FileClose(filehandle);
    }
    
+   void writeTradeDetails(string msg) {
+   
+      Alert(msg);
+      
+   }
    
   };
 //+------------------------------------------------------------------+

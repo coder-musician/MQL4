@@ -103,12 +103,17 @@ void OnStart()
       ORDER_LOTS = (riskedAmount/pipValue)/RISKED_PIPS;
       
       int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, 
-         ORDER_RISK_PRICE, ORDER_PROFIT_PRICE, DoubleToStr(ORDER_PROFIT_PRICE) + "," + DoubleToStr(ORDER_RISK_PRICE));
+         ORDER_RISK_PRICE, ORDER_PROFIT_PRICE);
+         
+         ObjectDelete(0, "SL_ASK");
+         ObjectDelete(0, "TP_ASK");
       
       if(newOrder != -1) {
       
          bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
          ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrSienna);
+         
+         
       } 
       else {
       

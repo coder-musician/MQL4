@@ -11,6 +11,7 @@
 #include "..\Include\Custom\Management.mqh"
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
+#include "..\Include\Custom\Analytics.mqh"
 
 #include "..\Include\Custom\Indicators\Candlesticks.mqh"
 #include "..\Include\Custom\Indicators\CustomVolume.mqh"
@@ -101,6 +102,8 @@ void OnTick()
       Orders orders = Orders();
       orders.GetOrdersList();
       
+      Analytics analytics = Analytics();
+      
       Candlesticks candlesticks = Candlesticks();
       candlesticks.UpdateCandlesIndicator();
       
@@ -118,13 +121,19 @@ void OnTick()
             journal.CloseScreenshot(ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = False;
             
-            OrderSelect(ORDER_TICKET, SELECT_BY_TICKET);
+            string tradeDetails = ORDER_DATE + "," + 
+            ORDER_TIME + "," + 
+            Symbol() + "," + 
+            ORDER_OPERATION + "," + 
+            ORDER_TICKET + "," + 
+            ORDER_OPEN_PRICE + "," +
+            ORDER_PROFIT_PRICE + "," +  
+            OrderTakeProfit() + "," +
+            ORDER_RISK_PRICE + "," + 
+            OrderStopLoss() + "," + 
+            OrderProfit();
             
-            MessageBox(ORDER_DATE + "-" + ORDER_TIME + "-" + Symbol() + "-" + ORDER_OPERATION + "-" + ORDER_TICKET + "-//" + 
-               ORDER_OPEN_PRICE + "-" + ORDER_PROFIT_PRICE + "-" +  OrderTakeProfit() + "-//" +
-               ORDER_RISK_PRICE + "-" +  OrderStopLoss() + "-" + 
-               OrderProfit());
-               
+            analytics.writeTradeDetails(tradeDetails);
             management.DeleteLevels();
          }
          
@@ -139,10 +148,10 @@ void OnTick()
             string time = GetTime();            
             
             IS_ORDER_ACTIVE = True;
+            
             ORDER_TICKET = OrderTicket();
             ORDER_DATE = date;
             ORDER_TIME = time;
-            
             ORDER_OPEN_PRICE = OrderOpenPrice();
             ORDER_PROFIT_PRICE = OrderTakeProfit();
             ORDER_RISK_PRICE = OrderStopLoss();

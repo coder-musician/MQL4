@@ -21,7 +21,7 @@ double ANALYTICS_CLOSE_PRICE = 0;
 class Analytics
   {
 private:
-   
+   /*
    string CreateFolder() {
    
       string folder = Symbol() + "\\" + IntegerToString(Year()) + "." + IntegerToString(Month());   
@@ -29,15 +29,55 @@ private:
       
       return folder;
    }
-   
+   */
    string GetDate() {
-   
+      
       string year = IntegerToString(Year());
       string month = IntegerToString(Month());
-      string day = IntegerToString(Day());      
-      string date = year + "." + month;
+      string day = IntegerToString(Day());
       
-      return date;
+      if(Month() < 10) {
+         
+         month = "0" + IntegerToString(Month());
+      }
+   
+      return year+month;
+   }
+   
+   void WriteStats(string tradeDetails) {
+   
+      //string folder = CreateFolder();
+      //string yearmonth = IntegerToString(Year()) + "." + IntegerToString(Month());
+      string filename = GetDate() + "-ANALYTICS.csv";
+      int filehandle;
+      
+      string header = "ORDER_DATE," + 
+      "ORDER_TIME," + 
+      "SYMBOL," + 
+      "ORDER_OPERATION," + 
+      "ORDER_TICKET," + 
+      "ORDER_OPEN_PRICE," + 
+      "ORDER_PROFIT_PRICE," + 
+      "CLOSED_TAKE_PROFIT," + 
+      "ORDER_RISK_PRICE," + 
+      "CLOSED_RISK_PRICE," + 
+      "PROFIT";
+                  
+      if(!FileIsExist(filename, 0)) {
+        
+        filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
+        FileWrite(filehandle, header + "\n"); // HEADERS
+        FileSeek(filehandle, 0, SEEK_END);
+        FileWrite(filehandle, tradeDetails + "\n");
+        FileClose(filehandle);
+        
+      }
+      else {
+         filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
+         FileSeek(filehandle, 0, SEEK_END);
+         FileWrite(filehandle, tradeDetails + "\n");
+         FileClose(filehandle);
+      }
    }
    
 public:
@@ -46,35 +86,11 @@ public:
                      
    
    
-   void WriteStats() {
-   
-      string folder = CreateFolder();
-      string yearmonth = IntegerToString(Year()) + "." + IntegerToString(Month());
-      string filename = folder + "\\" + Symbol() + "-" + yearmonth + "-ANALYTICS.csv";
-      int filehandle;
-      
-     if(!FileIsExist(filename, 0)) {
-        
-        filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
-        FileWrite(filehandle, "SYMBOL", "DATE"); // HEADERS
-        FileSeek(filehandle, 0, SEEK_END);
-        FileWrite(filehandle, ANALYTICS_LOTS, ANALYTICS_CLOSE_PRICE);
-        FileClose(filehandle);
-        
-     }
-     else {
-         filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
-         FileSeek(filehandle, 0, SEEK_END);
-         FileWrite(filehandle, ANALYTICS_OPEN_PRICE, ANALYTICS_CLOSE_PRICE);
-         FileClose(filehandle);
-     }
-      
-      FileClose(filehandle);
-   }
+
    
    void writeTradeDetails(string msg) {
    
-      Alert(msg);
+      WriteStats(msg);
       
    }
    

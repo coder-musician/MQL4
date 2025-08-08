@@ -8,16 +8,22 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Analytics.mqh"
+#include "..\Include\Custom\Journal.mqh"
+
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
-
+   
 void OnStart()
-  {   
+  {
+      //Journal journal = Journal();
       
-      Analytics analytics = Analytics();
+      //journal.CustomSnapshot(ChartID());
+      //journal.MarketSnapshot(ChartID());
+      //journal.OpenSnapshot(ChartID(),123456);
+      //journal.TradeSnapshot(ChartID(),123456);
+      //journal.CloseSnapshot(ChartID(),123456);+
       
-      analytics.writeTradeDetails("a,b,c");
+      MessageBox(ACCOUNT_CURRENCY);
   }
   

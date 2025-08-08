@@ -14,69 +14,61 @@
 
 #include "..\Include\Custom\Orders.mqh"
 
-int priceDecimals;
-int standardLot = 100000;
-double risk = 0.01;
-string accountCurrency = "USD";
-
-double NormalizePrice(double price) {
-
-   string priceString = DoubleToStr(price);
-   int priceStringLength = StringLen(priceString);
-   int priceEntire = StringFind(priceString,".", 0) + 1;   
-   priceDecimals = priceStringLength - priceEntire;
+   int priceDecimals;
+   int standardLot = 100000;
+   double RISK = 0.01;
+   string ACC_CURRENCY = "USD";
    
-   if(priceDecimals == 5 || priceDecimals == 3) {
+   double NormalizePrice(double price) {
+   
+      string priceString = DoubleToStr(price);
+      int priceStringLength = StringLen(priceString);
+      int priceEntire = StringFind(priceString,".", 0) + 1;   
+      priceDecimals = priceStringLength - priceEntire;
       
-      priceDecimals--;
-      priceString = StringSubstr(priceString,0, (priceEntire+priceDecimals));
-   }
-   
-   return StringToDouble(priceString);
-}
-
-double valuePerPip() {
-   
-   string baseCurrency = StringSubstr(Symbol(), 0, 3);
-   string singlePipString = "0.";
-   
-   for(int i=0; i < priceDecimals; i++) {
-      
-      if(i == (priceDecimals-1)) {
+      if(priceDecimals == 5 || priceDecimals == 3) {
          
-         singlePipString = singlePipString + "1";
+         priceDecimals--;
+         priceString = StringSubstr(priceString,0, (priceEntire+priceDecimals));
       }
-      else {
       
-         singlePipString = singlePipString + "0";
+      return StringToDouble(priceString);
+   }
+   
+   double valuePerPip() {
+      
+      string baseCurrency = StringSubstr(Symbol(), 0, 3);
+      string singlePipString = "0.";
+      
+      for(int i=0; i < priceDecimals; i++) {
+         
+         if(i == (priceDecimals-1))            
+            singlePipString = singlePipString + "1";
+         else 
+            singlePipString = singlePipString + "0";
       }
+      
+      double pipValue = StringToDouble(singlePipString) / Bid;
+      
+      if(baseCurrency != ACC_CURRENCY)
+         pipValue = pipValue * ORDER_OPEN_PRICE;
+      
+      return (pipValue*standardLot);
    }
    
-   double pipValue = StringToDouble(singlePipString) / Bid;
+   double getRISKedPips(double RISKedPips) {
    
-   if(baseCurrency != accountCurrency) {
-   
-      pipValue = pipValue * ORDER_OPEN_PRICE;
+      string multiplier = "1";
+      
+      for(int i=1; i<=priceDecimals; i++)       
+         multiplier = multiplier + "0";
+      
+      return (RISKedPips*StringToInteger(multiplier));
    }
-   
-   return (pipValue*standardLot);
-}
-
-double getRiskedPips(double riskedPips) {
-
-   string multiplier = "1";
-   
-   for(int i=1; i<=priceDecimals; i++) {
-   
-      multiplier = multiplier + "0";
-   }
-   
-   return (riskedPips*StringToInteger(multiplier));
-}
    
 void OnStart()
   {   
-      double accountBalance = 20034.51;
+      double accountBalance = AccountBalance();
       double RISKED_PIPS = 0;
       
       ORDER_PROFIT_PRICE = NormalizePrice(NormalizeDouble(ObjectGet("TP_BID", 1),Digits)); 
@@ -95,25 +87,23 @@ void OnStart()
          RISKED_PIPS = ORDER_RISK_PRICE - ORDER_OPEN_PRICE;
       }
       
-      RISKED_PIPS = getRiskedPips(RISKED_PIPS);
+      RISKED_PIPS = getRISKedPips(RISKED_PIPS);
       
       double pipValue = valuePerPip();
-      double riskedAmount = accountBalance * risk;
+      double RISKedAmount = accountBalance * RISK;
        
-      ORDER_LOTS = (riskedAmount/pipValue)/RISKED_PIPS;
+      ORDER_LOTS = (RISKedAmount/pipValue)/RISKED_PIPS;
       
       int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, 
          ORDER_RISK_PRICE, ORDER_PROFIT_PRICE);
          
-         ObjectDelete(0, "SL_ASK");
-         ObjectDelete(0, "TP_ASK");
+      ObjectDelete(0, "SL_ASK");
+      ObjectDelete(0, "TP_ASK");
       
       if(newOrder != -1) {
       
          bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
-         ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrSienna);
-         
-         
+         ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR,clrSienna);   
       } 
       else {
       
@@ -126,6 +116,5 @@ void OnStart()
             "ERROR: " + IntegerToString(GetLastError()) + "\n Enable Auto Trading";
             
          MessageBox(summary);
-   }
-      
+      }      
   }

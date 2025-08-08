@@ -8,15 +8,6 @@
 #property version   "1.00"
 #property strict
 
-int ANALYTICS_TICKET = 0;
-double ANALYTICS_LOTS = 0;
-int ANALYTICS_OPERATION;
-
-string ANALYTICS_OPEN_DATETIME;
-double ANALYTICS_OPEN_PRICE = 0;
-
-string ANALYTICS_CLOSE_DATETIME;
-double ANALYTICS_CLOSE_PRICE = 0;
 
 class Analytics
   {
@@ -81,8 +72,8 @@ private:
    }
    
 public:
-                     Analytics();
-                    ~Analytics();
+   Analytics();
+   ~Analytics();
                      
    
    

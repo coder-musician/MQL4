@@ -8,20 +8,20 @@
 #property version   "1.00"
 #property strict
 
-bool IS_ORDER_ACTIVE = False;
-int ORDERS_LIST[10];
-int ORDER_TICKET = 0;
-
-string ORDER_DATE;
-string ORDER_TIME;
-
-double ORDER_OPEN_PRICE = 0;
-
-double ORDER_PROFIT_PRICE = 0;
-double ORDER_RISK_PRICE = 0;
-
-double ORDER_LOTS = 0;
-int ORDER_OPERATION = 0;
+   bool IS_ORDER_ACTIVE = False;
+   int ORDERS_LIST[10];
+   int ORDER_TICKET = 0;
+   
+   string ORDER_DATE;
+   string ORDER_TIME;
+   
+   double ORDER_OPEN_PRICE = 0;
+   
+   double ORDER_PROFIT_PRICE = 0;
+   double ORDER_RISK_PRICE = 0;
+   
+   double ORDER_LOTS = 0;
+   int ORDER_OPERATION = 0;
 
 
 class Orders
@@ -63,36 +63,6 @@ public:
          IS_ORDER_ACTIVE = True;
       }
    }
-
-   
-   void loadActiveOrders() {
-      
-      int CurrentOrderTicket = 0;
-      IS_ORDER_ACTIVE = False;
-      
-      for(int i=0; i<OrdersTotal(); i++) {
-      
-         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
-         
-         if(openOrder && OrderSymbol() == Symbol()){
-            
-            CurrentOrderTicket = OrderTicket(); 
-            break;
-         }
-      }
-
-      if (CurrentOrderTicket != -1) {
-         
-         IS_ORDER_ACTIVE = True;
-         ORDER_TICKET = OrderTicket(); 
-         ORDER_OPEN_PRICE = OrderOpenPrice();
-         ORDER_PROFIT_PRICE = OrderTakeProfit();
-         ORDER_RISK_PRICE = OrderStopLoss();
-         ORDER_LOTS = OrderLots();
-      
-      }
-   }
-   
       
    bool checkForActiveOrders(string symbol) {
       
@@ -124,7 +94,13 @@ public:
       }
       else {
       
-         GetSummary();
+         string summary = "ORDER_TICKET: " + IntegerToString(ORDER_TICKET) + "\n" +
+         "ORDER_OPEN_PRICE: " + DoubleToString(ORDER_OPEN_PRICE) + "\n" +
+         "ORDER_PROFIT_PRICE: " + DoubleToString(ORDER_PROFIT_PRICE) + "\n" +
+         "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
+         "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n";
+         
+         MessageBox(summary);
       }
       
       return newOrder;
@@ -146,15 +122,18 @@ public:
       ObjectDelete(0, "SL_BID");
    }
    
-   void GetSummary() {      
+   void CloseAllOrders() {
+   
+      GetOrdersList();
       
-      string summary = "ORDER_TICKET: " + IntegerToString(ORDER_TICKET) + "\n" +
-      "ORDER_OPEN_PRICE: " + DoubleToString(ORDER_OPEN_PRICE) + "\n" +
-      "ORDER_PROFIT_PRICE: " + DoubleToString(ORDER_PROFIT_PRICE) + "\n" +
-      "ORDER_RISK_PRICE: " + DoubleToString(ORDER_RISK_PRICE) + "\n" +
-      "ORDER_LOTS: " + DoubleToString(ORDER_LOTS) + "\n";
+      for(int i=0; i<ArraySize(ORDERS_LIST); i++) {
       
-      MessageBox(summary);
+         if(ORDERS_LIST[i] == 0)
+            break;
+         
+         double currentOrder = OrderSelect(ORDERS_LIST[i], SELECT_BY_TICKET, MODE_TRADES );
+         CloseOrder(OrderTicket(), OrderLots(), OrderOpenPrice());
+      }      
    }
    
   };

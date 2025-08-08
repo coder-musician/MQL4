@@ -8,6 +8,8 @@
 #property version   "1.00"
 #property strict
 
+#include ".\Utils\Utils.mqh"
+
    bool IS_ORDER_ACTIVE = False;
    int ORDERS_LIST[10];
    int ORDER_TICKET = 0;

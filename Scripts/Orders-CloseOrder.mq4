@@ -11,7 +11,6 @@
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 #include "..\Include\Custom\Orders.mqh"
-#include "..\Include\Custom\Management.mqh"
 
 void OnStart()
   {

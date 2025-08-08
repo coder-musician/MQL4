@@ -11,13 +11,11 @@
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
-
+#include "..\Include\Custom\\Utils\Utils.mqh"
 #include "..\Include\Custom\Orders.mqh"
 
    int priceDecimals;
    int standardLot = 100000;
-   double RISK = 0.01;
-   string ACC_CURRENCY = "USD";
    
    double NormalizePrice(double price) {
    

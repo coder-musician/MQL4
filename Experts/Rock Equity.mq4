@@ -8,8 +8,6 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Utils\Utils.mqh"
-
 #include "..\Include\Custom\Management.mqh"
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
@@ -74,6 +72,7 @@ void OnDeinit(const int reason)
 //+------------------------------------------------------------------+
 void OnTick()
   {         
+  
       Management management = Management();
       Journal journal = Journal();
       
@@ -93,8 +92,9 @@ void OnTick()
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
       
       if(!areOrdersActive) {
-      
-         management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
+         
+         if(ChartPeriod() != HTF)  
+            management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
          
          if(IS_ORDER_ACTIVE) {
             
@@ -103,29 +103,35 @@ void OnTick()
             string tradeDetails = ORDER_DATE + "," + 
             ORDER_TIME + "," + 
             Symbol() + "," + 
-            ORDER_OPERATION + "," + 
-            ORDER_TICKET + "," + 
-            ORDER_OPEN_PRICE + "," +
-            ORDER_PROFIT_PRICE + "," +  
-            OrderTakeProfit() + "," +
-            ORDER_RISK_PRICE + "," + 
-            OrderStopLoss() + "," + 
-            OrderProfit();
+            DoubleToString(ORDER_OPERATION) + "," + 
+            DoubleToString(ORDER_TICKET) + "," + 
+            DoubleToString(ORDER_OPEN_PRICE) + "," +
+            DoubleToString(ORDER_PROFIT_PRICE) + "," +  
+            DoubleToString(OrderTakeProfit()) + "," +
+            DoubleToString(ORDER_RISK_PRICE) + "," + 
+            DoubleToString(OrderStopLoss()) + "," + 
+            DoubleToString(OrderProfit());
             
-            //analytics.writeTradeDetails(tradeDetails);
-            journal.CloseSnapshot(ChartID(),ORDERS_LIST[0]);
+            if(ChartPeriod() != HTF) {
+               
+               journal.CloseSnapshot(ChartID(),ORDERS_LIST[0]);
+               analytics.writeTradeDetails(tradeDetails);
+            }
+               
             management.DeleteLevels();
          }
 
-         if(isNewCandle())            
-            journal.MarketSnapshot(ChartID());
+         if(isNewCandle())
+         
+            if(ChartPeriod() != HTF)            
+               journal.MarketSnapshot(ChartID());
       }
       else {
          
          if(!IS_ORDER_ACTIVE) {
          
-            string date = GetDate();
-            string time = GetTime();            
+            string date = utils.GetDate();
+            string time = utils.GetTime();            
             
             IS_ORDER_ACTIVE = True;
             
@@ -136,7 +142,8 @@ void OnTick()
             ORDER_PROFIT_PRICE = OrderTakeProfit();
             ORDER_RISK_PRICE = OrderStopLoss();
             
-            journal.OpenSnapshot(ChartID(),ORDERS_LIST[0]);
+            if(ChartPeriod() != HTF)
+               journal.OpenSnapshot(ChartID(),ORDERS_LIST[0]);
          }
          
          if(isNewCandle())
@@ -156,7 +163,9 @@ void OnTick()
             else {
                
                management.DeleteLevels();
-               management.PlotLevels(OrderOpenPrice(), OrderTakeProfit(), OrderStopLoss());            
+               
+               if(ChartPeriod() != HTF)  
+                  management.PlotLevels(OrderOpenPrice(), OrderTakeProfit(), OrderStopLoss());            
             }
             
             management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);

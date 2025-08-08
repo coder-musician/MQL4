@@ -8,38 +8,16 @@
 #property version   "1.00"
 #property strict
 
+#include ".\Utils\Utils.mqh"
+Utils utils1 = Utils();
 
 class Analytics
   {
 private:
-   /*
-   string CreateFolder() {
-   
-      string folder = Symbol() + "\\" + IntegerToString(Year()) + "." + IntegerToString(Month());   
-      bool result = FolderCreate(folder,0);
-      
-      return folder;
-   }
-   */
-   string GetDate() {
-      
-      string year = IntegerToString(Year());
-      string month = IntegerToString(Month());
-      string day = IntegerToString(Day());
-      
-      if(Month() < 10) {
-         
-         month = "0" + IntegerToString(Month());
-      }
-   
-      return year+month;
-   }
    
    void WriteStats(string tradeDetails) {
-   
-      //string folder = CreateFolder();
-      //string yearmonth = IntegerToString(Year()) + "." + IntegerToString(Month());
-      string filename = GetDate() + "-ANALYTICS.csv";
+      
+      string filename = utils1.GetDate() + "-ANALYTICS.csv";
       int filehandle;
       
       string header = "ORDER_DATE," + 
@@ -57,31 +35,29 @@ private:
       if(!FileIsExist(filename, 0)) {
         
         filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
-        FileWrite(filehandle, header + "\n"); // HEADERS
+//FileWrite(filehandle, header + "\n"); // HEADERS
+        FileWrite(filehandle, header); // HEADERS
         FileSeek(filehandle, 0, SEEK_END);
-        FileWrite(filehandle, tradeDetails + "\n");
+        FileWrite(filehandle, tradeDetails);
         FileClose(filehandle);
         
       }
       else {
          filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
          FileSeek(filehandle, 0, SEEK_END);
-         FileWrite(filehandle, tradeDetails + "\n");
+FileWrite(filehandle, tradeDetails + "\n");
          FileClose(filehandle);
       }
    }
    
 public:
+
    Analytics();
    ~Analytics();
-                     
    
+   void writeTradeDetails(string details) {
    
-
-   
-   void writeTradeDetails(string msg) {
-   
-      WriteStats(msg);
+      WriteStats(details);
       
    }
    

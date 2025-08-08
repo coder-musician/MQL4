@@ -60,14 +60,12 @@ private:
       
       STOP_RISK_BID_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
       
-      if(Bid > STOP_RISK_BID_PRICE) {
-      
+      if(Bid > STOP_RISK_BID_PRICE) 
          STOP_RISK_PIPS = Ask - STOP_RISK_BID_PRICE;
-      }
-      else {
-         
+      
+      else 
          STOP_RISK_PIPS = STOP_RISK_BID_PRICE - Bid;
-      }   
+         
    }
      
 public:
@@ -172,7 +170,7 @@ public:
          MoveLine("SL_BID", SlBid);
       }
       
-      void SetLevels(string chart) {
+      void SetLevels() {
       
          ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)));
          ObjectSetInteger(0,"SL_BID",OBJPROP_COLOR,clrRed);

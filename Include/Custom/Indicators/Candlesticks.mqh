@@ -23,8 +23,7 @@ private:
    
       for(int i=0; i<ArrayRange(candles,0); i++){
    
-         ObjectDelete(0,candles[i]);
-   
+         ObjectDelete(0,candles[i]);   
       }
    }
      
@@ -45,8 +44,7 @@ private:
          ObjectCreate(0,candles[i],OBJ_LABEL,0,0,0);
          ObjectSet(candles[i], OBJPROP_XDISTANCE, right-offsetx[i]);
          ObjectSet(candles[i], OBJPROP_YDISTANCE, y-offsety);
-         ObjectSetText(candles[i], ".", fontSize, "Arial", clrWhite);
-   
+         ObjectSetText(candles[i], ".", fontSize, "Arial", clrWhite);   
       }
    }
 
@@ -131,16 +129,8 @@ public:
    
          if((x2type - x1type) != 0) {
             
-            /*
-            if(x2pips < x1pips)
-              {
-                  //Engulfing
-                  //ObjectSetText(candles[j], ".", fontSize, "Arial", clrWhite);
-                  //ObjectSetText(candles[j+1], ".", fontSize, "Arial", clrWhite);
-              }
-            */  
-            
             if(Close [2] == Open[1]) {
+            
                //Tweezer
                ObjectSetText(candles[j], ".", fontSize, "Arial", clrYellow);
                ObjectSetText(candles[j+1], ".", fontSize, "Arial", clrYellow);

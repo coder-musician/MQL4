@@ -49,7 +49,7 @@ public:
       ObjectCreate(0,"CustomVolume",OBJ_LABEL,0,0,0);   
       ObjectSet("CustomVolume", OBJPROP_XDISTANCE, right-setx);
       ObjectSet("CustomVolume", OBJPROP_YDISTANCE, up-sety);
-      ObjectSetText("CustomVolume", volumeRate + "%", font, "Arial", clrCornflowerBlue);
+      ObjectSetText("CustomVolume", DoubleToString(volumeRate) + "%", font, "Arial", clrCornflowerBlue);
    
    }
    

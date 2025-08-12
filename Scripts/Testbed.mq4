@@ -8,7 +8,7 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Journal.mqh"
+#include "..\Include\Custom\Orders.mqh"
 
 //+------------------------------------------------------------------+
 //|                                                                  |
@@ -16,14 +16,20 @@
    
 void OnStart()
   {
-      //Journal journal = Journal();
+      Orders orders = Orders();
       
-      //journal.CustomSnapshot(ChartID());
-      //journal.MarketSnapshot(ChartID());
-      //journal.OpenSnapshot(ChartID(),123456);
-      //journal.TradeSnapshot(ChartID(),123456);
-      //journal.CloseSnapshot(ChartID(),123456);+
+      orders.
       
-      MessageBox(ACCOUNT_CURRENCY);
+      string tradeDetails = ORDER_DATE + "," + 
+      ORDER_TIME + "," + 
+      Symbol() + "," + 
+      DoubleToString(ORDER_OPERATION) + "," + 
+      DoubleToString(ORDER_TICKET) + "," + 
+      DoubleToString(ORDER_OPEN_PRICE) + "," +
+      DoubleToString(ORDER_PROFIT_PRICE) + "," +  
+      DoubleToString(OrderTakeProfit()) + "," +
+      DoubleToString(ORDER_RISK_PRICE) + "," + 
+      DoubleToString(OrderStopLoss()) + "," + 
+      DoubleToString(OrderProfit());
   }
   

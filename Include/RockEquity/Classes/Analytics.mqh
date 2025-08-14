@@ -7,16 +7,21 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
+#property library
 
 #include "..\\Utils.mqh"
+
+#import
+   string GetDate();
+#import
 
 class Analytics
   {
 private:
    
-   void WriteStats(string tradeDetails) {
+   static void WriteStats(string tradeDetails) {
       
-      string filename = "";//utils1.GetDate() + "-ANALYTICS.csv";
+      string filename = Utils::GetDate() + "-ANALYTICS.csv";
       int filehandle;
       
       string header = "ORDER_DATE," + 
@@ -34,7 +39,6 @@ private:
       if(!FileIsExist(filename, 0)) {
         
         filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
-//FileWrite(filehandle, header + "\n"); // HEADERS
         FileWrite(filehandle, header); // HEADERS
         FileSeek(filehandle, 0, SEEK_END);
         FileWrite(filehandle, tradeDetails);
@@ -44,7 +48,7 @@ private:
       else {
          filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
          FileSeek(filehandle, 0, SEEK_END);
-FileWrite(filehandle, tradeDetails + "\n");
+         FileWrite(filehandle, tradeDetails + "\n");
          FileClose(filehandle);
       }
    }
@@ -54,7 +58,7 @@ public:
    Analytics();
    ~Analytics();
    
-   void writeTradeDetails(string details) {
+   static void WriteTrade(string details) {
    
       WriteStats(details);
       

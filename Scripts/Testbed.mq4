@@ -8,11 +8,10 @@
 #property version   "1.00"
 #property strict
 
-#include "..\\Include\\RockEquity\\Classes\\Management.mqh";
+#include "..\\Include\\RockEquity\\Classes\\Analytics.mqh";
 
 #import
-   string GetDate();
-   string GetTime();
+   void WriteTrade(string details);
 #import
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
@@ -21,7 +20,7 @@ void OnStart()
   {
 //---
    
-      MessageBox(Utils::GetTime());
+      Analytics::WriteTrade("TEST");
    
   }
 //+------------------------------------------------------------------+

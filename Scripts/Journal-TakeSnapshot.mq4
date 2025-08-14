@@ -8,15 +8,20 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Journal.mqh"
+#include "..\\Include\\RockEquity\\Classes\\Journal.mqh";
+
+#import
+    void CustomSnapshot(long chartid);
+#import
+
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 void OnStart()
   {
 //---
-      Journal journal = Journal();
-      journal.CustomSnapshot(ChartID());
-      
+   
+       Journal::CustomSnapshot(ChartID());
+   
   }
 //+------------------------------------------------------------------+

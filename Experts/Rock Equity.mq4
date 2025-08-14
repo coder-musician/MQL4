@@ -16,6 +16,9 @@
 #include "..\Include\Custom\Indicators\Candlesticks.mqh"
 #include "..\Include\Custom\Indicators\CustomVolume.mqh"
 
+#include "..\Include\Custom\Utils\Utils.mqh"
+
+int HTF = 240;
 int CANDLES_COUNT = Bars;
    
    bool isNewCandle() {
@@ -86,6 +89,8 @@ void OnTick()
       
       CustomVolume customVolume = CustomVolume();
       customVolume.PlotCustomVolume();
+      
+      Utils utils = Utils();
       
       setHFTColors();
       

@@ -8,49 +8,88 @@
 #property version   "1.00"
 #property strict
 
+#include "..\\Constants.mqh"
 
-#include ".\Utils\Utils.mqh"
-   
-   Utils utils = Utils(); 
-   
-   int IMAGE_XPIX = 615;
-   int IMAGE_YPIX = 882;
-   
 class Journal
   {
-    
 private:
    
-   string GetImagePath() {
+   static string GetDate() {
+      
+      string year = IntegerToString(Year());
+      string month = IntegerToString(Month());
+      string day = IntegerToString(Day());
+      
+      if(Month() < 10) {
+         
+         month = "0" + IntegerToString(Month());
+      }
+      
+      if(Day() < 10) {
+      
+         day = "0" + IntegerToString(Day());
+      }
    
-      string path = utils.GetDate() + "\\" + Symbol() + "\\";  
+      return year+month+day;
+   }
+   
+   static string GetTime() {
+   
+      string hour = IntegerToString(Hour());
+      string minutes = IntegerToString(Minute());      
+      string seconds = IntegerToString(Seconds());
+      
+      if(Hour() < 10) {
+         
+         hour = "0" + IntegerToString(Hour());
+      }
+      
+      if(Minute() < 10) {
+      
+         minutes = "0" + IntegerToString(Minute());
+      }
+      
+      if(Seconds() < 10) {
+      
+         seconds = "0" + IntegerToString(Seconds());
+      }
+      
+      string time = hour + minutes + seconds;
+      
+      return time;
+   }
+   
+   static string GetImagePath() {
+   
+      string path = GetDate() + "\\" + Symbol() + "\\";  
       
       return path;
    }
    
-   string GetImageName(string desc) {
+   static string GetImageName(string desc) {
       
-      string image = Symbol() + "-" + utils.GetDate() + "-" + utils.GetTime() + "-" + desc + ".png";
+      string image = Symbol() + "-" + GetDate() + "-" + GetTime() + "-" + desc + ".png";
                         
       return image;
    }
    
-   void TakeSnapshot(long chartid, string desc) {
+   static void TakeSnapshot(long chartid, string desc) {
       
       bool snapSuccess;
       string fullpath;
       string image;      
       
-      image = Symbol() + "-" + utils.GetDate() + "-" + utils.GetTime() + "-" + desc + ".png";      
-      
+      image = Symbol() + "-" + GetDate() + "-" + GetTime() + "-" + desc + ".png";      
       fullpath = GetImagePath() + "LTF\\" + GetImageName(desc);           
     
       snapSuccess = ChartScreenShot(chartid, fullpath, 
-         IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);      
+         IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
+      
+      chartid = (ChartNext(chartid));      
       
       fullpath = GetImagePath() + "HTF\\" + GetImageName(desc);           
       
-      snapSuccess = ChartScreenShot(ChartNext(chartid), fullpath, 
+      snapSuccess = ChartScreenShot(chartid, fullpath, 
          IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
    }
    
@@ -65,7 +104,7 @@ public:
       TakeSnapshot(chartid, desc);
    }
    
-   void CustomSnapshot(long chartid) {
+   static void CustomSnapshot(long chartid)  {
       
       string desc = "Custom";      
       TakeSnapshot(chartid, desc);
@@ -73,19 +112,19 @@ public:
    
    void OpenSnapshot(long chartid, int orderid) {
       
-      string desc = "Trade-1-Open-" + IntegerToString(orderid) + "-" + OPEN_TRADE_SUFFIX;      
+      string desc = "Trade-1-Open-" + orderid + "-" + "1M";      
       TakeSnapshot(chartid, desc);      
    }
    
    void TradeSnapshot(long chartid, int orderid) {
       
-      string desc = "Trade-2-Next-" + IntegerToString(orderid) ;      
+      string desc = "Trade-2-Next-" + orderid;      
       TakeSnapshot(chartid, desc);
    }
    
    void CloseSnapshot(long chartid, int orderid) {  
-   
-      string desc = "Trade-3-Close-" + IntegerToString(orderid);   
+      string desc = "Trade-3-Close-" + orderid;
+      
       TakeSnapshot(chartid, desc);
    }
    

@@ -1,0 +1,188 @@
+//+------------------------------------------------------------------+
+//|                                                   Management.mqh |
+//|                                  Copyright 2024, MetaQuotes Ltd. |
+//|                                             https://www.mql5.com |
+//+------------------------------------------------------------------+
+#property copyright "Copyright 2024, MetaQuotes Ltd."
+#property link      "https://www.mql5.com"
+#property version   "1.00"
+#property strict
+#property library
+
+
+#include "..\\Constants.mqh"
+#include "..\\Utils.mqh"
+
+#import
+   double GetLinePrice(string LineName);
+   void DeleteLevels();
+#import
+
+class Management
+  {
+private:
+
+   static void PlotLine(string LineName, double Price, int Color) {
+      
+      bool NewLine = ObjectCreate(LineName, OBJ_HLINE, 0, Time[0], Price, 0, 0);
+      ObjectSetInteger(0,LineName,OBJPROP_COLOR,Color);
+   }
+   
+   void MoveLine(string LineName, double Price) {
+   
+      bool MoveLine = ObjectSetDouble(0, LineName, OBJPROP_PRICE1, Price);
+   }
+   
+   void ChangeLineColor(string LineName, int Color) {
+   
+      bool LineColor = ObjectSetInteger(0,LineName,OBJPROP_COLOR,Color);
+   }
+   
+   void GetRiskPips() { 
+      
+      STOP_RISK_BID_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
+      
+      if(Bid > STOP_RISK_BID_PRICE) 
+         STOP_RISK_PIPS = Ask - STOP_RISK_BID_PRICE;
+      
+      else 
+         STOP_RISK_PIPS = STOP_RISK_BID_PRICE - Bid;
+         
+   }
+     
+public:
+
+      Management();
+     ~Management();                    
+      
+      void UpdateTakeProfit(double SlBid) {  
+         
+         double SPREAD = Ask-Bid;
+         
+         int TP_LINE_COLOR = SR_BID_LINE_COLOR;  
+                
+         if(GetLinePrice("TP_BID") == 0) {
+         
+            PlotLine("TP_BID", 0, TP_LINE_COLOR);   
+         } 
+         
+         STOP_RISK_BID_PRICE = GetLinePrice("SL_BID");
+         STOP_RISK_ASK_PRICE = STOP_RISK_BID_PRICE + SPREAD;
+         
+         GetRiskPips();
+         
+         if(Bid > SlBid) {
+            
+            ORDER_OPERATION = OP_BUY;
+            
+            TAKE_PROFIT_BID_PRICE = Bid + (STOP_RISK_PIPS*RISK_REWARD_RATIO) + (SPREAD);
+            
+            ChangeLineColor("SL_BID", SR_BID_LINE_COLOR);
+                        
+         }
+         else {
+
+            ORDER_OPERATION = OP_SELL;
+            
+            TAKE_PROFIT_BID_PRICE = Ask - (STOP_RISK_PIPS*RISK_REWARD_RATIO) - (SPREAD);           
+            
+            ChangeLineColor("SL_BID", TP_LINE_COLOR);
+            TP_LINE_COLOR = TP_ASK_LINE_COLOR;
+         }
+         
+         
+         TAKE_PROFIT_ASK_PRICE = TAKE_PROFIT_BID_PRICE + SPREAD;
+         ChangeLineColor("TP_BID", TP_LINE_COLOR);
+         MoveLine("TP_BID", TAKE_PROFIT_BID_PRICE);
+            
+         AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
+     }     
+      
+      void LoadValues() {
+         
+         OPEN_BID_PRICE = GetLinePrice("OPEN_PRICE");
+         
+         TAKE_PROFIT_BID_PRICE = GetLinePrice("TP_BID");
+         TAKE_PROFIT_ASK_PRICE = GetLinePrice("TP_ASK");
+         
+         STOP_RISK_BID_PRICE = GetLinePrice("SL_BID");
+         STOP_RISK_ASK_PRICE = GetLinePrice("SL_ASK");
+         
+         GetRiskPips();
+      }
+      
+      void AdjustAskLines(double TpBid, double SlBid) {   
+         
+         double SPREAD = Ask-Bid;
+         
+         ObjectDelete(0, "SL_ASK");
+         ObjectDelete(0, "TP_ASK");
+         
+         if(SlBid > TpBid) { // <- SELL
+         
+            PlotLine("TP_ASK", (TpBid-SPREAD), TP_BID_LINE_COLOR);
+            PlotLine("SL_ASK", (SlBid-SPREAD), SR_BID_LINE_COLOR);
+         }
+   
+      }
+      
+      void PlotLevels(double OpenPrice, double TpBid, double SlBid) {
+         
+         double SPREAD = Ask-Bid;
+         
+         DeleteLevels();
+         PlotLine("OPEN_PRICE", OpenPrice, OPEN_LINE_COLOR);
+         
+         
+         if(SlBid > TpBid) { // <- SELL
+            
+            PlotLine("TP_BID", TpBid, TP_ASK_LINE_COLOR);
+            PlotLine("SL_BID", SlBid, SR_ASK_LINE_COLOR);
+         }
+         else {
+            
+            PlotLine("TP_BID", TpBid, TP_BID_LINE_COLOR);
+            PlotLine("SL_BID", SlBid, SR_BID_LINE_COLOR);
+         }
+      }
+      
+      void MoveLevels(double TpBid, double SlBid) {
+         
+         MoveLine("TP_BID", TpBid);
+         MoveLine("SL_BID", SlBid);
+      }
+      
+      void SetLevels() {
+         
+         PlotLine("SL_BID", STOP_RISK_BID_PRICE, SR_BID_LINE_COLOR);
+      }
+     
+      string GetSummary() {
+      
+         string summary = "ORDER_OPERATION: " +  IntegerToString(ORDER_OPERATION) + "\n" +
+            "TAKE_PROFIT_BID_PRICE: " + DoubleToString(TAKE_PROFIT_BID_PRICE) + "\n" +
+            "TAKE_PROFIT_ASK_PRICE: " + DoubleToString(TAKE_PROFIT_ASK_PRICE) + "\n" +
+            "STOP_RISK_BID_PRICE: " + DoubleToString(STOP_RISK_BID_PRICE) + "\n" +
+            "STOP_RISK_ASK_PRICE: " + DoubleToString(STOP_RISK_ASK_PRICE) + "\n" +
+            "STOP_RISK_PIPS: " + DoubleToString(STOP_RISK_PIPS) + "\n";
+         
+         return summary;
+      }
+      
+  };
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+Management::Management()
+  {
+   
+  }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+Management::~Management()
+  {
+  }
+//+------------------------------------------------------------------+
+ 
+ 

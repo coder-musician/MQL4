@@ -7,23 +7,48 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
+#property library
 
-
-int HTF = 240;
-string OPEN_TRADE_SUFFIX = "1M";
-double RISK = 0.01;
-string ACC_CURRENCY = "USD";
+#include "Constants.mqh"
 
 class Utils
   {
 private:
 
+   static void DeleteLine(string lineName) {
+   
+      ObjectDelete(0, lineName);
+   }
+   
+   
+   static void GetOrdersList() {
+   
+      for(int i=0; i<OrdersTotal(); i++) {
+      
+         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
+         
+         if(openOrder && OrderSymbol() == Symbol()){
+            
+            ORDERS_LIST[i] = OrderTicket();
+         }
+      }
+   }
+   
+   
+   
+   static void CloseOrder(int ticket, double lots, double price) {
+   
+      bool closeSuccess = OrderClose(ticket,lots,price,3,clrNONE);
+   }
+   
+
+   
 public:
   
    Utils();
   ~Utils();
   
-     string GetDate() {
+     static string GetDate() {
       
       string year = IntegerToString(Year());
       string month = IntegerToString(Month());
@@ -38,7 +63,7 @@ public:
       return year+month+day;
    }
    
-   string GetTime() {
+   static string GetTime() {
    
       string hour = IntegerToString(Hour());
       string minutes = IntegerToString(Minute());      
@@ -57,7 +82,39 @@ public:
       
       return time;
    }
-  
+   
+   static double GetLinePrice(string LineName) {
+   
+      double LinePrice = NormalizeDouble(ObjectGet(LineName, 1),Digits); 
+      
+      return LinePrice;
+   }
+   
+   static void DeleteLevels() {
+      
+         DeleteLine("OPEN_PRICE");
+         DeleteLine("TP_ASK");
+         DeleteLine("TP_BID");
+         DeleteLine("SL_ASK");
+         DeleteLine("SL_BID");
+      
+   }
+   
+   static void CloseAllOrders() {
+   
+      GetOrdersList();
+      
+      for(int i=0; i<ArraySize(ORDERS_LIST); i++) {
+      
+         if(ORDERS_LIST[i] == 0)
+            break;
+         
+         double currentOrder = OrderSelect(ORDERS_LIST[i], SELECT_BY_TICKET, MODE_TRADES );
+         CloseOrder(OrderTicket(), OrderLots(), OrderOpenPrice());
+      } 
+      
+      DeleteLevels();     
+   }
   
   };
 //+------------------------------------------------------------------+

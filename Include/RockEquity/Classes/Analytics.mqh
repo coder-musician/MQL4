@@ -8,8 +8,7 @@
 #property version   "1.00"
 #property strict
 
-#include ".\Utils\Utils.mqh"
-Utils utils1 = Utils();
+#include "..\\Utils.mqh"
 
 class Analytics
   {
@@ -17,7 +16,7 @@ private:
    
    void WriteStats(string tradeDetails) {
       
-      string filename = utils1.GetDate() + "-ANALYTICS.csv";
+      string filename = "";//utils1.GetDate() + "-ANALYTICS.csv";
       int filehandle;
       
       string header = "ORDER_DATE," + 

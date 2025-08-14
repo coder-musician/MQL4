@@ -8,18 +8,20 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Management.mqh"
+#include "..\\Include\\RockEquity\\Classes\\Management.mqh";
+
+#import
+   void SetLevels();
+#import
+
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
-
-
-
 void OnStart()
   {
-       Management management = Management();
-       management.DeleteLevels();
-       management.SetLevels();
+//---
+   
+   Management::SetLevels(ChartID());
+   
   }
-
 //+------------------------------------------------------------------+

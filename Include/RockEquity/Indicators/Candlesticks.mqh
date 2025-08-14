@@ -8,12 +8,7 @@
 #property version   "1.00"
 #property strict
 
-   string candles[3] = {"CANDLE0", "CANDLE1", "CANDLE2"};
-   int offsetx[3] = {20, 27, 34};
-   
-   int fontSize = 27;
-   int offsety = 40;
-
+#include "..\\Constants.mqh"
 
 class Candlesticks
   {
@@ -28,9 +23,6 @@ private:
    }
      
    void PlotCandlesDots() {
-   
-      int x;
-      int y;
       
       ChartTimePriceToXY(0,0,TimeCurrent(),Bid,x,y);
    

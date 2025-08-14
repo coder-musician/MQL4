@@ -16,3 +16,8 @@
 //    return(value+value2);
 //   }
 //+------------------------------------------------------------------+
+void SetLevels export {
+         
+         ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)));
+         //ObjectSetInteger(0,"SL_BID",OBJPROP_COLOR, clrRed);
+      }

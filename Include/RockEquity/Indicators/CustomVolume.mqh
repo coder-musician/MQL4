@@ -8,6 +8,8 @@
 #property version   "1.00"
 #property strict
 
+#include "..\\Constants.mqh"
+
 class CustomVolume
   {
 private:
@@ -18,14 +20,7 @@ public:
    ~CustomVolume();
    
    void PlotCustomVolume() {
-   
-      int timeframe = 10; // last 10 bars
-      int x;
-      int y;
-      
-      int font = 9;
-      int sety = 25;
-      int setx = 40;   
+  
       
       ChartTimePriceToXY(0,0,TimeCurrent(),Bid,x,y);
       

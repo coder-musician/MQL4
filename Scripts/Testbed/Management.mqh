@@ -8,26 +8,7 @@
 #property version   "1.00"
 #property strict
 
-
-#include ".\Utils\Utils.mqh"
-
-   // SETTINGS
-   double RISK_REWARD_RATIO = 3;
-   // ----------
-   
-   double OPEN_BID_PRICE = 0;
-   double OPEN_ASK_PRICE = 0;
-   
-   double TAKE_PROFIT_BID_PRICE = 0;
-   double TAKE_PROFIT_ASK_PRICE = 0;
-   
-   double STOP_RISK_BID_PRICE = 0;
-   double STOP_RISK_ASK_PRICE = 0;
-   
-   double TAKE_PROFIT_PIPS = 0;
-   double STOP_RISK_PIPS = 0;
-   
-   int OPERATION_TYPE = 0;
+#include "Constants.mqh"
 
 class Management
   {
@@ -60,12 +41,14 @@ private:
       
       STOP_RISK_BID_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
       
-      if(Bid > STOP_RISK_BID_PRICE) 
-         STOP_RISK_PIPS = Ask - STOP_RISK_BID_PRICE;
+      if(Bid > STOP_RISK_BID_PRICE) {
       
-      else 
-         STOP_RISK_PIPS = STOP_RISK_BID_PRICE - Bid;
+         STOP_RISK_PIPS = Ask - STOP_RISK_BID_PRICE;
+      }
+      else {
          
+         STOP_RISK_PIPS = STOP_RISK_BID_PRICE - Bid;
+      }   
    }
      
 public:
@@ -91,7 +74,7 @@ public:
          
          if(Bid > SlBid) {
             
-            OPERATION_TYPE = OP_BUY;
+            ORDER_OPERATION = OP_BUY;
             
             TAKE_PROFIT_BID_PRICE = Bid + (STOP_RISK_PIPS*RISK_REWARD_RATIO) + (SPREAD);
             
@@ -100,7 +83,7 @@ public:
          }
          else {
 
-            OPERATION_TYPE = OP_SELL;
+            ORDER_OPERATION = OP_SELL;
             
             TAKE_PROFIT_BID_PRICE = Ask - (STOP_RISK_PIPS*RISK_REWARD_RATIO) - (SPREAD);           
             
@@ -170,8 +153,8 @@ public:
          MoveLine("SL_BID", SlBid);
       }
       
-      void SetLevels() {
-      
+      void SetLevels(string chart) {
+      MessageBox("L");
          ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)));
          ObjectSetInteger(0,"SL_BID",OBJPROP_COLOR,clrRed);
       }
@@ -187,7 +170,7 @@ public:
      
       string GetSummary() {
       
-         string summary = "OPERATION_TYPE: " +  IntegerToString(OPERATION_TYPE) + "\n" +
+         string summary = "ORDER_OPERATION: " +  IntegerToString(ORDER_OPERATION) + "\n" +
             "TAKE_PROFIT_BID_PRICE: " + DoubleToString(TAKE_PROFIT_BID_PRICE) + "\n" +
             "TAKE_PROFIT_ASK_PRICE: " + DoubleToString(TAKE_PROFIT_ASK_PRICE) + "\n" +
             "STOP_RISK_BID_PRICE: " + DoubleToString(STOP_RISK_BID_PRICE) + "\n" +

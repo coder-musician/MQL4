@@ -1,5 +1,6 @@
 {
     "C_Cpp.default.forcedInclude": [
         "c:\\Users\\alexa\\.vscode\\extensions\\l-i-v.mql-tools-2.1.0\\data\\mql4_en.mqh"
-    ]
+    ],
+    "C_Cpp.dimInactiveRegions": false
 }

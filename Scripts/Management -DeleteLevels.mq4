@@ -11,7 +11,7 @@
 #include "..\\Include\\RockEquity\\Classes\\Management.mqh";
 
 #import
-   void DeleteLevels(long chartid);
+   void DeleteLevels();
 #import
 
 //+------------------------------------------------------------------+
@@ -21,7 +21,7 @@ void OnStart()
   {
 //---
    
-   Management::DeleteLevels(ChartID());
+   Utils::DeleteLevels();
    
   }
 //+------------------------------------------------------------------+

@@ -8,53 +8,26 @@
 #property version   "1.00"
 #property strict
 
-#include "..\Include\Custom\Management.mqh"
-#include "..\Include\Custom\Orders.mqh"
-#include "..\Include\Custom\Journal.mqh"
-#include "..\Include\Custom\Analytics.mqh"
+#include "..\\Include\\RockEquity\\Utils.mqh"
+#include "..\\Include\\RockEquity\\Constants.mqh"
 
-#include "..\Include\Custom\Indicators\Candlesticks.mqh"
-#include "..\Include\Custom\Indicators\CustomVolume.mqh"
+#include "..\\Include\\RockEquity\\Classes\\RockExpert.mqh"
+#include "..\\Include\\RockEquity\\Classes\\Orders.mqh"
+#include "..\\Include\\RockEquity\\Classes\\Management.mqh"
 
-#include "..\Include\Custom\Utils\Utils.mqh"
 
-int HTF = 240;
-int CANDLES_COUNT = Bars;
+#import
+   // UTILS
+   //void LoadValues();
+   //double GetLinePrice(string LineName) ;
    
-   bool isNewCandle() {
-      
-      bool newCandle = false;
-      
-      if(CANDLES_COUNT < Bars) {
-         
-         newCandle = true;
-         CANDLES_COUNT = Bars;
-      }
-      
-      return newCandle;
-      
-   }
+   // ORDERS
+   //bool checkForActiveOrders();
    
-   void setHFTColors() {
-
-   if(ChartPeriod() != HTF) {
-      
-         ChartSetInteger(0, CHART_COLOR_CANDLE_BULL, clrAqua);
-         ChartSetInteger(0, CHART_COLOR_CANDLE_BEAR, clrRed);
-         
-         ChartSetInteger(0, CHART_COLOR_CHART_UP, clrTurquoise);
-         ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrRed);
-      }
-      else {
-         
-         ChartSetInteger(0, CHART_COLOR_CANDLE_BULL, clrLimeGreen);
-         ChartSetInteger(0, CHART_COLOR_CANDLE_BEAR, clrCrimson);
-         
-         ChartSetInteger(0, CHART_COLOR_CHART_UP, clrGreen);
-         ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrMaroon);
-      }
-   }
+   //MANAGEMENT
+   //void UpdateTakeProfit(double SlBid);
    
+#import
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
 //+------------------------------------------------------------------+
@@ -68,39 +41,40 @@ int OnInit()
 void OnDeinit(const int reason)
   {
 //---
+      
    
   }
 //+------------------------------------------------------------------+
 //| Expert tick function                                             |
 //+------------------------------------------------------------------+
 void OnTick()
-  {         
-  
-      Management management = Management();
-      Journal journal = Journal();
+  {   
+      /*
+      if(RockExpert::isNewCandle()) {
       
-      Orders orders = Orders();
-      orders.GetOrdersList();
+         Alert("SII");
+      }*/
       
-      Analytics analytics = Analytics();
+      RockExpert::setLTFColors();
+      Orders::checkForActiveOrders();
+      Management::LoadValues();
       
-      Candlesticks candlesticks = Candlesticks();
-      candlesticks.UpdateCandlesIndicator();
-      
-      CustomVolume customVolume = CustomVolume();
-      customVolume.PlotCustomVolume();
-      
-      Utils utils = Utils();
-      
-      setHFTColors();
-      
-      bool areOrdersActive = orders.checkForActiveOrders(Symbol());
-      
-      if(!areOrdersActive) {
+      if(!IS_ORDER_ACTIVE) {
          
-         if(ChartPeriod() != HTF)  
-            management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
+         if(ChartPeriod() == LTF) {
          
+            //Management::UpdateTakeProfit(double STOP_RISK_BID_PRICE);
+            
+         }
+      }
+      else {
+         
+         
+      }
+      
+      
+      /*
+
          if(IS_ORDER_ACTIVE) {
             
             IS_ORDER_ACTIVE = False;
@@ -174,7 +148,7 @@ void OnTick()
             }
             
             management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
-         }
+         }*/
   }
   
 

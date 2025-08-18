@@ -12,10 +12,6 @@
 #include "..\Utils.mqh"
 #include "..\Constants.mqh"
 
-#import
-   double GetLinePrice(string LineName);
-#import
-
 class Orders
   {
   
@@ -89,22 +85,22 @@ public:
       }
    }
       
-   bool checkForActiveOrders(string symbol) {
+   static void checkForActiveOrders() {
       
-      bool isActive = False;
-      
+      IS_ORDER_ACTIVE = False;
+      ORDER_TICKET = 0;
+            
       for(int i=0; i<OrdersTotal(); i++) {
       
          bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
          
-         if(openOrder && OrderSymbol() == symbol){
+         if(openOrder && OrderSymbol() == Symbol()){
             
-            isActive = True;
+            IS_ORDER_ACTIVE = True;
+            ORDER_TICKET = OrderTicket();
             break;
          }
-      }
-     
-      return isActive;      
+      }      
    }
    
    static int PlaceOrder() {
@@ -112,8 +108,8 @@ public:
       double accountBalance = AccountBalance();
       double RISKED_PIPS = 0;
       
-      ORDER_PROFIT_PRICE = GetLinePrice("TP_BID");
-      ORDER_RISK_PRICE = GetLinePrice("SL_BID");
+      ORDER_PROFIT_PRICE = Utils::GetLinePrice("TP_BID");
+      ORDER_RISK_PRICE = Utils::GetLinePrice("SL_BID");
       
       if(ORDER_RISK_PRICE < Bid) {
          

@@ -8,19 +8,16 @@
 #property version   "1.00"
 #property strict
 
-#include "..\\Include\\RockEquity\\Classes\\Analytics.mqh";
+#include "..\\Include\\RockEquity\\Classes\\Management.mqh";
 
 #import
-   void WriteTrade(string details);
+   void test();
 #import
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 void OnStart()
   {
-//---
-   
-      Analytics::WriteTrade("TEST");
-   
+     Management::UpdateValues();   
   }
 //+------------------------------------------------------------------+

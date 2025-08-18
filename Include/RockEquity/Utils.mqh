@@ -13,13 +13,7 @@
 
 class Utils
   {
-private:
-
-   static void DeleteLine(string lineName) {
-   
-      ObjectDelete(0, lineName);
-   }
-   
+private:   
    
    static void GetOrdersList() {
    
@@ -84,10 +78,31 @@ public:
    }
    
    static double GetLinePrice(string LineName) {
-   
+
       double LinePrice = NormalizeDouble(ObjectGet(LineName, 1),Digits); 
-      
       return LinePrice;
+   }
+   
+   static void PlotLine(string LineName, double Price, int Color) {
+   
+      bool NewLine = ObjectCreate(LineName, OBJ_HLINE, 0, Time[0], Price, 0, 0);
+      ObjectSetInteger(0,LineName,OBJPROP_COLOR,Color);
+   }
+   
+   static void MoveLine(string LineName, double Price) {
+   
+      static bool MoveLine = ObjectSetDouble(0, LineName, OBJPROP_PRICE1, Price);
+   }
+   
+   static void DeleteLine(string LineName) {
+      
+      ObjectDelete(ChartID(), LineName);
+   }
+   
+   static void ChangeLineColor(string LineName, int Color) {
+
+      bool LineColor = ObjectSetInteger(0,LineName,OBJPROP_COLOR,Color);
+   
    }
    
    static void DeleteLevels() {

@@ -20,7 +20,7 @@
 void OnStart()
   {
 //--- 
-      Utils::CloseAllOrders();
+      //Utils::CloseAllOrders();
    
   }
 //+------------------------------------------------------------------+

@@ -9,87 +9,48 @@
 #property strict
 
 #include "..\\Constants.mqh"
+#include "..\\Utils.mqh"
 
 class Journal
   {
 private:
    
-   static string GetDate() {
-      
-      string year = IntegerToString(Year());
-      string month = IntegerToString(Month());
-      string day = IntegerToString(Day());
-      
-      if(Month() < 10) {
-         
-         month = "0" + IntegerToString(Month());
-      }
-      
-      if(Day() < 10) {
-      
-         day = "0" + IntegerToString(Day());
-      }
-   
-      return year+month+day;
-   }
-   
-   static string GetTime() {
-   
-      string hour = IntegerToString(Hour());
-      string minutes = IntegerToString(Minute());      
-      string seconds = IntegerToString(Seconds());
-      
-      if(Hour() < 10) {
-         
-         hour = "0" + IntegerToString(Hour());
-      }
-      
-      if(Minute() < 10) {
-      
-         minutes = "0" + IntegerToString(Minute());
-      }
-      
-      if(Seconds() < 10) {
-      
-         seconds = "0" + IntegerToString(Seconds());
-      }
-      
-      string time = hour + minutes + seconds;
-      
-      return time;
-   }
-   
    static string GetImagePath() {
    
-      string path = GetDate() + "\\" + Symbol() + "\\";  
+      string Path = Utils::GetDate() + "\\" + Symbol() + "\\";  
       
-      return path;
+      return Path;
    }
    
-   static string GetImageName(string desc) {
+   static string GetImageName(string Description) {
       
-      string image = Symbol() + "-" + GetDate() + "-" + GetTime() + "-" + desc + ".png";
+      string ImageExtension = ".png";
+      
+      string Image = Symbol() + "-" + Utils::GetDate() + "-" + 
+      Utils::GetTime() + "-" + Description + ImageExtension;
                         
-      return image;
+      return Image;
    }
    
-   static void TakeSnapshot(long chartid, string desc) {
+   static void TakeSnapshot(long ChartId, string Description) {
       
-      bool snapSuccess;
-      string fullpath;
-      string image;      
+      bool SnapSuccess;
+      string FullPath;
+      string ImageExtension;    
       
-      image = Symbol() + "-" + GetDate() + "-" + GetTime() + "-" + desc + ".png";      
-      fullpath = GetImagePath() + "LTF\\" + GetImageName(desc);           
+      string Image = Symbol() + "-" + Utils::GetDate() + "-" + Utils::GetTime() + 
+         "-" + Description + ImageExtension;
+         
+      FullPath = GetImagePath() + "LTF\\" + GetImageName(Description);           
     
-      snapSuccess = ChartScreenShot(chartid, fullpath, 
+      SnapSuccess = ChartScreenShot(ChartId, FullPath, 
          IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
       
-      chartid = (ChartNext(chartid));      
+      ChartId = (ChartNext(ChartId));      
       
-      fullpath = GetImagePath() + "HTF\\" + GetImageName(desc);           
+      FullPath = GetImagePath() + "HTF\\" + GetImageName(Description);           
       
-      snapSuccess = ChartScreenShot(chartid, fullpath, 
+      SnapSuccess = ChartScreenShot(ChartId, FullPath, 
          IMAGE_XPIX, IMAGE_YPIX, ALIGN_RIGHT);
    }
    
@@ -98,34 +59,34 @@ public:
    Journal();
   ~Journal();
 
-   void MarketSnapshot(long chartid) {
+   void MarketSnapshot(long ChartId) {
       
-      string desc = "Market";      
-      TakeSnapshot(chartid, desc);
+      string Description = "Market";      
+      TakeSnapshot(ChartId, Description);
    }
    
-   static void CustomSnapshot(long chartid)  {
+   static void CustomSnapshot(long ChartId)  {
       
-      string desc = "Custom";      
-      TakeSnapshot(chartid, desc);
+      string Description = "Custom";      
+      TakeSnapshot(ChartId, Description);
    }
    
-   void OpenSnapshot(long chartid, int orderid) {
+   void OpenSnapshot(long ChartId, int OrderId) {
       
-      string desc = "Trade-1-Open-" + orderid + "-" + "1M";      
-      TakeSnapshot(chartid, desc);      
+      string Description = "Trade-1-Open-" + IntegerToString(OrderId) + "-" + "1M";      
+      TakeSnapshot(ChartId, Description);      
    }
    
-   void TradeSnapshot(long chartid, int orderid) {
+   void TradeSnapshot(long ChartId, int OrderId) {
       
-      string desc = "Trade-2-Next-" + orderid;      
-      TakeSnapshot(chartid, desc);
+      string Description = "Trade-2-Next-" + IntegerToString(OrderId);      
+      TakeSnapshot(ChartId, Description);
    }
    
-   void CloseSnapshot(long chartid, int orderid) {  
-      string desc = "Trade-3-Close-" + orderid;
+   void CloseSnapshot(long ChartId, int OrderId) {  
+      string Description = "Trade-3-Close-" + IntegerToString(OrderId);
       
-      TakeSnapshot(chartid, desc);
+      TakeSnapshot(ChartId, Description);
    }
    
   };

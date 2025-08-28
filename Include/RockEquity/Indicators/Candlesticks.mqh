@@ -14,29 +14,31 @@ class Candlesticks
   {
 private:
 
-   void DeleteCandleDots() {
+   static void DeleteCandleDots(long ChartId) {
    
-      for(int i=0; i<ArrayRange(candles,0); i++){
+      for(int i=0; i < ArrayRange(CANDLES_NAMES, 0); i++){
    
-         ObjectDelete(0,candles[i]);   
+         ObjectDelete(ChartId, CANDLES_NAMES[i]);   
       }
    }
      
-   void PlotCandlesDots() {
+   static void PlotCandlesDots(long ChartId) {
+   
+      int X_Coordinate;
+      int Y_Coordinate;
       
-      ChartTimePriceToXY(0,0,TimeCurrent(),Bid,x,y);
+      ChartTimePriceToXY(ChartId, 0, TimeCurrent(), Bid, X_Coordinate, Y_Coordinate);
    
-      long right = ChartGetInteger(0,CHART_WIDTH_IN_PIXELS);
-      long up = ChartGetInteger(0, CHART_HEIGHT_IN_PIXELS);
+      long ChartWidth = ChartGetInteger(ChartId, CHART_WIDTH_IN_PIXELS);
    
-      DeleteCandleDots();
+      DeleteCandleDots(ChartId);
    
-      for(int i=0; i<ArrayRange(candles,0); i++) {
+      for(int i=0; i < ArrayRange(CANDLES_NAMES, 0); i++) {
    
-         ObjectCreate(0,candles[i],OBJ_LABEL,0,0,0);
-         ObjectSet(candles[i], OBJPROP_XDISTANCE, right-offsetx[i]);
-         ObjectSet(candles[i], OBJPROP_YDISTANCE, y-offsety);
-         ObjectSetText(candles[i], ".", fontSize, "Arial", clrWhite);   
+         ObjectCreate(ChartId, CANDLES_NAMES[i], OBJ_LABEL, 0,0,0);
+         ObjectSet(CANDLES_NAMES[i], OBJPROP_XDISTANCE, ChartWidth - CANDLE_OFFSET_X[i]);
+         ObjectSet(CANDLES_NAMES[i], OBJPROP_YDISTANCE, Y_Coordinate - CANDLE_OFFSET_Y);
+         ObjectSetText(CANDLES_NAMES[i], ".", CANDLE_FONT_SIZE, "Arial", clrWhite);   
       }
    }
 
@@ -45,44 +47,48 @@ public:
    Candlesticks();
   ~Candlesticks();
   
-  void UpdateCandlesIndicator()
+  static void UpdateCandlesIndicator()
   {
      
-      DeleteCandleDots();
-      PlotCandlesDots();
+      DeleteCandleDots(ChartID());
+      PlotCandlesDots(ChartID());
    
-      for(int j=1; j <= ArraySize(candles); j++) {
-   
+      for(int j=1; j <= ArraySize(CANDLES_NAMES); j++) {
    
          if(Open[j] < Close[j]) {
          
             if(Open[j-1] > Close[j])         
-               ObjectSetText(candles[j-1], ".", fontSize, "Arial", clrGreen);
+               ObjectSetText(CANDLES_NAMES[j-1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BULLISH_COLOR);
+            
             else                     
-               ObjectSetText(candles[j-1], ".", fontSize, "Arial", clrRed);
+               ObjectSetText(CANDLES_NAMES[j-1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BEARISH_COLOR);
          }      
          else {
          
             if(Open[j] > Close[j]) {
       
                if(Open[j-1] > Close[j])
-                  ObjectSetText(candles[j-1], ".", fontSize, "Arial", clrGreen);
+                  ObjectSetText(CANDLES_NAMES[j-1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BULLISH_COLOR);
+               
                else
-                 ObjectSetText(candles[j-1], ".", fontSize, "Arial", clrRed);
-            }
-            else {
-   
+                 ObjectSetText(CANDLES_NAMES[j-1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BEARISH_COLOR);
+                 
+            } else {
+            
+               
                if(Open[j-1] > Close[j])
-                 ObjectSetText(candles[j-1], ".", fontSize, "Arial", clrGreen);
+                 ObjectSetText(CANDLES_NAMES[j-1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BULLISH_COLOR);
+               
                else
-                 ObjectSetText(candles[j-1], ".", fontSize, "Arial", clrRed);
+                 ObjectSetText(CANDLES_NAMES[j-1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BEARISH_COLOR);
    
-               ObjectSetText(candles[j], ".", fontSize, "Arial", clrYellow);
+               ObjectSetText(CANDLES_NAMES[j], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_TWEEZER_COLOR);
    
                if(Close[j+1] < Open[j])
-                 ObjectSetText(candles[j+1], ".", fontSize, "Arial", clrGreen);
+                 ObjectSetText(CANDLES_NAMES[j+1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BULLISH_COLOR);
+               
                else
-                 ObjectSetText(candles[j+1], ".", fontSize, "Arial", clrRed);
+                 ObjectSetText(CANDLES_NAMES[j+1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_BEARISH_COLOR);
    
                break;
             }
@@ -90,42 +96,42 @@ public:
    
          //- ENGULFING/TWEEZER?
    
-         double x1pips;
-         double x2pips;
+         double X1_Pips;
+         double X2_Pips;
    
-         int x1type;
-         int x2type;
+         int X1_Operation;
+         int X2_Operation;
    
          if(Open[j+1] < Close[j+1]) {
    
-            x2pips = Close[j+1] - Open[j+1]; //[x]Bull
-            x2type = OP_BUY;   
+            X2_Pips = Close[j+1] - Open[j+1]; //[x]Bull
+            X2_Operation = OP_BUY;   
          }
          else {
    
-            x2pips = Open[j+1]-Close[j+1]; // [x]Bear
-            x2type = OP_SELL;
+            X2_Pips = Open[j+1]-Close[j+1]; // [x]Bear
+            X2_Operation = OP_SELL;
          }
          
          if(Open[j] < Close[j]) {
    
-            x1pips = Close[j]-Open[j]; //[x]Bull
-            x1type = OP_BUY;
+            X1_Pips = Close[j]-Open[j]; //[x]Bull
+            X1_Operation = OP_BUY;
          }
          else {
    
-            x1pips = Open[j]-Close[j]; // [x]Bear
-            x1type = OP_SELL;
+            X1_Pips = Open[j]-Close[j]; // [x]Bear
+            X1_Operation = OP_SELL;
          }
            
    
-         if((x2type - x1type) != 0) {
+         if((X2_Operation - X1_Operation) != 0) {
             
-            if(Close [2] == Open[1]) {
+            if(Close[2] == Open[1]) {
             
                //Tweezer
-               ObjectSetText(candles[j], ".", fontSize, "Arial", clrYellow);
-               ObjectSetText(candles[j+1], ".", fontSize, "Arial", clrYellow);
+               ObjectSetText(CANDLES_NAMES[j], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_TWEEZER_COLOR);
+               ObjectSetText(CANDLES_NAMES[j+1], ".", CANDLE_FONT_SIZE, "Arial", CANDLE_TWEEZER_COLOR);
             } 
          }
       }

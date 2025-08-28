@@ -9,19 +9,12 @@
 #property strict
 
 #include "..\\Include\\RockEquity\\Classes\\Management.mqh";
-
-#import
-   void DeleteLevels();
-#import
-
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 void OnStart()
   {
 //---
-   
-   Utils::DeleteLevels();
-   
+      Management::DeleteLevels(0);
   }
 //+------------------------------------------------------------------+

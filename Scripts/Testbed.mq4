@@ -8,16 +8,19 @@
 #property version   "1.00"
 #property strict
 
+#include "..\\Include\\RockEquity\\Classes\\Orders.mqh";
 #include "..\\Include\\RockEquity\\Classes\\Management.mqh";
-
-#import
-   void test();
-#import
+#include "..\\Include\\RockEquity\\Utils.mqh";
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
+
+   
 void OnStart()
-  {
-     Management::UpdateValues();   
+  {   
+      
+      
+      
   }
+           
 //+------------------------------------------------------------------+

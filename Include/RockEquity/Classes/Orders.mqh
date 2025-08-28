@@ -9,86 +9,57 @@
 #property strict
 #property library
 
-#include "..\Utils.mqh"
 #include "..\Constants.mqh"
+#include "..\Classes\Management.mqh"
 
 class Orders
   {
   
 private:
-
-   static double NormalizePrice(double price) {
    
-      string priceString = DoubleToStr(price);
-      int priceStringLength = StringLen(priceString);
-      int priceEntire = StringFind(priceString,".", 0) + 1;   
-      ORDER_PRICE_DECIMALS = priceStringLength - priceEntire;
+   static void GetOrdersList() {
+   
+      for(int i=0; i<OrdersTotal(); i++) {
+      
+         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
+         
+         if(openOrder && OrderSymbol() == Symbol()){
+            
+            ORDERS_LIST[i] = OrderTicket();
+         }
+      }
+   }
+   
+   
+   static void CloseOrder(int ticket, double lots, double price) {
+   
+      bool closeSuccess = OrderClose(ticket,lots,price,3,clrNONE);
+   }
+   
+   static double NormalizePrice(double Price) {
+   
+      string PriceString = DoubleToStr(Price);
+      int PriceStringLength = StringLen(PriceString);
+      int PriceEntire = StringFind(PriceString,".", 0) + 1;
+      
+      ORDER_PRICE_DECIMALS = PriceStringLength - PriceEntire;
       
       if(ORDER_PRICE_DECIMALS == 5 || ORDER_PRICE_DECIMALS == 3) {
          
          ORDER_PRICE_DECIMALS--;
-         priceString = StringSubstr(priceString,0, (priceEntire+ORDER_PRICE_DECIMALS));
-      }
-      
-      return StringToDouble(priceString);
-   }
-   
-   static double GetPipValue() {
-      
-      string baseCurrency = StringSubstr(Symbol(), 0, 3);
-      string singlePipString = "0.";
-      
-      for(int i=0; i < ORDER_PRICE_DECIMALS; i++) {
          
-         if(i == (ORDER_PRICE_DECIMALS-1))            
-            singlePipString = singlePipString + "1";
-         else 
-            singlePipString = singlePipString + "0";
+         PriceString = StringSubstr(PriceString,0, 
+            (PriceEntire + ORDER_PRICE_DECIMALS));
       }
       
-      double pipValue = StringToDouble(singlePipString) / Bid;
+      Price = StringToDouble(PriceString);
       
-      if(baseCurrency != ACC_CURRENCY)
-         pipValue = pipValue * ORDER_OPEN_PRICE;
-      
-      return (pipValue*ORDER_STANDARD_LOT);
+      return Price;
    }
    
-   static double GetRiskedPips(double RISKedPips) {
-   
-      string multiplier = "1";
+      static bool FindActiveOrders() {
       
-      for(int i=1; i<=ORDER_PRICE_DECIMALS; i++)       
-         multiplier = multiplier + "0";
-      
-      return (RISKedPips*StringToInteger(multiplier));
-   }
-
-public:
-
-   Orders();   
-   ~Orders();     
-   
-   static void LoadOrderValues(int OrderId){ 
-
-      double currentOrder = OrderSelect(OrderId, SELECT_BY_TICKET, MODE_TRADES );
-       
-      ORDER_TICKET = OrderTicket(); 
-      ORDER_OPEN_PRICE = OrderOpenPrice();
-      ORDER_PROFIT_PRICE = OrderTakeProfit();
-      ORDER_RISK_PRICE = OrderStopLoss();
-      ORDER_LOTS = OrderLots();
-      
-      if(currentOrder != -1) {
-      
-         IS_ORDER_ACTIVE = True;
-      }
-   }
-      
-   static void checkForActiveOrders() {
-      
-      IS_ORDER_ACTIVE = False;
-      ORDER_TICKET = 0;
+      bool IsOrderActive = False;
             
       for(int i=0; i<OrdersTotal(); i++) {
       
@@ -96,70 +67,170 @@ public:
          
          if(openOrder && OrderSymbol() == Symbol()){
             
-            IS_ORDER_ACTIVE = True;
             ORDER_TICKET = OrderTicket();
             break;
          }
-      }      
+      }
+      
+      return PAIR_HAS_ACTIVE_ORDERS;
    }
    
-   static int PlaceOrder() {
+   static double GetPipValue() {
       
-      double accountBalance = AccountBalance();
-      double RISKED_PIPS = 0;
+      string SinglePipString = "0.";
       
-      ORDER_PROFIT_PRICE = Utils::GetLinePrice("TP_BID");
-      ORDER_RISK_PRICE = Utils::GetLinePrice("SL_BID");
+      for(int i=0; i < ORDER_PRICE_DECIMALS; i++) {
+         
+         if(i == (ORDER_PRICE_DECIMALS-1))            
+            SinglePipString = SinglePipString + "1";
+         else 
+            SinglePipString = SinglePipString + "0";
+      }
       
-      if(ORDER_RISK_PRICE < Bid) {
+      double PipValue = StringToDouble(SinglePipString) / Bid;
+      
+      if(AccountCurrency() != TRADING_ACCOUNT_CURRENCY)
+         PipValue = PipValue * ORDER_OPEN_PRICE;
+         
+      PipValue = PipValue*ORDER_STANDARD_LOT;
+      
+      return PipValue;
+   }
+   
+   static double FormatRiskedPips(double RiskedPips) {
+   
+      string Multiplier = "1";
+      
+      for(int i=1; i <= ORDER_PRICE_DECIMALS; i++)       
+         Multiplier = Multiplier + "0";
+         
+      RiskedPips = RiskedPips*StringToInteger(Multiplier);
+      
+      return RiskedPips;
+   }
+
+public:
+
+   Orders();   
+   ~Orders();
+   
+   static bool PairHasActiveOrders(string PairSymbol) {
+      
+      bool OpenOrder;
+      
+      for(int i=0; i < OrdersTotal(); i++) {
+         
+         OpenOrder = OrderSelect(i, SELECT_BY_POS, MODE_TRADES);
+         
+         if (OrderSymbol() == Symbol()) {
+            
+            if(OrderCloseTime() == 0) {
+            
+               PAIR_HAS_ACTIVE_ORDERS = True;
+               ORDER_TICKET = OrderTicket();
+               break;
+            }
+         }
+      } 
+      
+      return PAIR_HAS_ACTIVE_ORDERS;
+   }
+   
+   static void LoadOrderValues(int OrderId){ 
+
+      double currentOrder = OrderSelect(OrderId, SELECT_BY_TICKET, MODE_TRADES );
+       
+      ORDER_TICKET = OrderTicket(); 
+      ORDER_OPEN_PRICE = OrderOpenPrice();
+      ORDER_TAKE_PROFIT_PRICE = OrderTakeProfit();
+      ORDER_STOP_LOSS_PRICE = OrderStopLoss();
+      ORDER_LOTS = OrderLots();
+      
+      if(currentOrder != -1) {
+      
+         PAIR_HAS_ACTIVE_ORDERS = True;
+         
+      } else {
+      
+         PAIR_HAS_ACTIVE_ORDERS = False;
+      }      
+   }
+      
+   static int PlaceOrder(long ChartId) {
+      
+      double AccountBalance = AccountBalance();
+      double RiskedPips = 0;
+      
+      ORDER_SPREAD = Ask-Bid;
+      
+      ORDER_TAKE_PROFIT_PRICE = Management::GetLinePrice("TP");
+      ORDER_STOP_LOSS_PRICE = Management::GetLinePrice("SL");
+      
+      if(ORDER_STOP_LOSS_PRICE < Bid) {
          
          ORDER_OPERATION = OP_BUY;
-         ORDER_OPEN_PRICE = NormalizePrice(Ask); 
-         RISKED_PIPS =  ORDER_OPEN_PRICE - ORDER_RISK_PRICE;
+         ORDER_OPEN_PRICE = NormalizePrice(Ask);
+         ORDER_CLOSE_PRICE = NormalizePrice(Bid);
+         
+         RiskedPips =  ORDER_OPEN_PRICE - ORDER_STOP_LOSS_PRICE;
+         
+         ORDER_STOP_LOSS_PRICE = ORDER_STOP_LOSS_PRICE + ORDER_SPREAD;
+         ORDER_TAKE_PROFIT_PRICE = ORDER_TAKE_PROFIT_PRICE + ORDER_SPREAD;
+         
+         Alert(ORDER_STOP_LOSS_PRICE);
+         
+         
       } 
       else {
          
          ORDER_OPERATION = OP_SELL;
          ORDER_OPEN_PRICE = NormalizePrice(Bid);
-         RISKED_PIPS = ORDER_RISK_PRICE - ORDER_OPEN_PRICE;
+         ORDER_CLOSE_PRICE = NormalizePrice(Ask);
+         
+         RiskedPips = ORDER_STOP_LOSS_PRICE - ORDER_CLOSE_PRICE;
+         
+         ORDER_STOP_LOSS_PRICE = ORDER_STOP_LOSS_PRICE + ORDER_SPREAD;
+         ORDER_TAKE_PROFIT_PRICE = ORDER_TAKE_PROFIT_PRICE + ORDER_SPREAD;
+         
+         
       }
       
-      RISKED_PIPS = GetRiskedPips(RISKED_PIPS);
+      RiskedPips = FormatRiskedPips(RiskedPips);
       
-      double pipValue = GetPipValue();
-      double riskedAmount = accountBalance * (CAPITAL_RISK_RATE)/100;
+      double PipValue = GetPipValue();
+      double RiskedAmount = AccountBalance * (CAPITAL_RISK_RATE)/100;
        
-      ORDER_LOTS = (riskedAmount/pipValue)/RISKED_PIPS;
+      ORDER_LOTS = (RiskedAmount/PipValue)/RiskedPips;
       
-      int newOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 0, 
-         ORDER_RISK_PRICE, ORDER_PROFIT_PRICE);
-         
-      ObjectDelete(0, "SL_ASK");
-      ObjectDelete(0, "TP_ASK");
+      int NewOrder = OrderSend(Symbol(), ORDER_OPERATION, ORDER_LOTS, ORDER_OPEN_PRICE, 
+         ORDER_SLIPPAGE, ORDER_STOP_LOSS_PRICE, ORDER_TAKE_PROFIT_PRICE);
       
-      if(newOrder != -1) {
+      if(NewOrder != -1) {
       
-         bool NewLine = ObjectCreate("OPEN_PRICE", OBJ_HLINE, 0, Time[0], ORDER_OPEN_PRICE, 0, 0);
-         ObjectSetInteger(0,"OPEN_PRICE",OBJPROP_COLOR, OPEN_LINE_COLOR);   
-      } 
-      else {
-      
-         string summary = "ORDER_TICKET: " + DoubleToStr(ORDER_TICKET) + "\n" +
-            "ORDER_OPEN_PRICE: " + DoubleToStr(ORDER_OPEN_PRICE) + "\n" +
-            "ORDER_PROFIT_PRICE: " + DoubleToStr(ORDER_PROFIT_PRICE) + "\n" +
-            "ORDER_RISK_PRICE: " + DoubleToStr(ORDER_RISK_PRICE) + "\n" +
-            "ORDER_LOTS: " + DoubleToStr(ORDER_LOTS) + "\n"+ 
-            "ERROR: " + IntegerToString(GetLastError()) + "\n Enable Auto Trading";
-            
-         MessageBox(summary);
-      } 
-
-      return newOrder;
+         Management::PlotLine(ChartID(), "OP", ORDER_OPEN_PRICE, OPEN_PRICE_COLOR);
+         PAIR_HAS_ACTIVE_ORDERS = True;  
+      }      
+   
+      return NewOrder;
    }
    
-   void UpdateOrder(int OrderId, double StopRisk, double TakeProfit) {
    
-      bool OrderAdjust = OrderModify(OrderId,0, StopRisk, TakeProfit, 0, clrNONE); 
+   void UpdateOrder(int OrderId, double StopLoss, double TakeProfit) {
+   
+      bool OrderAdjust = OrderModify(OrderId,0, StopLoss, TakeProfit, 0, clrNONE); 
+   }
+   
+   
+   void GetTradeSummary(int Ticket) {
+   
+      string Summary = "ORDER_TICKET: " + DoubleToStr(ORDER_TICKET) + "\n" +
+         "ORDER_OPEN_PRICE: " + DoubleToStr(ORDER_OPEN_PRICE) + "\n" +
+         "ORDER_PROFIT_PRICE: " + DoubleToStr(ORDER_TAKE_PROFIT_PRICE) + "\n" +
+         "ORDER_STOP_LOSS_PRICE: " + DoubleToStr(ORDER_STOP_LOSS_PRICE) + "\n" +
+         "ORDER_LOTS: " + DoubleToStr(ORDER_LOTS) + "\n"+ 
+         "ERROR: " + IntegerToString(GetLastError()) + "\n Enable Auto Trading";
+         
+      MessageBox(Summary);
    }
    
   };

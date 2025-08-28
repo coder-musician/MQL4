@@ -20,20 +20,20 @@ public:
                RockExpert();
               ~RockExpert();                   
    
-   static bool isNewCandle() {
+   static bool IsNewCandle() {
 
-      bool newCandle = false;
+      bool NewCandle = false;
       
       if(CANDLES_COUNT < Bars) {
          
-         newCandle = true;
+         NewCandle = true;
          CANDLES_COUNT = Bars;
       }
       
-      return newCandle;
+      return NewCandle;
    }
       
-   static void setLTFColors() {
+   static void SetLTFColors() {
    
       if(ChartPeriod() == LTF) {
       

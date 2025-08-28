@@ -7,24 +7,24 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
-#property library
 
 #include "..\\Utils.mqh"
-
-#import
-   string GetDate();
-#import
 
 class Analytics
   {
 private:
    
-   static void WriteStats(string tradeDetails) {
+public:
+
+   Analytics();
+   ~Analytics();
+   
+      static void WriteStats(string TradeDetails) {
       
-      string filename = Utils::GetDate() + "-ANALYTICS.csv";
-      int filehandle;
+      string Filename = Utils::GetDate() + "-ANALYTICS.csv";
+      int Filehandle;
       
-      string header = "ORDER_DATE," + 
+      string Header = "ORDER_DATE," + 
       "ORDER_TIME," + 
       "SYMBOL," + 
       "ORDER_OPERATION," + 
@@ -36,32 +36,21 @@ private:
       "CLOSED_RISK_PRICE," + 
       "PROFIT";
                   
-      if(!FileIsExist(filename, 0)) {
+      if(!FileIsExist(Filename, 0)) {
         
-        filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
-        FileWrite(filehandle, header); // HEADERS
-        FileSeek(filehandle, 0, SEEK_END);
-        FileWrite(filehandle, tradeDetails);
-        FileClose(filehandle);
+        Filehandle = FileOpen(Filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
+        FileWrite(Filehandle, Header); // HeaderS
+        FileSeek(Filehandle, 0, SEEK_END);
+        FileWrite(Filehandle, TradeDetails);
+        FileClose(Filehandle);
         
       }
       else {
-         filehandle = FileOpen(filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
-         FileSeek(filehandle, 0, SEEK_END);
-         FileWrite(filehandle, tradeDetails + "\n");
-         FileClose(filehandle);
+         Filehandle = FileOpen(Filename,FILE_READ|FILE_WRITE|FILE_CSV, ',');
+         FileSeek(Filehandle, 0, SEEK_END);
+         FileWrite(Filehandle, TradeDetails + "\n");
+         FileClose(Filehandle);
       }
-   }
-   
-public:
-
-   Analytics();
-   ~Analytics();
-   
-   static void WriteTrade(string details) {
-   
-      WriteStats(details);
-      
    }
    
   };

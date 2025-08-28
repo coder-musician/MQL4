@@ -10,24 +10,11 @@
 
 #include "..\\Include\\RockEquity\\Utils.mqh"
 #include "..\\Include\\RockEquity\\Constants.mqh"
-
 #include "..\\Include\\RockEquity\\Classes\\RockExpert.mqh"
-#include "..\\Include\\RockEquity\\Classes\\Orders.mqh"
 #include "..\\Include\\RockEquity\\Classes\\Management.mqh"
+#include "..\\Include\\RockEquity\\Classes\\Orders.mqh"
 
 
-#import
-   // UTILS
-   //void LoadValues();
-   //double GetLinePrice(string LineName) ;
-   
-   // ORDERS
-   //bool checkForActiveOrders();
-   
-   //MANAGEMENT
-   //void UpdateTakeProfit(double SlBid);
-   
-#import
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
 //+------------------------------------------------------------------+
@@ -49,28 +36,49 @@ void OnDeinit(const int reason)
 //+------------------------------------------------------------------+
 void OnTick()
   {   
-      /*
-      if(RockExpert::isNewCandle()) {
+      /*     
+      double sl = Management::GetLinePrice("SL");
+      double tp = Management::GetLinePrice("TP");
+      double spread = Ask-Bid;
+      double price = sl + spread;
+      double pricetp = tp + spread;
       
-         Alert("SII");
-      }*/
+      Management::MoveLine(0,"price",price);
+      Management::MoveLine(0,"pricetp",pricetp);
+      Management::MoveLine(0, "spread", (sl+spread));
       
-      RockExpert::setLTFColors();
-      Orders::checkForActiveOrders();
-      Management::LoadValues();
       
-      if(!IS_ORDER_ACTIVE) {
+      Alert((Ask-Bid) + " - " + (pricetp-tp));
+      Alert((pricetp-tp) != (Ask-Bid));*/
+      
+      RockExpert::SetLTFColors();
+      
+      bool PairHasActiveOrders = Orders::PairHasActiveOrders(Symbol());
+      ORDER_STOP_LOSS_PRICE = Management::GetLinePrice("SL");
+      
+      ORDER_OPERATION = OP_BUY;
+      
+      if(Bid < ORDER_STOP_LOSS_PRICE)
+         ORDER_OPERATION = OP_SELL;
          
-         if(ChartPeriod() == LTF) {
+      if(!PairHasActiveOrders) {
          
-            //Management::UpdateTakeProfit(double STOP_RISK_BID_PRICE);
+         if(PAIR_HAS_ACTIVE_ORDERS == True) {   // TRADE WAS JUST CLOSED         
             
+            PAIR_HAS_ACTIVE_ORDERS = False;
+            Management::DeleteLevels(0);
          }
-      }
-      else {
          
+         Management::AdjustTakeProfit(0);
          
+      } else {   
+         
+         if(PAIR_HAS_ACTIVE_ORDERS == False)   // TRADE WAS JUST OPENED         
+            PAIR_HAS_ACTIVE_ORDERS = True;
       }
+      
+      
+      
       
       
       /*

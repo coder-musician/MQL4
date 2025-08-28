@@ -8,6 +8,7 @@
 #property version   "1.00"
 #property strict
 
+#include "..\\Include\\RockEquity\\Constants.mqh";
 #include "..\\Include\\RockEquity\\Classes\\Orders.mqh";
 
 #import
@@ -20,7 +21,7 @@
 void OnStart()
   {
 //--- 
-      Orders::PlaceOrder();
+      Orders::PlaceOrder(0);
    
   }
 //+------------------------------------------------------------------+

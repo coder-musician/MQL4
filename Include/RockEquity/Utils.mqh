@@ -13,70 +13,66 @@
 
 class Utils
   {
-private:   
-   
-   static void GetOrdersList() {
-   
-      for(int i=0; i<OrdersTotal(); i++) {
-      
-         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
-         
-         if(openOrder && OrderSymbol() == Symbol()){
-            
-            ORDERS_LIST[i] = OrderTicket();
-         }
-      }
-   }
-   
-   
-   
-   static void CloseOrder(int ticket, double lots, double price) {
-   
-      bool closeSuccess = OrderClose(ticket,lots,price,3,clrNONE);
-   }
-   
-
+private:
    
 public:
   
    Utils();
   ~Utils();
   
-     static string GetDate() {
+// --------------------------- DATE / TIME  
+  
+   static string GetDate() {
       
-      string year = IntegerToString(Year());
-      string month = IntegerToString(Month());
-      string day = IntegerToString(Day());
+      string YearString = IntegerToString(Year());
+      string MonthString = IntegerToString(Month());
+      string DayString = IntegerToString(Day());
       
       if(Month() < 10)         
-         month = "0" + IntegerToString(Month());
+         MonthString = "0" + IntegerToString(Month());
       
       if(Day() < 10) 
-         day = "0" + IntegerToString(Day());
+         DayString = "0" + IntegerToString(Day());
          
-      return year+month+day;
+      return YearString + MonthString + DayString;
    }
    
    static string GetTime() {
    
-      string hour = IntegerToString(Hour());
-      string minutes = IntegerToString(Minute());      
-      string seconds = IntegerToString(Seconds());
+      string HourString = IntegerToString(Hour());
+      string MinutesString = IntegerToString(Minute());      
+      string SecondsString = IntegerToString(Seconds());
       
       if(Hour() < 10)          
-         hour = "0" + IntegerToString(Hour());
+         HourString = "0" + IntegerToString(Hour());
             
       if(Minute() < 10) 
-         minutes = "0" + IntegerToString(Minute());
+         MinutesString = "0" + IntegerToString(Minute());
       
       if(Seconds() < 10)
-         seconds = "0" + IntegerToString(Seconds());
+         SecondsString = "0" + IntegerToString(Seconds());
       
-      string time = hour + minutes + seconds;
+      string TimeString = HourString + MinutesString + SecondsString;
       
-      return time;
+      return TimeString;
    }
+
    
+  };
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+Utils::Utils()
+  {
+  }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+Utils::~Utils()
+  {
+  }
+//+------------------------------------------------------------------+
+   /*
    static double GetLinePrice(string LineName) {
 
       double LinePrice = NormalizeDouble(ObjectGet(LineName, 1),Digits); 
@@ -90,7 +86,7 @@ public:
    }
    
    static void MoveLine(string LineName, double Price) {
-   
+   //Alert(LineName + " - "+ Price);
       static bool MoveLine = ObjectSetDouble(0, LineName, OBJPROP_PRICE1, Price);
    }
    
@@ -107,12 +103,9 @@ public:
    
    static void DeleteLevels() {
       
-         DeleteLine("OPEN_PRICE");
-         DeleteLine("TP_ASK");
-         DeleteLine("TP_BID");
-         DeleteLine("SL_ASK");
-         DeleteLine("SL_BID");
-      
+         DeleteLine("OP");
+         DeleteLine("TP");
+         DeleteLine("SL");
    }
    
    static void CloseAllOrders() {
@@ -130,18 +123,4 @@ public:
       
       DeleteLevels();     
    }
-  
-  };
-//+------------------------------------------------------------------+
-//|                                                                  |
-//+------------------------------------------------------------------+
-Utils::Utils()
-  {
-  }
-//+------------------------------------------------------------------+
-//|                                                                  |
-//+------------------------------------------------------------------+
-Utils::~Utils()
-  {
-  }
-//+------------------------------------------------------------------+
+   */

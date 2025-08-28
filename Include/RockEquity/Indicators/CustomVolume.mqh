@@ -1,15 +1,15 @@
 //+------------------------------------------------------------------+
 //|                                                 CustomVolume.mqh |
-//|                                  Copyright 2025, MetaQuotes Ltd. |
+//|                                  CopyRight 2025, MetaQuotes Ltd. |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2025, MetaQuotes Ltd."
+#property copyright "Copyright 2024, MetaQuotes Ltd."
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
 
 #include "..\\Constants.mqh"
-
+   
 class CustomVolume
   {
 private:
@@ -19,32 +19,34 @@ public:
    CustomVolume();
    ~CustomVolume();
    
-   void PlotCustomVolume() {
-  
+   void PlotCustomVolume(long ChartId) {
       
-      ChartTimePriceToXY(0,0,TimeCurrent(),Bid,x,y);
+      int X_Cordinate;
+      int Y_Cordinate;
       
-      long right = ChartGetInteger(0,CHART_WIDTH_IN_PIXELS);
-      long up = ChartGetInteger(0, CHART_HEIGHT_IN_PIXELS);
+      ChartTimePriceToXY(0,0,TimeCurrent(),Bid, X_Cordinate, Y_Cordinate);
       
-      double averageVolume = 0;
-      long currentVolume = iVolume(Symbol(),Period(),1);
+      long RightWidth = ChartGetInteger(ChartId, CHART_WIDTH_IN_PIXELS);
+      long HeigthWidth = ChartGetInteger(ChartId, CHART_HEIGHT_IN_PIXELS);
+      
+      double AverageVolume = 0;
+      long CurrentVolume = iVolume(Symbol(),Period(),1);
             
-      for(int i=2; i < timeframe; i++) {
+      for(int i=2; i < BARS_INCLUDED; i++) {
       
-         averageVolume = averageVolume + iVolume(Symbol(),Period(),i);
+         AverageVolume = AverageVolume + iVolume(Symbol(),Period(),i);
       }
       
-      averageVolume = averageVolume/(timeframe-2);
+      AverageVolume = AverageVolume/(BARS_INCLUDED - 2);
             
-      double volumeRate = (currentVolume / averageVolume)*100;
-      volumeRate = NormalizeDouble(volumeRate, 0);
+      double VolumeRate = (CurrentVolume / AverageVolume)*100;
+      VolumeRate = NormalizeDouble(VolumeRate, 0);
             
       ObjectDelete(0,"CustomVolume");
       ObjectCreate(0,"CustomVolume",OBJ_LABEL,0,0,0);   
-      ObjectSet("CustomVolume", OBJPROP_XDISTANCE, right-setx);
-      ObjectSet("CustomVolume", OBJPROP_YDISTANCE, up-sety);
-      ObjectSetText("CustomVolume", DoubleToString(volumeRate) + "%", font, "Arial", clrCornflowerBlue);
+      ObjectSet("CustomVolume", OBJPROP_XDISTANCE, RightWidth - X_POSITION);
+      ObjectSet("CustomVolume", OBJPROP_YDISTANCE, HeigthWidth - Y_POSITION);
+      ObjectSetText("CustomVolume", DoubleToString(VolumeRate) + "%", VOLUMES_FONT_SIZE, "Arial", VOLUMES_FONT_COLOR);
    
    }
    

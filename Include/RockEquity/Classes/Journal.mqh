@@ -36,10 +36,6 @@ private:
       
       bool SnapSuccess;
       string FullPath;
-      string ImageExtension;    
-      
-      string Image = Symbol() + "-" + Utils::GetDate() + "-" + Utils::GetTime() + 
-         "-" + Description + ImageExtension;
          
       FullPath = GetImagePath() + "LTF\\" + GetImageName(Description);           
     
@@ -59,7 +55,7 @@ public:
    Journal();
   ~Journal();
 
-   void MarketSnapshot(long ChartId) {
+   static void MarketSnapshot(long ChartId) {
       
       string Description = "Market";      
       TakeSnapshot(ChartId, Description);
@@ -71,19 +67,19 @@ public:
       TakeSnapshot(ChartId, Description);
    }
    
-   void OpenSnapshot(long ChartId, int OrderId) {
+   static void OpenSnapshot(long ChartId, int OrderId) {
       
       string Description = "Trade-1-Open-" + IntegerToString(OrderId) + "-" + "1M";      
       TakeSnapshot(ChartId, Description);      
    }
    
-   void TradeSnapshot(long ChartId, int OrderId) {
+   static void TradeSnapshot(long ChartId, int OrderId) {
       
       string Description = "Trade-2-Next-" + IntegerToString(OrderId);      
       TakeSnapshot(ChartId, Description);
    }
    
-   void CloseSnapshot(long ChartId, int OrderId) {  
+   static void CloseSnapshot(long ChartId, int OrderId) {  
       string Description = "Trade-3-Close-" + IntegerToString(OrderId);
       
       TakeSnapshot(ChartId, Description);

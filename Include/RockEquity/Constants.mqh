@@ -34,14 +34,17 @@ int CANDLES_COUNT;
 // --------------------------- ORDERS
    int ORDER_TICKET;
    string ORDER_DATE;
+   string ORDER_TIME;
    int ORDER_OPERATION;
    double ORDER_LOTS;
+   string ORDER_SYMBOL_STRING;
       
    double ORDER_SPREAD;
    double ORDER_OPEN_PRICE;
    double ORDER_CLOSE_PRICE;
    double ORDER_TAKE_PROFIT_PRICE;
-   double ORDER_STOP_LOSS_PRICE;   
+   double ORDER_STOP_LOSS_PRICE;
+   double ORDER_PROFIT;   
    
    int ORDERS_LIST[100];
    bool PAIR_HAS_ACTIVE_ORDERS;   
@@ -70,3 +73,19 @@ int CANDLES_COUNT;
    int X_POSITION = 40;
    int Y_POSITION = 25;   
    
+// --------------------------- ANALYTICS
+   string Header = "ORDER_DATE," + "ORDER_TIME," + "SYMBOL," + "ORDER_OPERATION," + 
+                     "ORDER_TICKET," + "ORDER_OPEN_PRICE," + "ORDER_PROFIT_PRICE," + 
+                     "CLOSED_TAKE_PROFIT," + "ORDER_RISK_PRICE," + "CLOSED_RISK_PRICE," + 
+                     "PROFIT";
+                     
+   string TradeDetails = ORDER_DATE + 
+                     ORDER_TIME + 
+                     ORDER_SYMBOL_STRING + 
+                     IntegerToString(ORDER_OPERATION) + 
+                     IntegerToString(ORDER_TICKET) + DoubleToString(ORDER_OPEN_PRICE) + 
+                     DoubleToString(ORDER_TAKE_PROFIT_PRICE) + 
+                     DoubleToString(ORDER_CLOSE_PRICE) + DoubleToString(ORDER_STOP_LOSS_PRICE) + 
+                     DoubleToString(ORDER_CLOSE_PRICE) + 
+                     DoubleToString(ORDER_PROFIT);
+                     

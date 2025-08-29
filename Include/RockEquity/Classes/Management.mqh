@@ -46,6 +46,49 @@ public:
    
       bool MoveLine = ObjectSetDouble(0, LineName, OBJPROP_PRICE1, Price);
    }
+   
+   static void ReloadTradeLines(long ChartId) {
+   
+      if(GetLinePrice("OP") != OrderOpenPrice()) {
+         
+         if(GetLinePrice("OP") == 0) {            
+            
+            ObjectDelete(ChartId, "OP");
+            PlotLine(ChartId, "OP", ORDER_OPEN_PRICE, OPEN_PRICE_COLOR);
+         
+         } else {
+            
+            MoveLine(ChartId, "OP", ORDER_OPEN_PRICE);
+         }
+      }
+      
+      if(GetLinePrice("TP") != OrderTakeProfit()) {
+         
+         if(GetLinePrice("TP") == 0) {            
+            
+            ObjectDelete(ChartId, "TP");
+            PlotLine(ChartId, "TP", ORDER_TAKE_PROFIT_PRICE, TAKE_PROFIT_COLOR);
+         
+         } else {
+            
+            MoveLine(ChartId, "TP", ORDER_TAKE_PROFIT_PRICE);
+         }
+      }
+      
+      if(GetLinePrice("SL") != OrderTakeProfit()) {
+         
+         if(GetLinePrice("SL") == 0) {            
+            
+            ObjectDelete(ChartId, "SL");
+            PlotLine(ChartId, "SL", ORDER_STOP_LOSS_PRICE, STOP_LOSS_COLOR);
+         
+         } else {
+            
+            MoveLine(ChartId, "SL", ORDER_STOP_LOSS_PRICE);
+         }
+      }
+      
+   }
      
    static void AdjustTakeProfit (long ChartId) {       
       

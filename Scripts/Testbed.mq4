@@ -15,12 +15,33 @@
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
 
-   
+string PairSymbol = ChartSymbol();
+
 void OnStart()
-  {   
+  {
+      bool IsOrderLoaded = False;
+      bool IsOrderActive = False;
+  
+      for(int i=0; i < OrdersTotal(); i++) {
+   
+         IsOrderLoaded = OrderSelect(i, SELECT_BY_POS);
       
+         if(OrderSymbol() != PairSymbol)
+            continue;
+         
+         Alert(OrderTicket() + " - " + OrderSymbol() + " - " + OrderCloseTime());
+         
+         IsOrderActive = True;
+         break;
+      }   
+ }
+   /*
       
-      
-  }
+      for (int i = OrdersTotal() - 1; i >= 0; i--)
+    {
+        Alert(OrderSymbol());
+    }
+   */   
+  
            
 //+------------------------------------------------------------------+

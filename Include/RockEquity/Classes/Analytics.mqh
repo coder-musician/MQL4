@@ -19,22 +19,10 @@ public:
    Analytics();
    ~Analytics();
    
-      static void WriteStats(string TradeDetails) {
+      static void WriteStats() {
       
       string Filename = Utils::GetDate() + "-ANALYTICS.csv";
       int Filehandle;
-      
-      string Header = "ORDER_DATE," + 
-      "ORDER_TIME," + 
-      "SYMBOL," + 
-      "ORDER_OPERATION," + 
-      "ORDER_TICKET," + 
-      "ORDER_OPEN_PRICE," + 
-      "ORDER_PROFIT_PRICE," + 
-      "CLOSED_TAKE_PROFIT," + 
-      "ORDER_RISK_PRICE," + 
-      "CLOSED_RISK_PRICE," + 
-      "PROFIT";
                   
       if(!FileIsExist(Filename, 0)) {
         

@@ -56,24 +56,7 @@ private:
       
       return Price;
    }
-   
-      static bool FindActiveOrders() {
-      
-      bool IsOrderActive = False;
-            
-      for(int i=0; i<OrdersTotal(); i++) {
-      
-         bool openOrder = OrderSelect(i, SELECT_BY_POS,MODE_TRADES);
-         
-         if(openOrder && OrderSymbol() == Symbol()){
-            
-            ORDER_TICKET = OrderTicket();
-            break;
-         }
-      }
-      
-      return PAIR_HAS_ACTIVE_ORDERS;
-   }
+ 
    
    static double GetPipValue() {
       
@@ -113,47 +96,31 @@ public:
 
    Orders();   
    ~Orders();
-   
+      
    static bool PairHasActiveOrders(string PairSymbol) {
       
-      bool OpenOrder;
-      
+      bool IsOrderLoaded = False;
+      bool IsOrderActive = False;
+  
       for(int i=0; i < OrdersTotal(); i++) {
-         
-         OpenOrder = OrderSelect(i, SELECT_BY_POS, MODE_TRADES);
-         
-         if (OrderSymbol() == Symbol()) {
-            
-            if(OrderCloseTime() == 0) {
-            
-               PAIR_HAS_ACTIVE_ORDERS = True;
-               ORDER_TICKET = OrderTicket();
-               break;
-            }
-         }
-      } 
-      
-      return PAIR_HAS_ACTIVE_ORDERS;
-   }
    
-   static void LoadOrderValues(int OrderId){ 
-
-      double currentOrder = OrderSelect(OrderId, SELECT_BY_TICKET, MODE_TRADES );
-       
-      ORDER_TICKET = OrderTicket(); 
-      ORDER_OPEN_PRICE = OrderOpenPrice();
-      ORDER_TAKE_PROFIT_PRICE = OrderTakeProfit();
-      ORDER_STOP_LOSS_PRICE = OrderStopLoss();
-      ORDER_LOTS = OrderLots();
+         IsOrderLoaded = OrderSelect(i, SELECT_BY_POS);
       
-      if(currentOrder != -1) {
-      
-         PAIR_HAS_ACTIVE_ORDERS = True;
+         if(OrderSymbol() != PairSymbol)
+            continue;
          
-      } else {
+         IsOrderActive = True;
+         
+         ORDER_TICKET = OrderTicket(); 
+         ORDER_OPEN_PRICE = OrderOpenPrice();
+         ORDER_TAKE_PROFIT_PRICE = OrderTakeProfit();
+         ORDER_STOP_LOSS_PRICE = OrderStopLoss();
+         ORDER_LOTS = OrderLots(); 
+         
+         break;
+      }
       
-         PAIR_HAS_ACTIVE_ORDERS = False;
-      }      
+      return IsOrderActive;
    }
       
    static int PlaceOrder(long ChartId) {

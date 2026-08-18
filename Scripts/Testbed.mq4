@@ -7,33 +7,29 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
-  
+
+#include "..\Include\Custom\Orders.mqh"
+
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
-
-   string GetDate() {
-      
-      string year = IntegerToString(Year());
-      string month = IntegerToString(Month());
-      string day = IntegerToString(Day());
-      
-      if(Month() < 10) {
-         
-         month = "0" + IntegerToString(Month());
-      }
-      
-      if(Day() < 10) {
-      
-         day = "0" + IntegerToString(Day());
-      }
    
-      return year+month+day;
-   }
- 
 void OnStart()
-  {   
-      MessageBox(GetDate());
+  {
+      Orders orders = Orders();
       
+      orders.
+      
+      string tradeDetails = ORDER_DATE + "," + 
+      ORDER_TIME + "," + 
+      Symbol() + "," + 
+      DoubleToString(ORDER_OPERATION) + "," + 
+      DoubleToString(ORDER_TICKET) + "," + 
+      DoubleToString(ORDER_OPEN_PRICE) + "," +
+      DoubleToString(ORDER_PROFIT_PRICE) + "," +  
+      DoubleToString(OrderTakeProfit()) + "," +
+      DoubleToString(ORDER_RISK_PRICE) + "," + 
+      DoubleToString(OrderStopLoss()) + "," + 
+      DoubleToString(OrderProfit());
   }
   

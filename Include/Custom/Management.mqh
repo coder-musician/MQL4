@@ -8,23 +8,26 @@
 #property version   "1.00"
 #property strict
 
-// SETTINGS
-double REWARD_RATIO = 3;
-// ----------
 
-double OPEN_BID_PRICE = 0;
-double OPEN_ASK_PRICE = 0;
+#include ".\Utils\Utils.mqh"
 
-double TAKE_PROFIT_BID_PRICE = 0;
-double TAKE_PROFIT_ASK_PRICE = 0;
-
-double STOP_RISK_BID_PRICE = 0;
-double STOP_RISK_ASK_PRICE = 0;
-
-double TAKE_PROFIT_PIPS = 0;
-double STOP_RISK_PIPS = 0;
-
-int OPERATION_TYPE = 0;
+   // SETTINGS
+   double RISK_REWARD_RATIO = 3;
+   // ----------
+   
+   double OPEN_BID_PRICE = 0;
+   double OPEN_ASK_PRICE = 0;
+   
+   double TAKE_PROFIT_BID_PRICE = 0;
+   double TAKE_PROFIT_ASK_PRICE = 0;
+   
+   double STOP_RISK_BID_PRICE = 0;
+   double STOP_RISK_ASK_PRICE = 0;
+   
+   double TAKE_PROFIT_PIPS = 0;
+   double STOP_RISK_PIPS = 0;
+   
+   int OPERATION_TYPE = 0;
 
 class Management
   {
@@ -53,25 +56,22 @@ private:
       return LinePrice;
    }
    
-   
    void Get_Risk_Pips() { 
       
       STOP_RISK_BID_PRICE = NormalizeDouble(ObjectGet("SL_BID", 1),Digits);
       
-      if(Bid > STOP_RISK_BID_PRICE) {
-      
+      if(Bid > STOP_RISK_BID_PRICE) 
          STOP_RISK_PIPS = Ask - STOP_RISK_BID_PRICE;
-      }
-      else {
-         
+      
+      else 
          STOP_RISK_PIPS = STOP_RISK_BID_PRICE - Bid;
-      }   
+         
    }
      
 public:
-                     Management();
-                    ~Management();
-                    
+
+      Management();
+     ~Management();                    
       
       void UpdateTakeProfit(double SlBid) {  
          
@@ -93,7 +93,7 @@ public:
             
             OPERATION_TYPE = OP_BUY;
             
-            TAKE_PROFIT_BID_PRICE = Bid + (STOP_RISK_PIPS*REWARD_RATIO) + (SPREAD);
+            TAKE_PROFIT_BID_PRICE = Bid + (STOP_RISK_PIPS*RISK_REWARD_RATIO) + (SPREAD);
             
             ChangeLineColor("SL_BID", clrRed);
                         
@@ -102,7 +102,7 @@ public:
 
             OPERATION_TYPE = OP_SELL;
             
-            TAKE_PROFIT_BID_PRICE = Ask - (STOP_RISK_PIPS*REWARD_RATIO) - (SPREAD);           
+            TAKE_PROFIT_BID_PRICE = Ask - (STOP_RISK_PIPS*RISK_REWARD_RATIO) - (SPREAD);           
             
             ChangeLineColor("SL_BID", clrIndigo);
             TP_LINE_COLOR = clrIndigo;
@@ -170,7 +170,7 @@ public:
          MoveLine("SL_BID", SlBid);
       }
       
-      void SetLevels(string chart) {
+      void SetLevels() {
       
          ObjectCreate("SL_BID", OBJ_HLINE, 0, Time[0], (Bid - ((Ask-Bid)*5)));
          ObjectSetInteger(0,"SL_BID",OBJPROP_COLOR,clrRed);

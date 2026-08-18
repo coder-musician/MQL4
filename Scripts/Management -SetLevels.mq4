@@ -19,7 +19,7 @@ void OnStart()
   {
        Management management = Management();
        management.DeleteLevels();
-       management.SetLevels(IntegerToString(ChartID()));
+       management.SetLevels();
   }
 
 //+------------------------------------------------------------------+

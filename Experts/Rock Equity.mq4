@@ -11,70 +11,47 @@
 #include "..\Include\Custom\Management.mqh"
 #include "..\Include\Custom\Orders.mqh"
 #include "..\Include\Custom\Journal.mqh"
+#include "..\Include\Custom\Analytics.mqh"
 
 #include "..\Include\Custom\Indicators\Candlesticks.mqh"
 #include "..\Include\Custom\Indicators\CustomVolume.mqh"
 
-
 int CANDLES_COUNT = Bars;
+   
+   bool isNewCandle() {
+      
+      bool newCandle = false;
+      
+      if(CANDLES_COUNT < Bars) {
+         
+         newCandle = true;
+         CANDLES_COUNT = Bars;
+      }
+      
+      return newCandle;
+      
+   }
+   
+   void setHFTColors() {
 
-bool isNewCandle() {
-   
-   bool newCandle = false;
-   
-   if(CANDLES_COUNT < Bars) {
+   if(ChartPeriod() != HTF) {
       
-      newCandle = true;
-      CANDLES_COUNT = Bars;
-   }
-   
-   return newCandle;
-   
-}
-   string GetDate() {
-      
-      string year = IntegerToString(Year());
-      string month = IntegerToString(Month());
-      string day = IntegerToString(Day());
-      
-      if(Month() < 10) {
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BULL, clrAqua);
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BEAR, clrRed);
          
-         month = "0" + IntegerToString(Month());
+         ChartSetInteger(0, CHART_COLOR_CHART_UP, clrTurquoise);
+         ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrRed);
       }
-      
-      if(Day() < 10) {
-      
-         day = "0" + IntegerToString(Day());
-      }
-   
-      return year+month+day;
-   }
-   
-   string GetTime() {
-   
-      string hour = IntegerToString(Hour());
-      string minutes = IntegerToString(Minute());      
-      string seconds = IntegerToString(Seconds());
-      
-      if(Hour() < 10) {
+      else {
          
-         hour = "0" + IntegerToString(Hour());
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BULL, clrLimeGreen);
+         ChartSetInteger(0, CHART_COLOR_CANDLE_BEAR, clrCrimson);
+         
+         ChartSetInteger(0, CHART_COLOR_CHART_UP, clrGreen);
+         ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrMaroon);
       }
-      
-      if(Minute() < 10) {
-      
-         minutes = "0" + IntegerToString(Minute());
-      }
-      
-      if(Seconds() < 10) {
-      
-         seconds = "0" + IntegerToString(Seconds());
-      }
-      
-      string time = hour + minutes + seconds;
-      
-      return time;
    }
+   
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
 //+------------------------------------------------------------------+
@@ -95,11 +72,14 @@ void OnDeinit(const int reason)
 //+------------------------------------------------------------------+
 void OnTick()
   {         
+  
       Management management = Management();
       Journal journal = Journal();
       
       Orders orders = Orders();
       orders.GetOrdersList();
+      
+      Analytics analytics = Analytics();
       
       Candlesticks candlesticks = Candlesticks();
       candlesticks.UpdateCandlesIndicator();
@@ -107,81 +87,89 @@ void OnTick()
       CustomVolume customVolume = CustomVolume();
       customVolume.PlotCustomVolume();
       
+      setHFTColors();
+      
       bool areOrdersActive = orders.checkForActiveOrders(Symbol());
       
       if(!areOrdersActive) {
-      
-         management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
+         
+         if(ChartPeriod() != HTF)  
+            management.UpdateTakeProfit(NormalizeDouble(ObjectGet("SL_BID", 1),Digits));  
          
          if(IS_ORDER_ACTIVE) {
             
-            journal.CloseScreenshot(ORDERS_LIST[0]);
             IS_ORDER_ACTIVE = False;
             
-            OrderSelect(ORDER_TICKET, SELECT_BY_TICKET);
+            string tradeDetails = ORDER_DATE + "," + 
+            ORDER_TIME + "," + 
+            Symbol() + "," + 
+            DoubleToString(ORDER_OPERATION) + "," + 
+            DoubleToString(ORDER_TICKET) + "," + 
+            DoubleToString(ORDER_OPEN_PRICE) + "," +
+            DoubleToString(ORDER_PROFIT_PRICE) + "," +  
+            DoubleToString(OrderTakeProfit()) + "," +
+            DoubleToString(ORDER_RISK_PRICE) + "," + 
+            DoubleToString(OrderStopLoss()) + "," + 
+            DoubleToString(OrderProfit());
             
-            MessageBox(ORDER_DATE + "-" + ORDER_TIME + "-" + Symbol() + "-" + ORDER_OPERATION + "-" + ORDER_TICKET + "-//" + 
-               ORDER_OPEN_PRICE + "-" + ORDER_PROFIT_PRICE + "-" +  OrderTakeProfit() + "-//" +
-               ORDER_RISK_PRICE + "-" +  OrderStopLoss() + "-" + 
-               OrderProfit());
+            if(ChartPeriod() != HTF) {
+               
+               journal.CloseSnapshot(ChartID(),ORDERS_LIST[0]);
+               analytics.writeTradeDetails(tradeDetails);
+            }
                
             management.DeleteLevels();
          }
-         
+
          if(isNewCandle())
-            journal.MarketLTFScreenshot(ChartID());
+         
+            if(ChartPeriod() != HTF)            
+               journal.MarketSnapshot(ChartID());
       }
       else {
          
          if(!IS_ORDER_ACTIVE) {
          
-            string date = GetDate();
-            string time = GetTime();            
+            string date = utils.GetDate();
+            string time = utils.GetTime();            
             
             IS_ORDER_ACTIVE = True;
+            
             ORDER_TICKET = OrderTicket();
             ORDER_DATE = date;
             ORDER_TIME = time;
-            
             ORDER_OPEN_PRICE = OrderOpenPrice();
             ORDER_PROFIT_PRICE = OrderTakeProfit();
             ORDER_RISK_PRICE = OrderStopLoss();
             
-            journal.OpenScreenshot(ORDERS_LIST[0], date, time);
+            if(ChartPeriod() != HTF)
+               journal.OpenSnapshot(ChartID(),ORDERS_LIST[0]);
          }
          
          if(isNewCandle())
-            journal.TradeScreenshot(ORDERS_LIST[0]);
          
-         management.LoadValues();    
-         
-         if((STOP_RISK_BID_PRICE < Bid && (STOP_RISK_BID_PRICE < ORDER_RISK_PRICE)) ||  
-         (STOP_RISK_BID_PRICE > Bid && (STOP_RISK_BID_PRICE > ORDER_RISK_PRICE))) {
-       
-            management.MoveLevels(OrderTakeProfit(), ORDER_RISK_PRICE);
-         }
-         
-         if(STOP_RISK_BID_PRICE != 0 && TAKE_PROFIT_BID_PRICE != 0) {
-         
-            if(OrderTakeProfit() != TAKE_PROFIT_BID_PRICE || OrderStopLoss() != STOP_RISK_BID_PRICE)
+            journal.TradeSnapshot(ChartID(),ORDERS_LIST[0]);
+            management.LoadValues();    
             
-            orders.UpdateOrder(ORDERS_LIST[0], STOP_RISK_BID_PRICE, TAKE_PROFIT_BID_PRICE);
+            if((STOP_RISK_BID_PRICE < Bid && (STOP_RISK_BID_PRICE < ORDER_RISK_PRICE)) ||  
+            (STOP_RISK_BID_PRICE > Bid && (STOP_RISK_BID_PRICE > ORDER_RISK_PRICE))) 
+               management.MoveLevels(OrderTakeProfit(), ORDER_RISK_PRICE);
             
-            //if(GetLastError() == ERR_INVALID_STOPS) {
-                        
-                        
-               //management.MoveLevels(OrderTakeProfit(), OrderStopLoss());
-               //management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
-            //}
-         }
-         else {
+            if(STOP_RISK_BID_PRICE != 0 && TAKE_PROFIT_BID_PRICE != 0)
             
-            management.DeleteLevels();
-            management.PlotLevels(OrderOpenPrice(), OrderTakeProfit(), OrderStopLoss());            
+               if(OrderTakeProfit() != TAKE_PROFIT_BID_PRICE || OrderStopLoss() != STOP_RISK_BID_PRICE) {
+                  orders.UpdateOrder(ORDERS_LIST[0], STOP_RISK_BID_PRICE, TAKE_PROFIT_BID_PRICE);
+            } 
+            else {
+               
+               management.DeleteLevels();
+               
+               if(ChartPeriod() != HTF)  
+                  management.PlotLevels(OrderOpenPrice(), OrderTakeProfit(), OrderStopLoss());            
+            }
+            
+            management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
          }
-         
-         management.AdjustAskLines(TAKE_PROFIT_BID_PRICE, STOP_RISK_BID_PRICE);
-      }
   }
   
 
